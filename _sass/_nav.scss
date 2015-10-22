@@ -1,3 +1,13 @@
+h1.main {
+    a {
+        color: $text-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 nav {
     margin-bottom: 30px;
 
