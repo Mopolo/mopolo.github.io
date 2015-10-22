@@ -12,7 +12,7 @@ I was born in Bordeaux (France) and I studied computer science to make websites 
 
 <h4>Studies</h4>
 
-<dl class="dl-horizontal hidden-xs">
+<dl class="dl-horizontal">
     <dt>2013 &mdash; 2014</dt>
     <dd>Supinfo Montréal</dd>
 

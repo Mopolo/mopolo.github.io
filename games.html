@@ -21,11 +21,9 @@ permalink: /games/
 
                 {% if game.image %}
                 <div class="col-xs-12 col-md-6">
-                    <div class="row">
-                        <a href="{% if game.game.type == 'none' %}javascript:void(0);{% else %}{{ game.url }}{% endif %}" class="thumbnail">
-                            <img src="{{ game.image }}" />
-                        </a>
-                    </div>
+                    <a href="{% if game.game.type == 'none' %}javascript:void(0);{% else %}{{ game.url }}{% endif %}" class="thumbnail">
+                        <img src="{{ game.image }}" />
+                    </a>
                 </div>
                 {% endif %}
             </div>
