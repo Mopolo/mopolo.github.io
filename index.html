@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+    <h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+    </h3>
+
+    <div>{{ post.content | truncate: 70 }}</div>
+
+    <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+
+    <div>&mdash;&mdash;</div>
+{% endfor %}
+
+<hr />
+
+<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
