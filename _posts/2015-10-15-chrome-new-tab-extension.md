@@ -8,7 +8,7 @@ I made an extension for the Chrome Web Store to override the new tab page:
 
 <div class="row">
     <a href="https://chrome.google.com/webstore/detail/new-tab/hhklfodpfppcpgagmohffbgbfhhkghje">
-        <img class="img-responsive col-sm-6" src="https://raw.githubusercontent.com/Mopolo/Chrome-New-Tab/master/screen-1.png" alt="New Tab" />
+        <img class="img-responsive col-xs-12 col-sm-6" src="/img/posts/chrome-new-tab-extension.png" alt="New Tab" />
     </a>
 </div>
 

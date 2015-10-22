@@ -9,7 +9,7 @@ You can create several bots and save them in cache for later.
 
 <div class="row">
     <a href="https://mopolo.github.io/slack-bot-web">
-        <img src="/img/posts/slack-bot-web.png" alt="Slack Bot Webpage screenshot" class="img-responsive col-xs-12" />
+        <img class="img-responsive col-xs-12 col-sm-6" src="/img/posts/slack-bot-web.png" alt="Slack Bot Webpage screenshot" />
     </a>
 </div>
 
