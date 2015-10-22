@@ -6,6 +6,12 @@ layout: default
 
 <div id="game-container"></div>
 
+{% if page.game.instructions %}
+<p>
+    {{ page.game.instructions }}
+</p>
+{% endif %}
+
 {% if page.game.type == 'unity' %}
 
 <script type="text/javascript">

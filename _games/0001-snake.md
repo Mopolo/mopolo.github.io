@@ -9,6 +9,7 @@ game:
   files:
     - /js/kinetic-v4.5.4.min.js
     - /js/snake.js
+  instructions: "Use the <kbd>arrow keys</kbd> to control the snake and <kbd>Enter</kbd> to replay."
 image: /img/games/snake.png
 ---
 
