@@ -7,7 +7,7 @@ permalink: /experience/
 <div id="page-experience">
     <h4>Jobs</h4>
     <dl>
-        <dt>Since Jully 2014 &mdash; Montréal</dt>
+        <dt>Jully 2014 &mdash; October 2015 &mdash; Montréal</dt>
         <dd>Web Developper at <a href="http://osedea.com/">Osedea</a></dd>
     </dl>
     <br />
