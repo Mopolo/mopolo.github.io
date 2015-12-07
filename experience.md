@@ -7,6 +7,10 @@ permalink: /experience/
 <div id="page-experience">
     <h4>Jobs</h4>
     <dl>
+        <dt>December 2015 &mdash; Today &mdash; Paris</dt>
+        <dd>Web Developper at <a href="https://www.globalis-ms.com/">Globalis</a> for <a href="http://tempsreel.nouvelobs.com/">L'Obs</a></dd>
+    </dl>
+    <dl>
         <dt>Jully 2014 &mdash; October 2015 &mdash; Montréal</dt>
         <dd>Web Developper at <a href="http://osedea.com/">Osedea</a></dd>
     </dl>
