@@ -1,27 +1,27 @@
 ---
 layout: default
-title: Projects
-permalink: /projects/
+title: Work
+permalink: /work/
 ---
-#### These are personnal projects.
+#### These are projects I worked on in companies.
 
 <br />
 
 <div>
-    {% assign projects = site.projects | reverse %}
-    {% for project in projects %}
+    {% assign works = site.works | reverse %}
+    {% for work in works %}
         <div class="project">
-            <h2><a href="{{ project.link }}">{{ project.title }}</a></h2>
+            <h2><a href="{{ work.link }}">{{ work.title }}</a></h2>
 
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    {{ project.content }}
+                    {{ work.content }}
                 </div>
 
                 <div class="col-xs-12 col-md-6">
                     <div class="row">
-                        {% for image in project.images %}
-                            <div class="col-xs-{% if project.images_layout == 'mobile' %}2{% else %}6{% endif %}">
+                        {% for image in work.images %}
+                            <div class="col-xs-{% if work.images_layout == 'mobile' %}2{% else %}6{% endif %}">
                                 <a href="{{ image }}" class="image-link thumbnail">
                                     <img src="{{ image }}" />
                                 </a>

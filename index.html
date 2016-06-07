@@ -2,19 +2,10 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-    <h3>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-    </h3>
-
-    <div>{{ post.content | truncate: 70 }}</div>
-
-    <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
-
-    <div>&mdash;&mdash;</div>
-{% endfor %}
+<h4>Hey! Welcome to my small world on the internet.</h4>
+<br />
+I make <a href="">web stuff</a>, <a href="">games</a> and <a href="">personnal projects</a>.
 
 <hr />
 
-<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+The source code of this website is visible on my <a href="https://github.com/Mopolo/mopolo.github.io">Github</a>.

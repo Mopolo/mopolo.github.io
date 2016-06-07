@@ -9,6 +9,8 @@ markdown: kramdown
 collections:
   projects:
     output: false
+  works:
+    output: false
   games:
     output: true
     permalink: /games/:title:output_ext

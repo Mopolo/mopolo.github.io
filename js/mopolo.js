@@ -18,7 +18,22 @@ $(document).ready(function() {
 
     var age = today.getFullYear() - birth.getFullYear();
 
+    if ((today.getMonth() < birth.getMonth()) || (today.getDate() < birth.getDate())) {
+        age--;
+    }
+
     $('#age').html(age);
+
+    function duckface(face) {
+        $('#duckface').html(face);
+    }
+
+    $('#duck').click(function() {
+        setTimeout(function() { duckface('>'); }, 200);
+        setTimeout(function() { duckface('-'); }, 500);
+        setTimeout(function() { duckface('>'); }, 800);
+        setTimeout(function() { duckface('-'); }, 1100);
+    });
 });
 
 $('#zooby').hover(
