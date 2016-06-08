@@ -31,10 +31,10 @@ permalink: /experience/
 
     <h4>Summer Jobs</h4>
     <dl>
-        <dt>Jully 2012 &mdash; Beauvais</dt>
+        <dt>July 2012 &mdash; Beauvais</dt>
         <dd>Employee in an industrial laundry</dd>
 
-        <dt>Jully 2008, 2009, 2010, 2011 &mdash; Beauvais</dt>
+        <dt>July 2008, 2009, 2010, 2011 &mdash; Beauvais</dt>
         <dd>Several jobs at the <a href="http://www.ch-beauvais.fr/">Hospital Center of Beauvais</a></dd>
     </dl>
 </div>
