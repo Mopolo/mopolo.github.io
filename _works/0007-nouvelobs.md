@@ -14,6 +14,7 @@ techs:
 The Nouvel Obs is a french paper and online magazine.
 
 I worked on the frontend and the backend:
+
  - Home made PHP framework
  - Started and helped the transition from SVN to Git
  - Setup of an internal Gitlab
