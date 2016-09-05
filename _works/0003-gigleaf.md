@@ -1,5 +1,6 @@
 ---
 layout: project
+anchor: "gigleaf"
 title:  "Gigleaf"
 link: "https://gigleaf.me/"
 categories: project
@@ -8,6 +9,12 @@ images:
   - /img/projects/gigleaf-2.jpg
   - /img/projects/gigleaf-3.jpg
 images_layout: site
+techs:
+  - PHP
+  - Laravel 4
+  - Angular 1
+  - Bootstrap
+  - Beanstalk
 ---
 
 Gigleaf is a project built at Osedea. This is a website on which Creative Directors

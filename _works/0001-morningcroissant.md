@@ -1,5 +1,6 @@
 ---
 layout: project
+anchor: "morningcroissant"
 title:  "MorningCroissant"
 link: "http://www.morningcroissant.fr/"
 categories: project
@@ -9,6 +10,9 @@ images:
   - /img/projects/mc-3.jpg
   - /img/projects/mc-4.jpg
 images_layout: site
+techs:
+  - PHP
+  - Zend 1
 ---
 
 I did a six months internship in this company in Paris.

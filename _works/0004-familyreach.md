@@ -1,5 +1,6 @@
 ---
 layout: project
+anchor: "family-reach"
 title:  "FamilyReach Give"
 link: "https://familyreach.org/family-reach-give/"
 categories: project
@@ -10,6 +11,13 @@ images:
   - /img/projects/fr-4.jpg
   - /img/projects/fr-5.jpg
 images_layout: mobile
+techs:
+  - PHP
+  - Laravel 5
+  - Angular 1
+  - Bootstrap
+  - Ionic
+  - Beanstalk
 ---
 
 FamilyReach Give is a mobile app I worked on at Osedea for the FamilyReach association.
