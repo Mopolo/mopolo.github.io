@@ -23,7 +23,7 @@ permalink: /experience/
         <dt>March 2014 &mdash; July 2015 &mdash; Montréal</dt>
         <dd>Web Developper at <a href="http://osedea.com/">Osedea</a></dd>
 
-        <dt>July 2013 &mdash; January 2014 &mdash; Paris</dt>
+        <dt>July 2013 &mdash; September 2013 &mdash; Paris</dt>
         <dd>Web Developper at <a href="/work/#morningcroissant">MorningCroissant</a></dd>
 
         <dt>28 march &mdash; 3 june of 2011 &mdash; Paris</dt>
