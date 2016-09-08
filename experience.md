@@ -11,7 +11,7 @@ permalink: /experience/
         <dd>Web Developper at <a href="https://www.globalis-ms.com/">Globalis</a> for the <a href="/work/#nouvelobs">Nouvel Obs</a></dd>
     </dl>
     <dl>
-        <dt>July 2014 &mdash; October 2015 &mdash; Montréal</dt>
+        <dt>March 2014 &mdash; August 2015 &mdash; Montréal</dt>
         <dd>
             Web Developper at <a href="http://osedea.com/">Osedea</a><br />
             &#8618; Projects: <a href="/work/#wespeakstudent">WeSpeakStudent</a>, <a href="/work/#morcare">Morcare</a>, <a href="/work/#family-reach">Family Reach</a>, <a href="/work/#gigleaf">Gigleaf</a>, <a href="/work/#simply-obstetrics">Simply Obstetrics</a>
@@ -20,7 +20,7 @@ permalink: /experience/
     <br />
     <h4>Interships</h4>
     <dl>
-        <dt>July 2014 &mdash; January 2015 &mdash; Montréal</dt>
+        <dt>March 2014 &mdash; July 2015 &mdash; Montréal</dt>
         <dd>Web Developper at <a href="http://osedea.com/">Osedea</a></dd>
 
         <dt>July 2013 &mdash; January 2014 &mdash; Paris</dt>
