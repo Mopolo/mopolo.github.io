@@ -8,8 +8,14 @@ h1.main {
     }
 }
 
-nav {
+nav.top-menu {
     margin-bottom: 30px;
+
+    font-size: 20px;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 15px;
+    }
 
     a {
         &.active {
