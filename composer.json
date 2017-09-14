@@ -1,0 +1,13 @@
+{
+    "name": "mopolo/mopolo.github.io",
+    "description": "My personal website",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Boiron",
+            "email": "nathan.boiron@gmail.com"
+        }
+    ],
+    "require": {}
+}
