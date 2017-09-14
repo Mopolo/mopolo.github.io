@@ -1,0 +1,29 @@
+.thumbnail {
+    background-color: #bdc3c7;
+    border: none;
+
+    display: inline-block;
+    padding: 2px;
+    margin-bottom: 0;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+.thumbnail > img, .thumbnail a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-site {
+    width: 150px;
+}
+
+.project-mobile {
+    width: 50px;
+}

@@ -1,4 +1,11 @@
 .section-title {
     border-bottom: 3px solid $color-font;
     margin-bottom: 15px;
+
+    small {
+        float: right;
+        font-size: 0.8rem;
+        position: relative;
+        bottom: -10px;
+    }
 }
