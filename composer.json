@@ -9,5 +9,7 @@
             "email": "nathan.boiron@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "tightenco/jigsaw": "^1.0"
+    }
 }
