@@ -142,6 +142,31 @@ body {
   }
 }
 
+.section-title {
+  border-bottom: 3px solid #e67e22;
+  margin-bottom: 15px;
+}
+
+dl dt {
+  font-weight: 700;
+}
+
+@media (min-width: 45em) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+
 .sidebar {
   text-align: center;
   padding: 4rem 1rem 1rem 3rem;
@@ -208,13 +233,29 @@ body {
   padding-bottom: 4rem;
 }
 
+.content h2 {
+  color: #e67e22;
+  font-size: 2.5rem;
+  margin-top: 0.8rem;
+}
+
+.content h3 {
+  color: #e67e22;
+  font-size: 1.5rem;
+}
+
+.content a {
+  text-decoration: none;
+  color: #e67e22;
+}
+
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    max-width: 48rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
-  .content article {
+  .content .main {
     margin-left: 2rem;
   }
 }
@@ -224,9 +265,23 @@ body {
     margin-left: 22rem;
     margin-right: 4rem;
   }
-  .content article {
+  .content .main {
     margin-left: 8rem;
   }
+}
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.section header {
+  font-weight: 700;
+}
+
+.section article {
+  padding-top: 5px;
+  margin-bottom: 15px;
 }
 
 pre.normal {
@@ -244,6 +299,7 @@ pre.normal span {
 #duck {
   position: absolute;
   bottom: 10px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*# sourceMappingURL=main.css.map */

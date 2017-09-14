@@ -18,13 +18,13 @@
                 <h2>Web developer</h2>
 
                 <nav>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/experience">Experience</a>
-                    <a class="active" href="/contact">Contact</a>
-                    <a href="/work">Work</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/games">Games</a>
+                    <a class="{{ $page->menu('') }}" href="/">Home</a>
+                    <a class="{{ $page->menu('about') }}" href="/about">About</a>
+                    <a class="{{ $page->menu('experience') }}" href="/experience">Experience</a>
+                    <a class="{{ $page->menu('contact') }}" href="/contact">Contact</a>
+                    <a class="{{ $page->menu('work') }}" href="/work">Work</a>
+                    <a class="{{ $page->menu('projects') }}" href="/projects">Projects</a>
+                    <a class="{{ $page->menu('games') }}" href="/games">Games</a>
                     <a href="https://github.com/Mopolo">Github</a>
                 </nav>
 
