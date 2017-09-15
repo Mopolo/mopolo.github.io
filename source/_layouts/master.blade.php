@@ -24,7 +24,6 @@
                     <a class="{{ $page->menu('contact') }}" href="/contact">Contact</a>
                     <a class="{{ $page->menu('work') }}" href="/work">Work</a>
                     <a class="{{ $page->menu('projects') }}" href="/projects">Projects</a>
-                    <a class="{{ $page->menu('games') }}" href="/games">Games</a>
                     <a href="https://github.com/Mopolo">Github</a>
                 </nav>
 
@@ -41,5 +40,16 @@
                 @yield('body')
             </div>
         </div>
+
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-2986016-7', 'mopolo.fr');
+            ga('send', 'pageview');
+        </script>
+        <script src="/js/app.js"></script>
     </body>
 </html>

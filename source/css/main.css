@@ -438,22 +438,12 @@ dl dt {
   margin-bottom: 15px;
 }
 
-pre.normal {
-  background: none;
-  margin: 0;
-  border: none;
-  font-size: 12px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-pre.normal span {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 #duck {
   position: absolute;
   bottom: 10px;
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0;
 }
 
 kbd {
@@ -523,6 +513,18 @@ code {
   color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
+}
+
+pre.normal {
+  background: none;
+  margin: 0;
+  border: none;
+  font-size: 12px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+pre.normal span {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /*# sourceMappingURL=main.css.map */
