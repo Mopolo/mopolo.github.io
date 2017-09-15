@@ -7,7 +7,7 @@
         <div>
             <div class="left">
 
-                <pre class="normal hide-on-mobile about-tour">
+                <pre class="normal about-tour">
       .
      .|.
      |||

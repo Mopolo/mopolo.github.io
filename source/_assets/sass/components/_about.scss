@@ -4,4 +4,11 @@
 
 .about-tour {
     padding-top: 5rem;
+    display: none;
+}
+
+@media (min-width: $breakpoint-med) {
+    .about-tour {
+        display: block;
+    }
 }

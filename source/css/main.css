@@ -10,6 +10,11 @@ body {
   background: #ecf0f1;
 }
 
+html .full,
+body .full {
+  background: #e67e22;
+}
+
 * {
   font-family: "PT Sans", Helvetica, sans-serif;
 }
@@ -77,8 +82,8 @@ dl dt {
 .sidebar h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 3rem;
-  line-height: 4.5rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
 }
 
 .sidebar h2 {
@@ -95,7 +100,7 @@ dl dt {
   display: block;
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-top: 3px;
 }
@@ -104,18 +109,13 @@ dl dt {
   font-weight: 700;
 }
 
-.sidebar nav a:hover {
-  position: relative;
-  left: -0.6rem;
+.sidebar nav a.active:before, .sidebar nav a.active:after {
+  content: " - ";
+  font-weight: 400;
 }
 
-.sidebar nav a:hover:before {
-  content: ">";
-  padding-right: 5px;
-  font-weight: 400;
-  font-size: 0.7rem;
-  bottom: 5px;
-  position: relative;
+.sidebar nav a:hover {
+  position: initial;
 }
 
 @media (min-width: 45em) {
@@ -136,6 +136,16 @@ dl dt {
   }
   .sidebar nav {
     margin-top: 80px;
+  }
+  .sidebar nav a {
+    font-size: 1.5rem;
+  }
+  .sidebar nav a.active:before, .sidebar nav a.active:after {
+    content: none;
+  }
+  .sidebar nav a:hover {
+    position: relative;
+    left: 0.2rem;
   }
 }
 
@@ -330,6 +340,13 @@ pre.normal span {
 
 .about-tour {
   padding-top: 5rem;
+  display: none;
+}
+
+@media (min-width: 45em) {
+  .about-tour {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
