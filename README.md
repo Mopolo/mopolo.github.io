@@ -4,10 +4,6 @@ This website is built with [Jigsaw](http://jigsaw.tighten.co/) and hosted on thi
 
 You can visit it at <http://mopolo.fr/>
 
-## Source
-
-The source for this site is available on the [dev](https://github.com/Mopolo/mopolo.github.io/tree/dev) branch.
-
 ## Local setup
 
 ```shell
