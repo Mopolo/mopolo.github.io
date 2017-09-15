@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Redstone - A Spigot plugins manager"
+title:  "Redstone"
 link: "https://github.com/CraftWorldFr/redstone"
 categories: project
 images:

@@ -1,6 +1,6 @@
 .content {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
 
     h1, h2, h3, h4, h5, h6 {
         color: $color-font;
@@ -19,21 +19,28 @@
         text-decoration: none;
         color: $color-font;
     }
+
+    .main {
+        padding: 1rem;
+    }
 }
 
-@media (min-width: 48em) {
+@media (min-width: $breakpoint-med) {
     .content {
         max-width: 48rem;
         margin-left: 20rem;
         margin-right: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
 
         .main {
             margin-left: 2rem;
+            padding: 0;
         }
     }
 }
 
-@media (min-width: 64em) {
+@media (min-width: $breakpoint-large) {
     .content {
         margin-left: 22rem;
         margin-right: 4rem;

@@ -13,15 +13,21 @@
                         {{ $project->title }}
                     </a>
 
-                    <small>
+                    <small class="work-techs-desk">
                         @foreach($project->techs as $tech)
                             <kbd>{{ $tech }}</kbd>
                         @endforeach
                     </small>
                 </h3>
 
+                <div class="work-techs-mobile">
+                    @foreach($project->techs as $tech)
+                        <kbd>{{ $tech }}</kbd>
+                    @endforeach
+                </div>
+
                 @if($project->images)
-                    <div>
+                    <div class="work-images">
                         @foreach($project->images as $image)
                             <a href="{{ $image }}" class="image-link thumbnail">
                                 <img src="{{ $image }}" class="project-{{ $project->images_layout }}" />

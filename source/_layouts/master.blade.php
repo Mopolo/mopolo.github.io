@@ -11,8 +11,7 @@
         <div class="container">
             <div class="sidebar">
                 <h1>
-                    Nathan<br />
-                    Boiron
+                    Nathan Boiron
                 </h1>
 
                 <h2>Web developer</h2>

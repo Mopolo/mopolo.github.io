@@ -4,10 +4,10 @@
     <div class="main">
         <h2 class="section-title">About</h2>
 
-        <div class="row">
-            <div class="col-4-12">
+        <div>
+            <div class="left">
 
-                <pre class="normal">
+                <pre class="normal hide-on-mobile about-tour">
       .
      .|.
      |||
@@ -26,19 +26,21 @@
 
             </div>
 
-            <div class="col-8-12">
+            <div class="about-top">
                 <p>
                     My real name is Nathan Boiron and I'm <span id="age">27</span>.
                 </p>
 
                 <p>
-                    I was born in Bordeaux (France) and I studied computer science to make websites and games!
+                    I was born in Bordeaux (France) and I studied computer science to make websites and stuff!
                 </p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12-12">
+        <div class="left about-right">
+            <h3>Studies</h3>
+
+            <div>
                 <dl class="dl-horizontal">
                     <dt>2013 &mdash; 2014</dt>
                     <dd>Supinfo Montréal</dd>

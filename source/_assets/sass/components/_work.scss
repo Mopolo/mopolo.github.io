@@ -1,3 +1,29 @@
 .work {
     margin-bottom: 60px;
 }
+
+.work-techs-desk {
+    display: none;
+}
+
+.work-techs-mobile {
+    display: block;
+}
+
+.work-images {
+    padding-top: 1rem;
+}
+
+@media (min-width: $breakpoint-med) {
+    .work-techs-desk {
+        display: inline;
+    }
+
+    .work-techs-mobile {
+        display: none;
+    }
+
+    .work-images {
+        padding-top: 0;
+    }
+}
