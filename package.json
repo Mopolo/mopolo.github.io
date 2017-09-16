@@ -1,10 +1,13 @@
 {
-  "private": true,
-  "devDependencies": {
-    "gulp": "^3.8.8",
-    "hasbin": "^1.2.3",
-    "laravel-elixir": "^6.0.0-15",
-    "laravel-elixir-browsersync-official": "^1.0.0",
-    "yargs": "^4.6.0"
-  }
+    "private": true,
+    "devDependencies": {
+        "gulp": "^3.8.8",
+        "hasbin": "^1.2.3",
+        "laravel-elixir": "^6.0.0-15",
+        "laravel-elixir-browsersync-official": "^1.0.0",
+        "yargs": "^4.6.0"
+    },
+    "scripts": {
+        "deploy": "gulp --production && ./vendor/bin/jigsaw build production && git add build_production && git commit -m 'Build for production'"
+    }
 }
