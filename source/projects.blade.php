@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
+@section('title', 'Projects')
+
 @section('body')
     <div class="main">
         <p>

@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
+@section('title', 'Experience')
+
 @section('body')
     <div class="main">
         <h3 class="section-title">Jobs</h3>

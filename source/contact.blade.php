@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
+@section('title', 'Contact')
+
 @section('body')
     <div class="main">
         <h2 class="section-title">Contact</h2>
