@@ -19,7 +19,7 @@
 
                 <nav>
                     <a class="{{ $page->menu('') }}" href="/">Home</a>
-                    <a class="{{ $page->menu('about') }}" href="/about">About</a>
+                    <a class="{{ $page->menu('studies') }}" href="/studies">Studies</a>
                     <a class="{{ $page->menu('experience') }}" href="/experience">Experience</a>
                     <a class="{{ $page->menu('contact') }}" href="/contact">Contact</a>
                     <a class="{{ $page->menu('work') }}" href="/work">Work</a>

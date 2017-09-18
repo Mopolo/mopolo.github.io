@@ -16,3 +16,13 @@
 .left {
     float: left;
 }
+
+.visible-block-desk {
+    display: none;
+}
+
+@media (min-width: $breakpoint-med) {
+    .visible-block-desk {
+        display: block;
+    }
+}
