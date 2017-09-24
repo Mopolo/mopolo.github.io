@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 return [
     'baseUrl' => '',
 
@@ -15,7 +17,31 @@ return [
         return '';
     },
 
+    'getWorks' => function ($page, $works, $experience) {
+        return $works
+            ->filter(function ($work) use ($experience) {
+                return $work->experience === $experience;
+            })
+            ->reverse();
+    },
+
+    'period' => function($page, $start, $end) {
+        if (empty($start) || empty($end)) {
+            return '';
+        }
+
+        $start = Carbon::parse($start)->format('F Y');
+
+        $end = $end === 'now'
+            ? 'Now'
+            : Carbon::parse($end)->format('F Y');
+
+        return "$start &mdash; $end";
+    },
+
     'collections' => [
+
+        'experiences' => [],
 
         'works' => [],
 

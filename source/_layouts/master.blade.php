@@ -22,7 +22,6 @@
                     <a class="{{ $page->menu('studies') }}" href="/studies">Studies</a>
                     <a class="{{ $page->menu('experience') }}" href="/experience">Experience</a>
                     <a class="{{ $page->menu('contact') }}" href="/contact">Contact</a>
-                    <a class="{{ $page->menu('work') }}" href="/work">Work projects</a>
                     <a class="{{ $page->menu('projects') }}" href="/projects">Personal projects</a>
                     <a href="https://github.com/Mopolo">Github</a>
                 </nav>

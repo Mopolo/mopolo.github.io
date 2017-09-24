@@ -1,4 +1,5 @@
 ---
+experience: globalis
 anchor: "nouvelobs"
 title:  "Nouvel Obs"
 link: "http://tempsreel.nouvelobs.com/"
