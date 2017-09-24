@@ -14,11 +14,13 @@
                     </small>
                 </header>
                 <article>
-                    {!! $experience->getContent() !!}
+                    <div class="experience-content experience-description">
+                        {!! $experience->getContent() !!}
+                    </div>
 
                     @foreach($page->getWorks($works, $experience->id) as $work)
 
-                        <section class="work">
+                        <section class="work experience-content">
                             <h4 class="work-title">
                                 @if($work->link)
                                     <a class="link" href="{{ $work->link }}">

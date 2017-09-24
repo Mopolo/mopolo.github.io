@@ -1,9 +1,16 @@
 .work {
-    margin-bottom: 60px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(206, 210, 210);
+
+    &:last-child {
+        border-bottom: none;
+    }
 
     .work-title {
         color: $color-font-light;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
     }
 
     article {
@@ -11,10 +18,13 @@
     }
 
     .techs {
-        margin-left: 10px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 
     .work-content {
+        padding: 0 0 0 1rem;
+
         h4 {
             margin-bottom: 0;
         }
@@ -35,6 +45,7 @@
 
 .work-images {
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 @media (min-width: $breakpoint-med) {
@@ -47,6 +58,8 @@
     }
 
     .work-images {
-        padding-top: 0;
+        padding-top: 1rem;
+        padding-bottom: 0;
+        padding-left: 1rem;
     }
 }

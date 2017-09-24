@@ -287,12 +287,19 @@ kbd {
 }
 
 .work {
-  margin-bottom: 60px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ced2d2;
+}
+
+.work:last-child {
+  border-bottom: none;
 }
 
 .work .work-title {
   color: #7f8c8d;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .work article {
@@ -300,7 +307,12 @@ kbd {
 }
 
 .work .techs {
-  margin-left: 10px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.work .work-content {
+  padding: 0 0 0 1rem;
 }
 
 .work .work-content h4 {
@@ -321,6 +333,7 @@ kbd {
 
 .work-images {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 45em) {
@@ -331,7 +344,9 @@ kbd {
     display: none;
   }
   .work-images {
-    padding-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
   }
 }
 
@@ -414,8 +429,12 @@ pre.normal span {
   font-size: 1rem;
 }
 
-.experience article {
+.experience .experience-content {
   padding: 10px;
+}
+
+.experience .experience-description {
+  border-bottom: 1px solid #ced2d2;
 }
 
 /*# sourceMappingURL=main.css.map */
