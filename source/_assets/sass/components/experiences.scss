@@ -1,0 +1,18 @@
+.experience {
+    header {
+        padding-top: 0;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+
+        small {
+            text-transform: none;
+            display: block;
+            color: $color-font-light;
+            font-size: 1rem;
+        }
+    }
+
+    article {
+        padding-left: 1rem;
+    }
+}

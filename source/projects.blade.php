@@ -4,10 +4,6 @@
 
 @section('body')
     <div class="main">
-        <p>
-            These are personal projects.
-        </p>
-
         @foreach($projects->reverse() as $project)
             <section class="work">
                 <h3 class="section-title" id="{{ $project->anchor }}">
