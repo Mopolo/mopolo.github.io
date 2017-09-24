@@ -1,6 +1,5 @@
 ---
 experience: osedea
-anchor: "simply-obstetrics"
 title:  "Simply Obstetrics"
 link: "http://www.simplyobstetrics.com/"
 images:

@@ -303,6 +303,14 @@ kbd {
   margin-left: 10px;
 }
 
+.work .work-content h4 {
+  margin-bottom: 0;
+}
+
+.work .work-content ul {
+  margin-top: 5px;
+}
+
 .work-techs-desk {
   display: none;
 }

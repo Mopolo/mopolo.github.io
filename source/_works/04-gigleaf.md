@@ -1,6 +1,5 @@
 ---
 experience: osedea
-anchor: "gigleaf"
 title:  "Gigleaf"
 link: "https://gigleaf.me/"
 images:
@@ -10,7 +9,7 @@ images:
 images_layout: site
 techs:
   - PHP
-  - Laravel 4
+  - Laravel 4 & 5
   - AngularJS
   - Bootstrap
   - Beanstalk
@@ -20,5 +19,7 @@ Gigleaf is a project built at Osedea. This is a website on which Creative Direct
 can view and hire Freelancers.
 
  - First project made with Laravel
+ - Single Page Application
  - Queued jobs using Beanstalk
+ - Task scheduling using Laravel scheduler
  - Emailing using Mandrill API

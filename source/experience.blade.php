@@ -39,7 +39,7 @@
                                 </div>
                             @endif
 
-                            <article>
+                            <article class="work-content">
                                 {!! $work->getContent() !!}
                             </article>
 

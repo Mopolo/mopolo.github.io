@@ -1,6 +1,5 @@
 ---
 experience: morningcroissant
-anchor: "morningcroissant"
 title:  "MorningCroissant"
 link: "http://www.morningcroissant.fr/"
 images:
@@ -20,7 +19,7 @@ I've done many things such as:
 
  - A drag&amp;drop uploader for photos
  - HTML integration of psd models
- - SEO (sitemaps for example)
+ - SEO (sitemaps and cities description extracted from Wikipedia via crawling)
  - Improvements on the internal search engine
  - A/B testing solution
  - Visual calendar to choose availabilities

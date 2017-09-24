@@ -11,3 +11,6 @@ Osedea is a web agency based in Montréal, Québec.
 I started as an intern and continued on as an employee.
 
 The company was small when I started so I had the opportunity to build/discover a lot.
+
+It was also my first time working on MacOS and with a different keyboard
+layout than the french one.
