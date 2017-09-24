@@ -183,7 +183,7 @@ dl dt {
 }
 
 .content .main {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 45em) {
