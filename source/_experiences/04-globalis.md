@@ -7,5 +7,7 @@ end: "2016-06-30"
 location: Paris
 ---
 
-Web Developer for the <a class="link" href="https://tempsreel.nouvelobs.com/">Nouvel Obs</a>,
-a french online magazine.
+Globalis is an IT service company based in Paris. I was on mission at [L'Obs][obs], a french
+online and paper magazine.
+
+[obs]: https://tempsreel.nouvelobs.com/

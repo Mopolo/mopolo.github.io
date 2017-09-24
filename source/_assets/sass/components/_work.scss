@@ -1,5 +1,18 @@
 .work {
     margin-bottom: 60px;
+
+    .work-title {
+        color: $color-font-light;
+        margin-bottom: 10px;
+    }
+
+    article {
+        margin-bottom: 0;
+    }
+
+    .techs {
+        margin-left: 10px;
+    }
 }
 
 .work-techs-desk {

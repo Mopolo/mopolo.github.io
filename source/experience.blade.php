@@ -6,7 +6,7 @@
     <div class="main">
 
         @foreach($experiences->reverse() as $experience)
-            <section class="section experience">
+            <section class="section experience card">
                 <header>
                     {{ $experience->title }} &mdash; {{ $experience->location }}
                     <small>
@@ -19,23 +19,15 @@
                     @foreach($page->getWorks($works, $experience->id) as $work)
 
                         <section class="work">
-                            <h3 class="section-title" id="{{ $work->anchor }}">
-                                <a href="{{ $work->link }}">
+                            <h4 class="work-title">
+                                @if($work->link)
+                                    <a class="link" href="{{ $work->link }}">
+                                        {{ $work->title }}
+                                    </a>
+                                @else
                                     {{ $work->title }}
-                                </a>
-
-                                <small class="work-techs-desk">
-                                    @foreach($work->techs as $tech)
-                                        <kbd>{{ $tech }}</kbd>
-                                    @endforeach
-                                </small>
-                            </h3>
-
-                            <div class="work-techs-mobile">
-                                @foreach($work->techs as $tech)
-                                    <kbd>{{ $tech }}</kbd>
-                                @endforeach
-                            </div>
+                                @endif
+                            </h4>
 
                             @if($work->images)
                                 <div class="work-images">
@@ -50,6 +42,13 @@
                             <article>
                                 {!! $work->getContent() !!}
                             </article>
+
+                            <div class="techs">
+                                Technologies:
+                                @foreach($work->techs as $tech)
+                                    <kbd>{{ $tech }}</kbd>
+                                @endforeach
+                            </div>
                         </section>
 
                     @endforeach
