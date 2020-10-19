@@ -1,0 +1,15 @@
+{% extends "layouts/main.twig" %}
+
+{% block content %}
+
+{#    {{ include('partials/title.twig', {title: 'Open source'}) }}#}
+
+    <div class="mt-4 md:mt-10">
+
+        {% for project in data.projects %}
+            {{ include('partials/open-source.twig') }}
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

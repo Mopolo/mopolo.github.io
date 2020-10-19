@@ -1,0 +1,15 @@
+@media (max-width: 639px) {
+    #main-menu-toggle:checked ~ .main-menu {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
+    }
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

@@ -1,0 +1,255 @@
+{
+    "contact": {
+        "email": "hello@mopolo.net",
+        "linkedin": "https://www.linkedin.com/in/nathan-boiron-79785a60/",
+        "twitter": "Lopom"
+    },
+    "links": {
+        "github": "https://github.com/Mopolo",
+        "gitlab": "https://gitlab.com/Mopolo"
+    },
+    "work": [
+        {
+            "name": "Total Direct Energie",
+            "place": "Paris, France",
+            "start": "2016-10-01",
+            "tags": ["TYPO3", "Laravel", "Doctrine", "PHPStan", "SOAP", "Git"],
+            "intro": "l:work.tde.intro",
+            "summary": "l:work.tde.summary",
+            "projects": [
+                {
+                    "name": "l:work.tde.site.name",
+                    "highlights": "l:work.tde.site.highlights",
+                    "images": [
+                        "img:tde/ec.png",
+                        "img:tde/site.jpg"
+                    ]
+                },
+                {
+                    "name": "Micro framework",
+                    "summary": "l:work.tde.micro.summary",
+                    "highlights": "l:work.tde.micro.highlights"
+                },
+                {
+                    "name": "API",
+                    "highlights": "l:work.tde.api.highlights"
+                }
+            ]
+        },
+        {
+            "name": "Globalis",
+            "place": "Paris, France",
+            "start": "2015-12-01",
+            "end": "2016-06-01",
+            "tags": ["PHP", "SVN", "Git", "Bootstrap", "Docker"],
+            "intro": "l:work.globalis.intro",
+            "summary": "l:work.globalis.summary",
+            "projects": [
+                {
+                    "name": "Nouvel Obs",
+                    "url": "https://www.nouvelobs.com",
+                    "summary": "l:work.globalis.obs.summary",
+                    "highlights": "l:work.globalis.obs.highlights"
+                }
+            ]
+        },
+        {
+            "name": "Osedea",
+            "place": "Montréal, Canada",
+            "start": "2014-03-01",
+            "end": "2015-08-01",
+            "tags": ["Laravel", "Zend", "Ionic", "AngularJS", "Git"],
+            "intro": "l:work.osedea.intro",
+            "summary": "work.osedea.summary",
+            "projects": [
+                {
+                    "name": "WeSpeakStudent",
+                    "summary": "l:work.osedea.wss.summary",
+                    "url": "https://wespeakstudent.com",
+                    "tags": ["Zend 2", "AngularJS", "Bootstrap", "prerender.io", "Ionic", "Git"],
+                    "images": [
+                        "img:osedea/wss-1.jpg",
+                        "img:osedea/wss-2.jpg",
+                        "img:osedea/wss-3.jpg",
+                        "img:osedea/wss-4.jpg"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Backend",
+                            "highlights": "l:work.osedea.wss.backend.highlights"
+                        },
+                        {
+                            "name": "Site",
+                            "highlights": "l:work.osedea.wss.site.highlights"
+                        },
+                        {
+                            "name": "Apps",
+                            "highlights": "l:work.osedea.wss.apps.highlights"
+                        }
+                    ]
+                },
+                {
+                    "name": "Morcare",
+                    "summary": "l:work.osedea.morcare.summary",
+                    "url": "https://morcare.ca",
+                    "tags": ["Zend 2", "AngularJS", "Bootstrap"],
+                    "images": [
+                        "img:osedea/morcare-1.jpg",
+                        "img:osedea/morcare-2.jpg"
+                    ]
+                },
+                {
+                    "name": "Arcelormittal",
+                    "summary": "l:work.osedea.arcelormittal.summary",
+                    "tags": ["Zend 2", "AngularJS", "Bootstrap", "Git"]
+                },
+                {
+                    "name": "FamilyReach Give",
+                    "summary": "l:work.osedea.familyreach.summary",
+                    "url": "https://familyreach.org",
+                    "tags": ["Laravel 4", "AngularJS", "Bootstrap", "Ionic", "Beanstalk"],
+                    "images": [
+                        "img:osedea/fr-1.jpg",
+                        "img:osedea/fr-2.jpg",
+                        "img:osedea/fr-3.jpg",
+                        "img:osedea/fr-4.jpg",
+                        "img:osedea/fr-5.jpg"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Backend",
+                            "highlights": "l:work.osedea.familyreach.backend.highlights"
+                        },
+                        {
+                            "name": "App",
+                            "highlights": "l:work.osedea.familyreach.app.highlights"
+                        }
+                    ]
+                },
+                {
+                    "name": "Gigleaf",
+                    "summary": "l:work.osedea.gigleaf.summary",
+                    "url": "https://gigleaf.me",
+                    "tags": ["Laravel 5", "AngularJS", "Bootstrap", "Beanstalk"],
+                    "images": [
+                        "img:osedea/gigleaf-1.jpg",
+                        "img:osedea/gigleaf-2.jpg",
+                        "img:osedea/gigleaf-3.jpg"
+                    ],
+                    "highlights": "l:work.osedea.gigleaf.highlights"
+                },
+                {
+                    "name": "Simply Obstetrics",
+                    "summary": "l:work.osedea.simply-obstetrics.summary",
+                    "url": "https://www.simplyobstetrics.com",
+                    "tags": ["AngularJS", "Ionic"],
+                    "images": [
+                        "img:osedea/simply-obs-1.jpg",
+                        "img:osedea/simply-obs-2.jpg",
+                        "img:osedea/simply-obs-3.jpg",
+                        "img:osedea/simply-obs-4.jpg"
+                    ]
+                },
+                {
+                    "name": "Osd",
+                    "summary": "l:work.osedea.osd.summary",
+                    "highlights": "l:work.osedea.osd.highlights",
+                    "tags": ["Node.js", "Cordova", "Git", "Bash"]
+                }
+            ]
+        },
+        {
+            "name": "MorningCroissant",
+            "place": "Paris, France",
+            "start": "2013-07-01",
+            "end": "2013-09-01",
+            "tags": ["PHP", "Zend 1"],
+            "intro": "l:work.morningcroissant.intro",
+            "summary": "l:work.morningcroissant.summary",
+            "projects": [
+                {
+                    "name": "Site",
+                    "highlights": "l:work.morningcroissant.website.highlights",
+                    "images": [
+                        "img:morningcroissant/mc-1.jpg",
+                        "img:morningcroissant/mc-2.jpg",
+                        "img:morningcroissant/mc-3.jpg",
+                        "img:morningcroissant/mc-4.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "RATP",
+            "place": "Paris, France",
+            "start": "2011-03-01",
+            "end": "2011-06-01",
+            "tags": ["PHP", "SVN"],
+            "intro": "l:work.ratp.intro",
+            "summary": "l:work.ratp.summary"
+        }
+    ],
+    "projects": [
+        {
+            "name": "MagicConstants",
+            "summary": "l:projects.magic-constant",
+            "tags": ["PHP"],
+            "url": "https://github.com/CuyZ/MagicConstant"
+        },
+        {
+            "name": "Portfolio",
+            "summary": "l:projects.portfolio",
+            "tags": ["PHP", "Node.js", "Ruby"],
+            "url": "https://gitlab.com/Mopolo/mopolo.gitlab.io",
+            "images": [
+                "img:portfolio/v1.png",
+                "img:portfolio/v2.png",
+                "img:portfolio/v3.png"
+            ]
+        },
+        {
+            "name": "CraftWorld",
+            "summary": "l:projects.craftworld",
+            "tags": ["PHP", "Java", "Debian", "Git"],
+            "images": [
+                "img:craftworld/cw-1.jpg",
+                "img:craftworld/cw-2.jpg",
+                "img:craftworld/cw-3.jpg",
+                "img:craftworld/cw-4.jpg",
+                "img:craftworld/cw-5.jpg",
+                "img:craftworld/cw-6.jpg"
+            ]
+        }
+    ],
+    "studies": [
+        {
+            "start": "2013",
+            "end": "2014",
+            "name": "Supinfo",
+            "place": "Montréal, Canada"
+        },
+        {
+            "start": "2012",
+            "end": "2013",
+            "name": "Supinfo",
+            "place": "Paris, France"
+        },
+        {
+            "start": "2011",
+            "end": "2012",
+            "name": "l:studies.licence",
+            "place": "Amiens, France"
+        },
+        {
+            "start": "2009",
+            "end": "2011",
+            "name": "l:studies.dut",
+            "place": "Amiens, France"
+        },
+        {
+            "start": "2009",
+            "name": "l:studies.bac",
+            "place": "Beauvais, France"
+        }
+    ]
+}

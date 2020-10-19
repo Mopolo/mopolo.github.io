@@ -1,0 +1,40 @@
+{% extends "layouts/root.twig" %}
+
+{% block body %}
+
+    <body class="min-h-screen text-black font-sans bg-yellow-500 text-right md:text-left pr-6 md:pr-0">
+
+    <div class="leading-3 md:leading-normal container mx-auto pt-5 md:pt-32 pl-8">
+        <h1 class="text-3xl md:text-6xl font-extrabold text-black">
+            Nathan Boiron
+        </h1>
+        <h2 class="font-bold text-gray-900 md:text-xl">
+            Web dev
+            <span class="text-yellow-500 text-sm">ʘ‿ʘ</span>
+        </h2>
+
+        {% block content %}{% endblock %}
+
+        <div class="pt-1">
+            <ul class="flex flex-col md:flex-row mt-16 text-3xl md:text-2xl lg:text-3xl">
+                {% for name, url in urls %}
+                    {% if url.current == false %}
+                        <li class="pb-3 md:pb-0 md:pr-3 lg:pr-6">
+                            <a href="{{ url.href }}" class="hover:underline">{{ url.label }}</a>
+                            {% if loop.last == false %}
+                                <span class="md:pl-3 lg:pl-6 hidden md:inline">&bull;</span>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <div class="text-4xl mt-10 md:mt-20">
+                {{ include('partials/menu/langs.twig') }}
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+{% endblock %}

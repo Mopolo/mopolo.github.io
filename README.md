@@ -1,22 +1,26 @@
-# mopolo.github.io
+# Portfolio
 
-This website is built with [Jigsaw](http://jigsaw.tighten.co/) and hosted on this repo.
+This website is built in PHP and Tailwindwss and is hosted on Github pages.
 
-You can visit it at <http://mopolo.fr/>
+You can visit it at https://mopolo.dev
 
-## Local setup
+## Setup
 
-```shell
-# Clone the repo
-$ git clone git@github.com:Mopolo/mopolo.github.io.git
-
-# Go inside the new directory
-$ cd mopolo.github.io
-
-# Install dependencies
-$ composer install
+```bash
+$ composer i
 $ yarn
 
-# Run gulp, which will open the browser and reload automatically
-$ gulp watch
+# dev mode
+$ yarn watch
+```
+
+## Build site
+
+```bash
+$ php bin/build.php
+
+$ yarn prod
+
+$ cp -R public/css docs
+$ cp -R public/img docs
 ```

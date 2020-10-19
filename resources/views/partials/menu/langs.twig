@@ -1,0 +1,3 @@
+{% for lang in langs %}
+    <a href="{{ lang.href }}" class="{% if lang.current %}font-black{% else %}font-thin{% endif %}">{{ lang.label }}</a>
+{% endfor %}

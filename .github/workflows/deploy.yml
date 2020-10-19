@@ -1,0 +1,45 @@
+name: Build and Deploy
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout
+                uses: actions/checkout@v2.3.1
+                with:
+                    persist-credentials: false
+
+            -   name:
+                uses: borales/actions-yarn@v2.0.0
+                with:
+                    cmd: install
+
+            -   name:
+                uses: borales/actions-yarn@v2.0.0
+                with:
+                    cmd: prod
+
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: '7.4'
+                    extensions: json
+                    tools: composer
+
+            -   name: Install and Build
+                run: |
+                    composer install
+                    php bin/build.php
+                    cp -R public/css docs
+                    cp -R public/img docs
+
+            -   name: Deploy
+                uses: JamesIves/github-pages-deploy-action@3.7.1
+                with:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                    BRANCH: gh-pages
+                    FOLDER: docs
+                    CLEAN: true

@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+        <body>
+            <!-- Site -->
+            <trans-unit id="site.general.date.maintenant">
+                <source>site.general.date.maintenant</source>
+                <target>Présent</target>
+            </trans-unit>
+            <trans-unit id="site.general.techs">
+                <source>site.general.techs</source>
+                <target>Technologies :</target>
+            </trans-unit>
+
+            <!-- Menu -->
+            <trans-unit id="site.menu.index">
+                <source>site.menu.index</source>
+                <target>Accueil</target>
+            </trans-unit>
+            <trans-unit id="site.menu.work">
+                <source>site.menu.work</source>
+                <target>Expérience</target>
+            </trans-unit>
+            <trans-unit id="site.menu.opensource">
+                <source>site.menu.opensource</source>
+                <target>Open source</target>
+            </trans-unit>
+            <trans-unit id="site.menu.studies">
+                <source>site.menu.studies</source>
+                <target>Études</target>
+            </trans-unit>
+            <trans-unit id="site.menu.contact">
+                <source>site.menu.contact</source>
+                <target>Contact</target>
+            </trans-unit>
+
+            <!-- Pages -->
+            <trans-unit id="site.pages.studies">
+                <source>site.pages.studies</source>
+                <target>Études</target>
+            </trans-unit>
+            <trans-unit id="site.pages.contact">
+                <source>site.pages.contact</source>
+                <target>Contact</target>
+            </trans-unit>
+            <trans-unit id="site.pages.contact.email">
+                <source>site.pages.contact.email</source>
+                <target>Mon Email :</target>
+            </trans-unit>
+            <trans-unit id="site.pages.contact.linkedin">
+                <source>site.pages.contact.linkedin</source>
+                <target>Mon profil Linkedin est</target>
+            </trans-unit>
+            <trans-unit id="site.pages.contact.linkedin.url">
+                <source>site.pages.contact.linkedin.url</source>
+                <target>ici</target>
+            </trans-unit>
+            <trans-unit id="site.pages.contact.twitter">
+                <source>site.pages.contact.twitter</source>
+                <target>Je suis aussi sur Twitter :</target>
+            </trans-unit>
+            <trans-unit id="site.pages.work">
+                <source>site.pages.work</source>
+                <target>Expérience</target>
+            </trans-unit>
+
+            <!-- Work -->
+            <trans-unit id="work.tde.intro">
+                <source>work.tde.intro</source>
+                <target>Total Direct Energie est un fournisseur et producteur d'électricité et de gaz.</target>
+            </trans-unit>
+            <trans-unit id="work.tde.summary">
+                <source>work.tde.summary</source>
+                <target>Refontes complètes de l'espace client particuliers et de l'API pour l'app mobile</target>
+            </trans-unit>
+            <trans-unit id="work.tde.site.name">
+                <source>work.tde.site.name</source>
+                <target>Site web</target>
+            </trans-unit>
+            <trans-unit id="work.tde.site.highlights">
+                <source>work.tde.site.highlights</source>
+                <target>
+                    Configuration (pages, options, etc.)
+                    Formulaire de souscription avec étapes
+                    Simulateur de consommation
+                    Connexion client
+                    Connexion en mode admin
+                    Outils de log interne
+                </target>
+            </trans-unit>
+            <trans-unit id="work.tde.micro.summary">
+                <source>work.tde.micro.summary</source>
+                <target>
+                    Ce micro framework permet un accès central à toutes les données du SI.
+                    Il est importé via composer dans le site et l'api.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.tde.micro.highlights">
+                <source>work.tde.micro.highlights</source>
+                <target>
+                    Dépendances via composer
+                    Configuration standalone de Doctrine
+                    Librairie maison pour les webservices (SOAP, HTTP, Queues)
+                    Système d'énumérations via MagicConstant
+                    Documentation technique avec Mkdocs
+                    Tests unitaires avec PHPUnit
+                    Analyse du code avec PHPStan
+                </target>
+            </trans-unit>
+            <trans-unit id="work.tde.api.highlights">
+                <source>work.tde.api.highlights</source>
+                <target>
+                    Utilisation de Laravel
+                    OAuth via Laravel Passport
+                    Documentation OpenAPI
+                </target>
+            </trans-unit>
+
+            <trans-unit id="work.globalis.intro">
+                <source>work.globalis.intro</source>
+                <target>Globalis est une SSII basée à Paris. J'étais en régie au Nouvel Obs.</target>
+            </trans-unit>
+            <trans-unit id="work.globalis.summary">
+                <source>work.globalis.summary</source>
+                <target>Évolutions sur le site web du magasine Nouvel Obs</target>
+            </trans-unit>
+            <trans-unit id="work.globalis.obs.summary">
+                <source>work.globalis.obs.summary</source>
+                <target>Le Nouvel Obs est un magasine français. J'ai travaillé sur la version web.</target>
+            </trans-unit>
+            <trans-unit id="work.globalis.obs.highlights">
+                <source>work.globalis.obs.highlights</source>
+                <target>
+                    Framework PHP interne
+                    Démarrage de la migration de SVN vers Git
+                    Mise en place d'un Gitlab
+                    Création d'un backend de création visuelle de pages
+                    Refactor complet de la page Article
+                    Découverte de Docker
+                </target>
+            </trans-unit>
+
+            <trans-unit id="work.osedea.intro">
+                <source>work.osedea.intro</source>
+                <target>Osedea est une agence basée à Montréal dans laquelle j'ai démarré comme stagiaire puis continué comme employé.</target>
+            </trans-unit>
+            <trans-unit id="work.osedea.summary">
+                <source>work.osedea.summary</source>
+                <target>Développement de divers sites web et app mobile dans une agence Québequoise.</target>
+            </trans-unit>
+            <trans-unit id="work.osedea.wss.summary">
+                <source>work.osedea.wss.summary</source>
+                <target>
+                    WeSpeakStudent est le premier gros projet que j'ai réalisé à Osedea.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.wss.backend.highlights">
+                <source>work.osedea.wss.backend.highlights</source>
+                <target>
+                    Utilise Zend et Doctrine
+                    Emails envoyés via Mandrill
+                    Gestion des écoles, comptes de directeurs d'école
+                    Données des étudiants
+                    Affichage des paiements
+                    Gestion de documents
+                    Extraction des données Google Analytics
+                    Planification de notifications push
+                    Accès étudiant pour gérer leur app : news, évènements, élections, sondages
+                    API Rest pour le site et les apps
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.wss.site.highlights">
+                <source>work.osedea.wss.site.highlights</source>
+                <target>
+                    Utilise AngularJS
+                    Responsive et multi-langue
+                    Paiements via Stripe
+                    Utilisation de prerender.io pour le SEO
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.wss.apps.highlights">
+                <source>work.osedea.wss.apps.highlights</source>
+                <target>
+                    Utilise Ionic
+                    Version iOs et Android
+                    Une app par école
+                    Infos des transports publics via GTFS
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.morcare.summary">
+                <source>work.osedea.morcare.summary</source>
+                <target>Morecare est une version internationalle de WeSpeakStudent</target>
+            </trans-unit>
+            <trans-unit id="work.osedea.arcelormittal.summary">
+                <source>work.osedea.arcelormittal.summary</source>
+                <target>
+                    Webapp permettant la gestion d'équipements d'une mine au Canada.
+                    La gestion était anciennement faite via un fichier Excell.
+                    La webapp permettait d'attribuer les équipements de la mine de façon automatique en fonction de plusieurs critères.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.familyreach.summary">
+                <source>work.osedea.familyreach.summary</source>
+                <target>
+                    FamilyReach Give est une application de financement participatif pour aider des familles américaines ayant un enfant qui a un cancer.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.familyreach.backend.highlights">
+                <source>work.osedea.familyreach.backend.highlights</source>
+                <target>
+                    Utilise Laravel et AngularJS
+                    Gestion des familles, paiements et paramètres
+                    Données exposées via une API REST
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.familyreach.app.highlights">
+                <source>work.osedea.familyreach.app.highlights</source>
+                <target>
+                    Utilise Ionic
+                    Paiement in-app via Stripe
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.gigleaf.summary">
+                <source>work.osedea.gigleaf.summary</source>
+                <target>
+                    Ce site permet de mettre en relation des artistes freelances avec des recruteurs.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.gigleaf.highlights">
+                <source>work.osedea.gigleaf.highlights</source>
+                <target>
+                    Backend avec Laravel
+                    Frontend en SPA avec AngularJS
+                    Utilisation de Mandrill
+                    Queues via Beanstalk
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.simply-obstetrics.summary">
+                <source>work.osedea.simply-obstetrics.summary</source>
+                <target>
+                    Application Ionic d'informations médicales.
+                    Les données sont statiques.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.osd.summary">
+                <source>work.osedea.osd.summary</source>
+                <target>
+                    Outil interne pour le terminal que j'ai créé puis maintenu pendant tout mon temps à Osedea.
+                    La première version était écrite en bash puis ça a été refactor en Node.js
+                    Il permet l'automatisation de plusieurs processus interne.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.osd.highlights">
+                <source>work.osedea.osd.highlights</source>
+                <target>
+                    Gestion des alias SSH
+                    Gestion des versions des projets (tags git, mise à jour des package.json)
+                    Compilation des app Ionic/Cordova vers iOs et Android
+                    Gestion du temps de travail
+                    Générateur de squelette de projet
+                    Générateur de snippets de code
+                </target>
+            </trans-unit>
+
+            <trans-unit id="work.morningcroissant.intro">
+                <source>work.morningcroissant.intro</source>
+                <target>MorningCroissant est un site de location de logements meublés.</target>
+            </trans-unit>
+            <trans-unit id="work.morningcroissant.summary">
+                <source>work.morningcroissant.summary</source>
+                <target>Évolutions et maintenance sur le site web.</target>
+            </trans-unit>
+            <trans-unit id="work.morningcroissant.website.highlights">
+                <source>work.morningcroissant.website.highlights</source>
+                <target>
+                    Upload de photos en Drag&amp;Drop
+                    Intégration de maquettes
+                    SEO
+                    Création d'un crawler Wikipedia
+                    Moteur de recherche
+                    Mise en place d'A/B tests
+                    Calendrier visuel
+                </target>
+            </trans-unit>
+
+            <trans-unit id="work.ratp.intro">
+                <source>work.ratp.intro</source>
+                <target>La Régie Autonome des Transports Parisiens (RATP) est le service des transports en commun d'Île-de-France.</target>
+            </trans-unit>
+            <trans-unit id="work.ratp.summary">
+                <source>work.ratp.summary</source>
+                <target>Développement d'une appli intranet pour la maintenance des rames de métro.</target>
+            </trans-unit>
+
+            <!-- Studies -->
+            <trans-unit id="studies.licence">
+                <source>studies.licence</source>
+                <target>Licence info</target>
+            </trans-unit>
+            <trans-unit id="studies.dut">
+                <source>studies.dut</source>
+                <target>DUT info</target>
+            </trans-unit>
+            <trans-unit id="studies.bac">
+                <source>studies.bac</source>
+                <target>Baccalauréat Scientifique</target>
+            </trans-unit>
+
+            <!-- Projects -->
+            <trans-unit id="projects.magic-constant">
+                <source>projects.magic-constant</source>
+                <target>
+                    Implémentation PHP d'énumération avec gestion de multiples formats.
+
+                    Cette librairie a d'abord été développée pour Direct Energie avant de devenir open source.
+                </target>
+            </trans-unit>
+            <trans-unit id="projects.portfolio">
+                <source>projects.portfolio</source>
+                <target>
+                    J'aime bien refaire de zéro mon portfolio de temps en temps.
+
+                    Il y a eu plusieurs technologies au fil des années : Jekyll (en ruby), Jigsaw (en PHP) et actuellement du PHP custom.
+                </target>
+            </trans-unit>
+            <trans-unit id="projects.craftworld">
+                <source>projects.craftworld</source>
+                <target>CraftWorld était un serveur Minecraft français créé en 2011 et fermé en 2014.
+
+                    Ce projet a été à la fois un hobby et un moyen d'expérimenter des technologies.
+                    Le jeu et le site étaient hébergée sur des machines différentes, entièrements configurées à la main.
+
+                    J'ai développée une API et des outils pour permettre des interactions entre le site et le jeu.
+
+                    Les joueurs pouvaient gérer certains aspects du jeu (argent du jeu, rang, etc) depuis le site.
+
+                    J'ai aussi créé un pannel administratif pour que le staff puisse gérer le serveur sans devoir se connecter en jeu.
+                    Ce pannel permettait de voir les logs, la console de tchat, exécuter des commandes en jeu, installer des plugins, démarrer/arrêter le serveur, etc.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,21 @@
+{% extends "layouts/main.twig" %}
+
+{% block content %}
+
+    {{ include('partials/title.twig', {title: 'site.pages.contact' | trans}) }}
+
+    <div class="mt-4 md:mt-10">
+        <p>
+            {{ 'site.pages.contact.email'|trans }} <a href="mailto:{{ data.contact.email }}" class="border-b-2 border-black">{{ data.contact.email }}</a>
+        </p>
+
+        <p class="mt-8">
+            {{ 'site.pages.contact.linkedin'|trans }} <a href="{{ data.contact.linkedin }}" class="border-b-2 border-black">{{ 'site.pages.contact.linkedin.url'|trans }}</a>
+        </p>
+
+        <p class="mt-8">
+            {{ 'site.pages.contact.twitter'|trans }} <a href="https://twitter.com/{{ data.contact.twitter }}" class="border-b-2 border-black">@{{ data.contact.twitter }}</a>
+        </p>
+    </div>
+
+{% endblock %}
