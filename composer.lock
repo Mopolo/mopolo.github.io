@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce12b590833d951b61c9d83b63d7e5fc",
+    "content-hash": "535e99c03c32bdbc42fc7f1b73446862",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1627,20 +1627,20 @@
         },
         {
             "name": "tebru/gson-php",
-            "version": "v0.7.3",
+            "version": "dev-feature/php-7.4-typed-properties",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tebru/gson-php.git",
-                "reference": "f491859566461e09208b57d9ee1ab212172cd219"
+                "url": "https://github.com/mattjanssen/gson-php.git",
+                "reference": "38dd2a198f60d0093fe7936ac673035b5962d18d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tebru/gson-php/zipball/f491859566461e09208b57d9ee1ab212172cd219",
-                "reference": "f491859566461e09208b57d9ee1ab212172cd219",
+                "url": "https://api.github.com/repos/mattjanssen/gson-php/zipball/38dd2a198f60d0093fe7936ac673035b5962d18d",
+                "reference": "38dd2a198f60d0093fe7936ac673035b5962d18d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1",
+                "php": ">=7.4",
                 "phpdocumentor/reflection-docblock": "^3.2.3|^4.0.1",
                 "psr/simple-cache": "^1.0",
                 "symfony/cache": "^3.3|^4.0|^5.0",
@@ -1656,7 +1656,11 @@
                     "Tebru\\Gson\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tebru\\Gson\\Test\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -1667,7 +1671,10 @@
                 }
             ],
             "description": "Gson for PHP: Convert PHP objects to and from json",
-            "time": "2020-02-19T18:07:19+00:00"
+            "support": {
+                "source": "https://github.com/mattjanssen/gson-php/tree/feature/php-7.4-typed-properties"
+            },
+            "time": "2020-09-11T12:22:52+00:00"
         },
         {
             "name": "tebru/php-type",
@@ -2992,16 +2999,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "3.17.2",
+            "version": "3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "9e526d9cb569fe4631e6a737bbb7948d05596e3f"
+                "reference": "a463c894c4323e84121b5978867923efc6f8554a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/9e526d9cb569fe4631e6a737bbb7948d05596e3f",
-                "reference": "9e526d9cb569fe4631e6a737bbb7948d05596e3f",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/a463c894c4323e84121b5978867923efc6f8554a",
+                "reference": "a463c894c4323e84121b5978867923efc6f8554a",
                 "shasum": ""
             },
             "require": {
@@ -3088,7 +3095,7 @@
                 "inspection",
                 "php"
             ],
-            "time": "2020-10-15T00:23:17+00:00"
+            "time": "2020-10-19T19:02:41+00:00"
         },
         {
             "name": "webmozart/glob",
@@ -3184,9 +3191,18 @@
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "0.7.3",
+            "alias_normalized": "0.7.3.0",
+            "version": "dev-feature/php-7.4-typed-properties",
+            "package": "tebru/gson-php"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "tebru/gson-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

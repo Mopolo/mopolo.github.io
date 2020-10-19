@@ -7,10 +7,16 @@
             "email": "nathan.boiron@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mattjanssen/gson-php"
+        }
+    ],
     "require": {
         "php": ">=7.4.0",
         "ext-json": "*",
-        "tebru/gson-php": "^0.7.3",
+        "tebru/gson-php": "dev-feature/php-7.4-typed-properties as 0.7.3",
         "twig/twig": "^3.0",
         "symfony/translation": "^5.1",
         "symfony/config": "^5.1",
