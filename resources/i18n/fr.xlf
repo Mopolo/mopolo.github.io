@@ -47,17 +47,13 @@
                 <source>site.pages.contact.email</source>
                 <target>Mon Email :</target>
             </trans-unit>
-            <trans-unit id="site.pages.contact.linkedin">
-                <source>site.pages.contact.linkedin</source>
-                <target>Mon profil Linkedin est</target>
-            </trans-unit>
-            <trans-unit id="site.pages.contact.linkedin.url">
-                <source>site.pages.contact.linkedin.url</source>
-                <target>ici</target>
-            </trans-unit>
             <trans-unit id="site.pages.contact.twitter">
                 <source>site.pages.contact.twitter</source>
-                <target>Je suis aussi sur Twitter :</target>
+                <target>Je suis sur Twitter :</target>
+            </trans-unit>
+            <trans-unit id="site.pages.contact.linkedin">
+                <source>site.pages.contact.linkedin</source>
+                <target>Je suis aussi sur</target>
             </trans-unit>
             <trans-unit id="site.pages.work">
                 <source>site.pages.work</source>
