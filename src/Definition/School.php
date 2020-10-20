@@ -8,15 +8,13 @@ namespace Mopolo\Cv\Definition;
  */
 final class School
 {
-    public string $start;
-    public ?string $end = null;
+    public int $year;
     public string $name;
     public string $place;
 
-    public function __construct(string $start, ?string $end, string $name, string $place)
+    public function __construct(int $year, string $name, string $place)
     {
-        $this->start = $start;
-        $this->end = $end;
+        $this->year = $year;
         $this->name = $name;
         $this->place = $place;
     }

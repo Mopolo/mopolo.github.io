@@ -223,31 +223,27 @@
     ],
     "studies": [
         {
-            "start": "2013",
-            "end": "2014",
+            "year": "2014",
             "name": "Supinfo",
             "place": "Montréal, Canada"
         },
         {
-            "start": "2012",
-            "end": "2013",
+            "year": "2013",
             "name": "Supinfo",
             "place": "Paris, France"
         },
         {
-            "start": "2011",
-            "end": "2012",
+            "year": "2012",
             "name": "l:studies.licence",
             "place": "Amiens, France"
         },
         {
-            "start": "2009",
-            "end": "2011",
+            "year": "2011",
             "name": "l:studies.dut",
             "place": "Amiens, France"
         },
         {
-            "start": "2009",
+            "year": "2009",
             "name": "l:studies.bac",
             "place": "Beauvais, France"
         }
