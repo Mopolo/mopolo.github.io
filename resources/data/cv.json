@@ -200,7 +200,7 @@
             "name": "Portfolio",
             "summary": "l:projects.portfolio",
             "tags": ["PHP", "Node.js", "Ruby"],
-            "url": "https://gitlab.com/Mopolo/mopolo.gitlab.io",
+            "url": "https://github.com/Mopolo/mopolo.github.io",
             "images": [
                 "img:portfolio/v1.png",
                 "img:portfolio/v2.png",
