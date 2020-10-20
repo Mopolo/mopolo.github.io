@@ -10,7 +10,7 @@ mix.postCss('./resources/css/style.css', './public/css/style.css',
 mix.copyDirectory('./resources/img', './public/img');
 
 mix.browserSync({
-    proxy: 'cv2.test', // valet link
+    proxy: 'portfolio.test', // valet link
     notify: false,
     ui: false,
     files: [
