@@ -4,6 +4,7 @@
 .php_cs.cache
 .phpunit.result.cache
 .DS_Store
+yarn-error.log
 
 phpunit.xml
 mix-manifest.json

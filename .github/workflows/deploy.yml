@@ -1,46 +1,38 @@
 name: Build and Deploy
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+      - master
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-            -   name: Checkout
-                uses: actions/checkout@v2.3.1
-                with:
-                    persist-credentials: false
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-            -   name:
-                uses: borales/actions-yarn@v2.0.0
-                with:
-                    cmd: install
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: json
 
-            -   name:
-                uses: borales/actions-yarn@v2.0.0
-                with:
-                    cmd: prod
+      - name: Setup Node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
 
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: '7.4'
-                    extensions: json
-                    tools: composer
+      - name: Install dependencies
+        run: make install
 
-            -   name: Install and Build
-                run: |
-                    composer install
-                    php bin/build.php
-                    cp -R public/css docs
-                    cp -R public/img docs
-                    cp CNAME docs
+      - name: Install dependencies
+        run: make build
 
-            -   name: Deploy
-                uses: JamesIves/github-pages-deploy-action@3.7.1
-                with:
-                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                    BRANCH: gh-pages
-                    FOLDER: docs
-                    CLEAN: true
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs
+          CLEAN: true

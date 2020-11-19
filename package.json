@@ -1,9 +1,11 @@
 {
     "license": "MIT",
     "dependencies": {
+        "autoprefixer": "^10.0.2",
         "cross-env": "^7.0.2",
         "laravel-mix": "^5.0.7",
-        "tailwindcss": "^1.9.2"
+        "postcss": "^8.1.8",
+        "tailwindcss": "^2.0"
     },
     "scripts": {
         "dev": "npm run development",
