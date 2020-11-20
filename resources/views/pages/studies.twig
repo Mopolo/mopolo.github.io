@@ -5,10 +5,10 @@
     {{ include('partials/title.twig', {title: 'site.pages.studies' | trans}) }}
 
     <div class="mt-4 md:mt-10">
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-6">
             {% for school in data.studies %}
-                <div class="text-right font-bold pr-8 md:pr-16 mb-2">{{ school.year }}</div>
-                <div>{{ school.name }}</div>
+                <div class="text-right font-bold pr-8 mb-2">{{ school.year }}</div>
+                <div class="text-left col-span-5">{{ school.name }}</div>
             {% endfor %}
         </div>
     </div>
