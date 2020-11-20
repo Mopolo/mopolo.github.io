@@ -18,7 +18,7 @@
         {% block content %}{% endblock %}
 
         <div class="pt-1">
-            <ul class="flex flex-col md:flex-row mt-16 text-3xl md:text-2xl lg:text-3xl">
+            <ul class="flex flex-col md:flex-row mt-12 md:mt-16 text-3xl md:text-2xl lg:text-3xl">
                 {% for name, url in urls %}
                     {% if url.current == false %}
                         <li class="pb-3 md:pb-0 md:pr-3 lg:pr-6">
@@ -31,11 +31,11 @@
                 {% endfor %}
             </ul>
 
-            <div class="text-4xl mt-10 md:mt-20">
+            <div class="text-4xl mt-8 md:mt-20">
                 {{ include('partials/menu/langs.twig') }}
             </div>
 
-            <div class="text-4xl mt-3">
+            <div class="text-4xl mt-8 md:mt-10">
                 {{ include('partials/menu/theme.twig', {size: 'w-10'}) }}
             </div>
         </div>
