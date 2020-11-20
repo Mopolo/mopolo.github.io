@@ -1,8 +1,10 @@
 name: Build and Deploy
+
 on:
   push:
     branches:
       - master
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,10 +26,10 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: make install
+        run: make prod-setup
 
       - name: Install dependencies
-        run: make build
+        run: make prod-build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
