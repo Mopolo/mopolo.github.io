@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: make prod-setup
 
-      - name: Install dependencies
+      - name: Build site
         run: make prod-build
 
       - name: Deploy
