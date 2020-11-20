@@ -2,28 +2,28 @@
 
 {% block body %}
 
-    <body class="min-h-screen text-black leading-normal font-sans bg-gray-200">
+    <body class="min-h-screen text-black dark:text-gray-300 leading-normal font-sans">
 
     <div class="flex flex-col md:flex-row md:h-auto">
-        <div class="bg-yellow-500" style="min-width: 300px;">
+        <div class="bg-yellow-500 dark:bg-gray-900" style="min-width: 300px;">
 
             <div class="mt-2 mb-3 mx-4 md:mx-12 md:mt-20">
                 <div class="md:flex">
                     <div class="md:fixed">
                         <div class="leading-3 md:leading-normal">
                             <a href="{{ urls.index.href }}">
-                                <h1 class="text-3xl md:text-5xl font-extrabold text-black leading-normal md:leading-none">
+                                <h1 class="text-3xl md:text-5xl font-extrabold text-black dark:text-yellow-700 leading-normal md:leading-none">
                                     Nathan<br class="hidden md:inline"/>
                                     Boiron
                                 </h1>
                             </a>
-                            <h2 class="font-bold text-gray-900">
+                            <h2 class="font-bold text-gray-900 dark:text-yellow-800">
                                 Web dev
-                                <span class="text-yellow-500 text-sm">ʘ‿ʘ</span>
+                                <span class="text-yellow-500 dark:text-gray-900 text-sm">ʘ‿ʘ</span>
                             </h2>
                         </div>
 
-                        <nav class="relative mt-2">
+                        <nav class="relative mt-2 dark:text-gray-400">
                             <input type="checkbox" class="hidden" id="main-menu-toggle" />
                             <label for="main-menu-toggle" class="md:hidden absolute right-0 text-right uppercase font-bold" style="top: -3rem;">Menu</label>
                             <div class="main-menu | pt-1 text-right md:text-left">
@@ -39,7 +39,11 @@
                                     {{ include('partials/menu/langs.twig') }}
                                 </div>
 
-                                <div class="-hidden md:block md:fixed md:bottom-0 pb-3 cursor-pointer text-left absolute bottom-0">
+                                <div class="text-2xl md:mt-1 absolute top-5 md:static">
+                                    {{ include('partials/menu/theme.twig') }}
+                                </div>
+
+                                <div class="md:block md:fixed md:bottom-0 pb-3 cursor-pointer text-left absolute bottom-0">
                                 <pre class="font-mono text-xs" id="duck" aria-hidden="true">  _
 <span id="duckface">-</span>(.)__
  (___/
@@ -54,7 +58,7 @@
 
         </div>
 
-        <div class="bg-gray-300 md:flex-grow min-h-screen">
+        <div class="bg-gray-300 dark:bg-gray-800 md:flex-grow min-h-screen">
             <div class="md:ml-10 md:pr-10 lg:pr-20" style="max-width: 800px;">
 
                 <div class="mt-4 md:mt-24 px-5 md:px-10">

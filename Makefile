@@ -13,6 +13,9 @@ dev-setup:
 dev-watch:
 	yarn watch
 
+dev-build:
+	yarn dev
+
 dev-link:
 	valet link portfolio
 
