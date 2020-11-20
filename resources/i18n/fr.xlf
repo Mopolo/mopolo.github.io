@@ -303,6 +303,14 @@
             </trans-unit>
 
             <!-- Projects -->
+            <trans-unit id="projects.webz">
+                <source>projects.webz</source>
+                <target>
+                    WebZ est une librairie ayant pour but d'abstraire les appels a différents WebServices (en HTTP ou SOAP).
+
+                    Elle gère automatiquement le cache, les évènement et de parser le résultat en tableau.
+                </target>
+            </trans-unit>
             <trans-unit id="projects.magic-constant">
                 <source>projects.magic-constant</source>
                 <target>

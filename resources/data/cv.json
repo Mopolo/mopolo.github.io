@@ -191,6 +191,12 @@
     ],
     "projects": [
         {
+            "name": "WebZ",
+            "summary": "l:projects.webz",
+            "tags": ["PHP","HTTP", "SOAP"],
+            "url": "https://github.com/CuyZ/WebZ"
+        },
+        {
             "name": "MagicConstants",
             "summary": "l:projects.magic-constant",
             "tags": ["PHP"],
