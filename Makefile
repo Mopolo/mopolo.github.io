@@ -26,6 +26,11 @@ prod-setup:
 prod-build:
 	php bin/build.php
 	yarn prod
+	php bin/thumbnails.php
 	cp -R public/css docs
 	cp -R public/img docs
 	cp CNAME docs
+	cp public/favicon.ico docs
+	cp public/favicon-16x16.png docs
+	cp public/favicon-32x32.png docs
+	cp public/favicon-96x96.png docs
