@@ -19,6 +19,9 @@ dev-build:
 dev-link:
 	valet link portfolio
 
+psalm:
+	php vendor/bin/psalm
+
 prod-setup:
 	composer install --prefer-dist --no-interaction --no-suggest
 	yarn install --non-interactive

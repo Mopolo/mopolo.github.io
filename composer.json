@@ -30,6 +30,7 @@
         }
     },
     "require-dev": {
-        "vimeo/psalm": "^3.17"
+        "vimeo/psalm": "^4.0",
+        "spatie/ray": "^1.21"
     }
 }
