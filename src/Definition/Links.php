@@ -3,17 +3,12 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-/**
- * @psalm-immutable
- */
+use JetBrains\PhpStorm\Immutable;
+
+#[Immutable]
 final class Links
 {
     public string $github;
-    public string $gitlab;
 
-    public function __construct(string $github, string $gitlab)
-    {
-        $this->github = $github;
-        $this->gitlab = $gitlab;
-    }
+    public string $gitlab;
 }

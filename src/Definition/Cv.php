@@ -3,12 +3,13 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-/**
- * @psalm-immutable
- */
+use JetBrains\PhpStorm\Immutable;
+
+#[Immutable]
 final class Cv
 {
     public Contact $contact;
+
     public Links $links;
 
     /** @var Skill[] */

@@ -3,17 +3,12 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-/**
- * @psalm-immutable
- */
+use JetBrains\PhpStorm\Immutable;
+
+#[Immutable]
 final class Section
 {
     public string $name;
-    public Highlights $highlights;
 
-    public function __construct(string $name, Highlights $highlights)
-    {
-        $this->name = $name;
-        $this->highlights = $highlights;
-    }
+    public Highlights $highlights;
 }

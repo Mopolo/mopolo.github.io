@@ -7,30 +7,35 @@
             "email": "nathan.boiron@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/mattjanssen/gson-php"
-        }
-    ],
     "require": {
-        "php": ">=7.4.0",
+        "php": "8.0.*",
         "ext-json": "*",
-        "tebru/gson-php": "dev-feature/php-7.4-typed-properties as 0.7.3",
         "twig/twig": "^3.0",
         "symfony/translation": "^5.1",
         "symfony/config": "^5.1",
         "twig/intl-extra": "^3.0",
         "intervention/image": "^2.5",
-        "symfony/finder": "^5.2"
+        "symfony/finder": "^5.2",
+        "tebru/gson-php": "^0.7.4",
+        "cweagans/composer-patches": "^1.7"
     },
     "autoload": {
         "psr-4": {
             "Mopolo\\Cv\\": "src"
         }
     },
+    "config": {
+        "preferred-install": "source"
+    },
     "require-dev": {
         "vimeo/psalm": "^4.0",
         "spatie/ray": "^1.21"
+    },
+    "extra": {
+        "patches": {
+            "tebru/gson-php": {
+                "PHP 7.4 properties": "resources/patches/gson.patch"
+            }
+        }
     }
 }

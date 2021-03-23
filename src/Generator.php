@@ -6,13 +6,11 @@ namespace Mopolo\Cv;
 use Mopolo\Cv\Definition\Cv;
 use Mopolo\Cv\Definition\Highlights;
 use Mopolo\Cv\Definition\Image;
+use Mopolo\Cv\Gson\HighlightsCreator;
 use Mopolo\Cv\Gson\ImageCreator;
 use Mopolo\Cv\Gson\StringAdapter;
-use Mopolo\Cv\Gson\HighlightsCreator;
 use Mopolo\Cv\Support\Translator;
 use Tebru\Gson\Gson;
-use Tebru\Gson\TypeAdapter\Factory\DateTimeTypeAdapterFactory;
-use Tebru\Gson\TypeAdapter\StringTypeAdapter;
 
 final class Generator
 {

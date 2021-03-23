@@ -1,0 +1,20 @@
+Index: src/Internal/TypeTokenFactory.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Internal/TypeTokenFactory.php b/src/Internal/TypeTokenFactory.php
+--- a/src/Internal/TypeTokenFactory.php	(revision 1e0aa5e3e02196c1d57d5efe207b08119aae87eb)
++++ b/src/Internal/TypeTokenFactory.php	(date 1616524812843)
+@@ -101,6 +101,11 @@
+             }
+         }
+
++        if ($property !== null && $property->getType() !== null) {
++            $propertyType = TypeToken::create($property->getType()->getName());
++            return $this->checkGenericArray($propertyType, $property, $getterMethod, $setterMethod);
++        }
++
+         $type = $this->checkDocBlocks($property, $getterMethod, $setterMethod);
+         if ($type !== null) {
+             return $this->checkGenericArray(

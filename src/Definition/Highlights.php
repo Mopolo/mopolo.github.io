@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-/**
- * @psalm-immutable
- */
+use JetBrains\PhpStorm\Immutable;
+
+#[Immutable]
 final class Highlights
 {
     /** @var string[] */
