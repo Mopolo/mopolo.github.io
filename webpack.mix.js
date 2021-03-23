@@ -1,11 +1,8 @@
 const mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss');
 
 mix.disableNotifications();
 
-mix.postCss('./resources/css/style.css', './public/css/style.css',
-    tailwindcss('./tailwind.config.js')
-);
+mix.css('./resources/css/style.css', './public/css/style.css');
 
 mix.copyDirectory('./resources/img', './public/img');
 
