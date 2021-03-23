@@ -8,6 +8,22 @@
         "github": "https://github.com/Mopolo",
         "gitlab": "https://gitlab.com/Mopolo"
     },
+    "skills": [
+        { "name": "PHP", "level": 5 },
+        { "name": "Laravel", "level": 4 },
+        { "name": "Symfony", "level": 2 },
+        { "name": "TYPO3", "level": 4 },
+        { "name": "React", "level": 3 },
+        { "name": "TypeScript", "level": 4 },
+        { "name": "Git", "level": 5 },
+        { "name": "Rust", "level": 1 },
+        { "name": "PHPStorm", "level": 5 },
+        { "name": "Docker", "level": 3 },
+        { "name": "Webpack", "level": 3 },
+        { "name": "Ray", "level": 2 },
+        { "name": "Jira", "level": 3 },
+        { "name": "Scrum", "level": 4 }
+    ],
     "work": [
         {
             "name": "Total Direct Energie",
