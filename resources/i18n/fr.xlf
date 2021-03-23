@@ -297,10 +297,6 @@
                 <source>studies.dut</source>
                 <target>DUT info</target>
             </trans-unit>
-            <trans-unit id="studies.bac">
-                <source>studies.bac</source>
-                <target>Baccalauréat Scientifique</target>
-            </trans-unit>
 
             <!-- Projects -->
             <trans-unit id="projects.webz">
