@@ -40,7 +40,7 @@ final class PageRenderer
         $this->twig = new Environment($loader);
         $this->twig->addExtension(new IntlExtension());
         $this->twig->addFilter(
-            new TwigFilter('trans', fn (string $value) => $this->translator->translate($value))
+            new TwigFilter('trans', fn(string $value) => $this->translator->translate($value))
         );
 
         $this->definition = (new Generator($this->translator))->build();
@@ -56,6 +56,7 @@ final class PageRenderer
                 'langs' => $this->langs($page),
                 'locale' => $this->locale,
                 'title' => $this->translator->translate('site.'),
+                'css' => SiteBuilder::findPublicCssFilePath(),
             ]
         );
     }

@@ -7,6 +7,10 @@ use Intervention\Image\Constraint;
 use Intervention\Image\ImageManager;
 use Symfony\Component\Finder\Finder;
 
+use function file_exists;
+use function file_get_contents;
+use function json_decode;
+
 final class SiteBuilder
 {
     public const DEFAULT_LOCALE = 'fr';
@@ -16,6 +20,7 @@ final class SiteBuilder
     private const RESOURCES_DIR = __DIR__ . '/../../resources';
     private const IMG_DIR = self::RESOURCES_DIR . '/img';
     private const PUBLIC_DIR = __DIR__ . '/../../public';
+    private const MIX_MANIFEST_FILE = self::PUBLIC_DIR . '/mix-manifest.json';
 
     private string $env;
     private ImageManager $images;
@@ -128,5 +133,16 @@ final class SiteBuilder
         }
 
         return rmdir($dir);
+    }
+
+    public static function findPublicCssFilePath(): string
+    {
+        if (!file_exists(self::MIX_MANIFEST_FILE)) {
+            return '/css/style.css';
+        }
+
+        $manifest = json_decode(file_get_contents(self::MIX_MANIFEST_FILE), true);
+
+        return $manifest['/css/style.css'] ?? '/css/style.css';
     }
 }

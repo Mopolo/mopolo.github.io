@@ -27,8 +27,8 @@ prod-setup:
 	yarn install --non-interactive
 
 prod-build:
-	php bin/build.php
 	yarn prod
+	php bin/build.php
 	php bin/thumbnails.php
 	cp -R public/css docs
 	cp -R public/img docs
