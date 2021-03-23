@@ -67,7 +67,7 @@
             </trans-unit>
             <trans-unit id="work.tde.summary">
                 <source>work.tde.summary</source>
-                <target>Refontes complètes de l'espace client particuliers et de l'API pour l'app mobile</target>
+                <target>Refontes complètes de l'espace client particuliers et de l'API pour l'app mobile.</target>
             </trans-unit>
             <trans-unit id="work.tde.site.name">
                 <source>work.tde.site.name</source>
@@ -118,7 +118,7 @@
             </trans-unit>
             <trans-unit id="work.globalis.summary">
                 <source>work.globalis.summary</source>
-                <target>Évolutions sur le site web du magasine Nouvel Obs</target>
+                <target>Évolutions sur le site web du magasine Nouvel Obs.</target>
             </trans-unit>
             <trans-unit id="work.globalis.obs.summary">
                 <source>work.globalis.obs.summary</source>
@@ -142,7 +142,7 @@
             </trans-unit>
             <trans-unit id="work.osedea.summary">
                 <source>work.osedea.summary</source>
-                <target>Développement de divers sites web et app mobile dans une agence Québequoise.</target>
+                <target>Développement de divers sites web et apps mobiles dans une agence Québequoise.</target>
             </trans-unit>
             <trans-unit id="work.osedea.wss.summary">
                 <source>work.osedea.wss.summary</source>
@@ -264,7 +264,7 @@
             </trans-unit>
             <trans-unit id="work.morningcroissant.summary">
                 <source>work.morningcroissant.summary</source>
-                <target>Évolutions et maintenance sur le site web.</target>
+                <target>Évolutions et maintenance sur un site web de location de logements meublés.</target>
             </trans-unit>
             <trans-unit id="work.morningcroissant.website.highlights">
                 <source>work.morningcroissant.website.highlights</source>
@@ -285,7 +285,7 @@
             </trans-unit>
             <trans-unit id="work.ratp.summary">
                 <source>work.ratp.summary</source>
-                <target>Développement d'une appli intranet pour la maintenance des rames de métro.</target>
+                <target>Développement d'une application intranet pour la maintenance des rames de métro.</target>
             </trans-unit>
 
             <!-- Studies -->

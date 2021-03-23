@@ -13,7 +13,7 @@
             "name": "Total Direct Energie",
             "place": "Paris, France",
             "start": "2016-10-01",
-            "tags": ["TYPO3", "Laravel", "Doctrine", "PHPStan", "SOAP", "Git"],
+            "tags": ["TYPO3", "Laravel", "Doctrine", "PHPStan", "SOAP", "Git", "Azure", "Kafka", "Docker"],
             "intro": "l:work.tde.intro",
             "summary": "l:work.tde.summary",
             "projects": [
@@ -60,7 +60,7 @@
             "end": "2015-08-01",
             "tags": ["Laravel", "Zend", "Ionic", "AngularJS", "Git"],
             "intro": "l:work.osedea.intro",
-            "summary": "work.osedea.summary",
+            "summary": "l:work.osedea.summary",
             "projects": [
                 {
                     "name": "WeSpeakStudent",
