@@ -17,7 +17,7 @@
                     "textlightbg": "text-orange-400",
                     "textdarkbg": "text-white",
                     "bg": "bg-orange-600",
-                    "home": "hover:border-yellow-400 dark:hover:border-yellow-400",
+                    "home": "hover:border-orange-400 dark:hover:border-orange-400",
                     "header": "border-orange-400"
                 }
             },
@@ -36,7 +36,7 @@
                 "colors": {
                     "textlightbg": "text-green-500",
                     "textdarkbg": "text-gray-200",
-                    "bg": "bg-emerald-600",
+                    "bg": "bg-green-600",
                     "home": "hover:border-green-500 dark:hover:border-green-500",
                     "header": "border-green-500"
                 }

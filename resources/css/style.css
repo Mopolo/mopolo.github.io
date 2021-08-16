@@ -8,8 +8,32 @@
     }
 }
 
+.fooo {
+    border-bottom: 5px solid;
+    border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;
+}
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+    .header-border {
+        @apply border-b-8;
+
+        border-image: linear-gradient(
+            to right,
+            theme('colors.purple.400') 20%,
+            theme('colors.orange.400') 20%,
+            theme('colors.orange.400') 40%,
+            theme('colors.pink.400') 40%,
+            theme('colors.pink.400') 60%,
+            theme('colors.green.500') 60%,
+            theme('colors.green.500') 80%,
+            theme('colors.blue.400') 80%,
+            theme('colors.blue.400') 100%
+        ) 5;
+    }
+}
