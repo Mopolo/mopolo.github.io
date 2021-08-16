@@ -299,6 +299,16 @@
             </trans-unit>
 
             <!-- Projects -->
+            <trans-unit id="projects.forlhorn">
+                <source>projects.forlhorn</source>
+                <target>
+                    Serveur Minecraft de type RPG en cours de développement.
+
+                    Dans ce projet je développe plusieurs systèmes : monnaie, donjons et portails.
+
+                    Je mets également en place l'architecture générale du code (Container, ORM, Query Bus, tests unitaires, etc).
+                </target>
+            </trans-unit>
             <trans-unit id="projects.webz">
                 <source>projects.webz</source>
                 <target>

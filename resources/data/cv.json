@@ -261,9 +261,14 @@
     ],
     "projects": [
         {
+            "name": "Forlhörn",
+            "summary": "l:projects.forlhorn",
+            "tags": ["Java", "Ebean", "Guice"]
+        },
+        {
             "name": "WebZ",
             "summary": "l:projects.webz",
-            "tags": ["PHP","HTTP", "SOAP"],
+            "tags": ["PHP", "HTTP", "SOAP"],
             "url": "https://github.com/CuyZ/WebZ"
         },
         {
