@@ -7,20 +7,14 @@ You can visit it at https://mopolo.dev
 ## Setup
 
 ```bash
-$ composer i
-$ yarn
+$ make dev-setup
 
 # dev mode
-$ yarn watch
+$ make dev-watch
 ```
 
 ## Build site
 
 ```bash
-$ php bin/build.php
-
-$ yarn prod
-
-$ cp -R public/css docs
-$ cp -R public/img docs
+$ make prod-build
 ```
