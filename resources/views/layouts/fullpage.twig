@@ -2,17 +2,17 @@
 
 {% block body %}
 
-    <body class="min-h-screen text-black dark:text-gray-400 font-sans bg-yellow-500 dark:bg-gray-900 text-right md:text-left pr-6 md:pr-0">
+    <body class="min-h-screen text-black dark:text-gray-300 font-sans bg-gray-100 dark:bg-gray-800 text-right md:text-left pr-6 md:pr-0">
 
     <div class="leading-3 md:leading-normal container mx-auto pt-5 md:pt-32 pl-8">
         <a href="{{ urls.index.href }}">
-            <h1 class="text-3xl md:text-6xl font-extrabold text-black dark:text-yellow-700">
+            <h1 class="text-3xl md:text-6xl font-extrabold text-black dark:text-white">
                 Nathan Boiron
             </h1>
         </a>
-        <h2 class="font-bold text-gray-900 dark:text-yellow-800 md:text-xl">
+        <h2 class="font-bold text-gray-900 dark:text-gray-300 md:text-xl">
             Web dev
-            <span class="text-yellow-500 dark:text-gray-900 text-sm">ʘ‿ʘ</span>
+            <span class="text-gray-100 dark:text-gray-800 text-sm">ʘ‿ʘ</span>
         </h2>
 
         {% block content %}{% endblock %}
@@ -22,7 +22,7 @@
                 {% for name, url in urls %}
                     {% if url.current == false %}
                         <li class="pb-3 md:pb-0 md:pr-3 lg:pr-6">
-                            <a href="{{ url.href }}" class="hover:underline">{{ url.label }}</a>
+                            <a href="{{ url.href }}" class="inline-block border-b-8 border-gray-100 dark:border-gray-800 {{ url.colors.home }}">{{ url.label }}</a>
                             {% if loop.last == false %}
                                 <span class="md:pl-3 lg:pl-6 hidden md:inline">&bull;</span>
                             {% endif %}

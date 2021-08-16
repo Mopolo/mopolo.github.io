@@ -6,7 +6,7 @@
         "cross-env": "^7.0.2",
         "laravel-mix": "^6.0.13",
         "postcss": "^8.2.10",
-        "tailwindcss": "^2.0"
+        "tailwindcss": "2.1.0"
     },
     "scripts": {
         "dev": "mix",

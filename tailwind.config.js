@@ -2,20 +2,15 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
     darkMode: 'class',
-    future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
-        defaultLineHeights: true,
-        standardFontWeights: true
-    },
     purge: [
-        './resources/**/*.twig'
+        './resources/**/*.twig',
+        './resources/data/cv.json',
     ],
     theme: {
         colors: {
             white: colors.white,
             black: colors.black,
-            gray: colors.blueGray,
+            gray: colors.coolGray,
             yellow: {
                 ...colors.yellow,
                 '300': '#FFE394',
@@ -26,12 +21,22 @@ module.exports = {
                 '800': '#906A00',
                 '900': '#654B00',
             },
+            green: colors.green,
+            orange: colors.orange,
+            purple: colors.violet,
+            blue: colors.blue,
+            sky: colors.lightBlue,
+            cyan: colors.cyan,
+            indigo: colors.indigo,
+            lime: colors.lime,
+            emerald: colors.emerald,
+            pink: colors.pink,
+            rose: colors.rose,
         },
     },
     variants: {
         extend: {
             display: ['dark'],
         },
-    },
-    plugins: []
+    }
 }

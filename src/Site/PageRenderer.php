@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Mopolo\Cv\Site;
 
 use Mopolo\Cv\Definition\Cv;
+use Mopolo\Cv\Definition\Site\Colors;
 use Mopolo\Cv\Generator;
 use Mopolo\Cv\Support\Translator;
 use Symfony\Component\Translation\Loader\XliffFileLoader;
@@ -57,8 +58,20 @@ final class PageRenderer
                 'locale' => $this->locale,
                 'title' => $this->translator->translate('site.'),
                 'css' => SiteBuilder::findPublicCssFilePath(),
+                'colors' => $this->colors($page),
             ]
         );
+    }
+
+    private function colors(string $pageId): ?Colors
+    {
+        foreach ($this->definition->site->pages as $page) {
+            if ($page->id === $pageId) {
+                return $page->colors;
+            }
+        }
+
+        return null;
     }
 
     private function langs(string $currentPage): array
@@ -85,12 +98,14 @@ final class PageRenderer
                 'href' => $this->url($page, $this->locale),
                 'label' => $this->translator->translate('site.menu.' . $page),
                 'current' => $page === $currentPage || ($page === 'index' && $currentPage === '404'),
+                'colors' => $this->colors($page),
             ];
         }
 
         $urls['github'] = [
             'href' => $this->definition->links->github,
             'label' => 'Github',
+            'colors' => $this->colors('github'),
         ];
 
         return $urls;

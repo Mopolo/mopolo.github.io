@@ -1,4 +1,58 @@
 {
+    "site": {
+        "pages": [
+            {
+                "id": "work",
+                "colors": {
+                    "textlightbg": "text-purple-500 dark:text-purple-400",
+                    "textdarkbg": "text-gray-200",
+                    "bg": "bg-purple-600",
+                    "home": "hover:border-purple-400 dark:hover:border-purple-400",
+                    "header": "border-purple-500"
+                }
+            },
+            {
+                "id": "projects",
+                "colors": {
+                    "textlightbg": "text-orange-400",
+                    "textdarkbg": "text-white",
+                    "bg": "bg-orange-600",
+                    "home": "hover:border-yellow-400 dark:hover:border-yellow-400",
+                    "header": "border-orange-400"
+                }
+            },
+            {
+                "id": "studies",
+                "colors": {
+                    "textlightbg": "text-pink-500",
+                    "textdarkbg": "text-gray-200",
+                    "bg": "bg-pink-600",
+                    "home": "hover:border-pink-400 dark:hover:border-pink-400",
+                    "header": "border-pink-500"
+                }
+            },
+            {
+                "id": "contact",
+                "colors": {
+                    "textlightbg": "text-green-500",
+                    "textdarkbg": "text-gray-200",
+                    "bg": "bg-emerald-600",
+                    "home": "hover:border-green-500 dark:hover:border-green-500",
+                    "header": "border-green-500"
+                }
+            },
+            {
+                "id": "github",
+                "colors": {
+                    "textlightbg": "text-cyan-600",
+                    "textdarkbg": "text-gray-200",
+                    "bg": "bg-cyan-600",
+                    "home": "hover:border-cyan-400 dark:hover:border-cyan-400",
+                    "header": "border-cyan-400"
+                }
+            }
+        ]
+    },
     "contact": {
         "email": "hello@mopolo.net",
         "linkedin": "https://www.linkedin.com/in/nathan-boiron-79785a60/",

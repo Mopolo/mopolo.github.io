@@ -8,6 +8,8 @@ use JetBrains\PhpStorm\Immutable;
 #[Immutable]
 final class Cv
 {
+    public Site $site;
+
     public Contact $contact;
 
     public Links $links;

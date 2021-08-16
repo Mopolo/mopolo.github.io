@@ -5,21 +5,21 @@
     <body class="min-h-screen text-black dark:text-gray-300 leading-normal font-sans">
 
     <div class="flex flex-col md:flex-row md:h-auto">
-        <div class="bg-yellow-500 dark:bg-gray-900" style="min-width: 300px;">
+        <div class="bg-gray-50 md:bg-gray-100 dark:bg-gray-900" style="min-width: 300px;">
 
             <div class="mt-2 mb-3 mx-4 md:mx-12 md:mt-20">
                 <div class="md:flex">
                     <div class="md:fixed">
                         <div class="leading-3 md:leading-normal">
-                            <a href="{{ urls.index.href }}">
-                                <h1 class="text-3xl md:text-5xl font-extrabold text-black dark:text-yellow-700 leading-normal md:leading-none">
+                            <a href="{{ urls.index.href }}" class="inline-block border-b-8 {{ colors.header }}">
+                                <h1 class="text-3xl md:text-5xl font-extrabold text-black dark:text-gray-400 leading-normal md:leading-none">
                                     Nathan<br class="hidden md:inline"/>
                                     Boiron
                                 </h1>
                             </a>
-                            <h2 class="font-bold text-gray-900 dark:text-yellow-800">
+                            <h2 class="font-bold {{ colors.textlightbg }}">
                                 Web dev
-                                <span class="text-yellow-500 dark:text-gray-900 text-sm">ʘ‿ʘ</span>
+                                <span class="text-gray-100 dark:text-gray-900 text-sm">ʘ‿ʘ</span>
                             </h2>
                         </div>
 
@@ -29,7 +29,7 @@
                             <div class="main-menu | pt-1 text-right md:text-left">
                                 <ul class="flex flex-col mt-1 md:mt-16 md:text-2xl md:leading-relaxed">
                                     {% for name, url in urls %}
-                                        <li class="{% if url.current %}font-extrabold{% endif %}">
+                                        <li class="{% if url.current %}font-extrabold {{ url.colors.textlightbg }}{% endif %}">
                                             <a href="{{ url.href }}">{{ url.label }}</a>
                                         </li>
                                     {% endfor %}
@@ -58,7 +58,7 @@
 
         </div>
 
-        <div class="bg-gray-300 dark:bg-gray-800 md:flex-grow min-h-screen">
+        <div class="bg-gray-100 dark:bg-gray-800 md:flex-grow min-h-screen">
             <div class="md:ml-10 md:pr-10 lg:pr-20" style="max-width: 800px;">
 
                 <div class="mt-4 md:mt-24 px-5 md:px-10">

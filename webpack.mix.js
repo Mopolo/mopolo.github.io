@@ -3,7 +3,9 @@ const mix = require('laravel-mix');
 mix
     .disableNotifications()
     .setPublicPath('public/')
-    .css('resources/css/style.css', 'css')
+    .postCss('resources/css/style.css', 'css', [
+        require('tailwindcss'),
+    ])
     .copyDirectory('resources/img', 'public/img')
     .browserSync({
         proxy: 'portfolio.test', // valet link
