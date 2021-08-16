@@ -21,9 +21,9 @@
                 <source>site.menu.work</source>
                 <target>Expérience</target>
             </trans-unit>
-            <trans-unit id="site.menu.opensource">
-                <source>site.menu.opensource</source>
-                <target>Open source</target>
+            <trans-unit id="site.menu.projects">
+                <source>site.menu.projects</source>
+                <target>Projets</target>
             </trans-unit>
             <trans-unit id="site.menu.studies">
                 <source>site.menu.studies</source>
@@ -63,7 +63,7 @@
             <!-- Work -->
             <trans-unit id="work.tde.intro">
                 <source>work.tde.intro</source>
-                <target>Total Direct Energie est un fournisseur et producteur d'électricité et de gaz.</target>
+                <target>TotalEnergies est un fournisseur et producteur d'électricité et de gaz.</target>
             </trans-unit>
             <trans-unit id="work.tde.summary">
                 <source>work.tde.summary</source>
@@ -76,7 +76,7 @@
             <trans-unit id="work.tde.site.highlights">
                 <source>work.tde.site.highlights</source>
                 <target>
-                    Configuration (pages, options, etc.)
+                    Configuration TYPO3 (pages, options, etc.)
                     Formulaire de souscription avec étapes
                     Simulateur de consommation
                     Connexion client

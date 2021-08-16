@@ -21,9 +21,9 @@
                 <source>site.menu.work</source>
                 <target>Work</target>
             </trans-unit>
-            <trans-unit id="site.menu.opensource">
-                <source>site.menu.opensource</source>
-                <target>Open source</target>
+            <trans-unit id="site.menu.projects">
+                <source>site.menu.projects</source>
+                <target>Projects</target>
             </trans-unit>
             <trans-unit id="site.menu.studies">
                 <source>site.menu.studies</source>
@@ -63,7 +63,7 @@
             <!-- Work -->
             <trans-unit id="work.tde.intro">
                 <source>work.tde.intro</source>
-                <target>Total Direct Energie is a french electric utility company which produces and distributes gas and electricity.</target>
+                <target>TotalEnergies is a french electric utility company which produces and distributes gas and electricity.</target>
             </trans-unit>
             <trans-unit id="work.tde.summary">
                 <source>work.tde.summary</source>
@@ -76,7 +76,7 @@
             <trans-unit id="work.tde.site.highlights">
                 <source>work.tde.site.highlights</source>
                 <target>
-                    Configuration (pages, options, etc.)
+                    TYPO3 configuration (pages, options, etc.)
                     Subscription form with complex steps
                     Consumption simulator
                     Client login flow
