@@ -15,7 +15,9 @@
     {% endfor %}
     </div>
 
-    <p>{{ project.summary | nl2br }}</p>
+    {% if project.summary %}
+        <p>{{ project.summary | nl2br }}</p>
+    {% endif %}
 
     {% if project.url %}
         <div class="mt-3 relative" style="left: -12px;">
