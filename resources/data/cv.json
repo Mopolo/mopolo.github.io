@@ -83,6 +83,7 @@
             "name": "TotalEnergies",
             "place": "Paris, France",
             "start": "2016-10-01",
+            "end": "2021-09-30",
             "tags": ["TYPO3", "Laravel", "Doctrine", "PHPStan", "SOAP", "Git", "Azure", "Kafka", "Docker"],
             "intro": "l:work.tde.intro",
             "summary": "l:work.tde.summary",
