@@ -3,39 +3,44 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv;
 
+use CuyZ\Valinor\Mapper\Source\FileSource;
+use CuyZ\Valinor\MapperBuilder;
 use Mopolo\Cv\Definition\Cv;
-use Mopolo\Cv\Definition\Highlights;
-use Mopolo\Cv\Definition\Image;
-use Mopolo\Cv\Gson\HighlightsCreator;
-use Mopolo\Cv\Gson\ImageCreator;
-use Mopolo\Cv\Gson\StringAdapter;
+use Mopolo\Cv\Binding\DateTimeBinding;
+use Mopolo\Cv\Binding\HighlightsBinding;
+use Mopolo\Cv\Binding\ImageBinding;
+use Mopolo\Cv\Binding\StringBinding;
 use Mopolo\Cv\Support\Translator;
-use Tebru\Gson\Gson;
+use SplFileObject;
 
 final class Generator
 {
     private Translator $translator;
+    private DateTimeBinding $dateTimeBinding;
+    private StringBinding $stringBinding;
+    private ImageBinding $imageBinding;
+    private HighlightsBinding $highlightsBinding;
 
     public function __construct(Translator $translator)
     {
         $this->translator = $translator;
+        $this->dateTimeBinding = new DateTimeBinding();
+        $this->stringBinding = new StringBinding($translator);
+        $this->imageBinding = new ImageBinding();
+        $this->highlightsBinding = new HighlightsBinding($translator);
     }
 
     public function build(): Cv
     {
-        $gson = Gson::builder()
-            ->setDateTimeFormat('Y-m-d')
-            ->registerType('string', new StringAdapter($this->translator))
-            ->registerType(Highlights::class, new HighlightsCreator($this->translator))
-            ->registerType(Image::class, new ImageCreator())
-            ->build();
-
-        /** @var Cv $data */
-        $data = $gson->fromJson(
-            file_get_contents(__DIR__ . '/../resources/data/cv.json'),
-            Cv::class
-        );
-
-        return $data;
+        return (new MapperBuilder())
+            ->bind($this->dateTimeBinding)
+            ->bind($this->stringBinding)
+            ->bind($this->imageBinding)
+            ->bind($this->highlightsBinding)
+            ->mapper()
+            ->map(
+                Cv::class,
+                new FileSource(new SplFileObject(__DIR__ . '/../resources/data/cv.json'))
+            );
     }
 }
