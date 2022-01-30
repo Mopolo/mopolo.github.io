@@ -5,7 +5,7 @@
         "autoprefixer": "^10.0.2",
         "cross-env": "^7.0.2",
         "laravel-mix": "^6.0.13",
-        "postcss": "^8.2.10",
+        "postcss": "^8.2.13",
         "tailwindcss": "2.1.0"
     },
     "scripts": {
