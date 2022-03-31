@@ -1,23 +1,18 @@
-@media (max-width: 639px) {
-    #main-menu-toggle:checked ~ .main-menu {
-        display: block;
-    }
-
-    .main-menu {
-        display: none;
-    }
-}
-
-.fooo {
-    border-bottom: 5px solid;
-    border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;
-}
-
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@layer base {
+    @media (max-width: 639px) {
+        #main-menu-toggle:checked ~ .main-menu {
+            display: block;
+        }
+
+        .main-menu {
+            display: none;
+        }
+    }
+}
 
 @layer components {
     .header-border {

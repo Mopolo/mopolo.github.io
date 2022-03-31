@@ -2,15 +2,16 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
     darkMode: 'class',
-    purge: [
+    content: [
         './resources/**/*.twig',
         './resources/data/cv.json',
     ],
     theme: {
         colors: {
+            current: 'currentColor',
             white: colors.white,
             black: colors.black,
-            gray: colors.coolGray,
+            gray: colors.gray,
             yellow: {
                 ...colors.yellow,
                 '300': '#FFE394',
@@ -25,7 +26,7 @@ module.exports = {
             orange: colors.orange,
             purple: colors.violet,
             blue: colors.blue,
-            sky: colors.lightBlue,
+            sky: colors.sky,
             cyan: colors.cyan,
             indigo: colors.indigo,
             lime: colors.lime,
@@ -34,9 +35,9 @@ module.exports = {
             rose: colors.rose,
         },
     },
-    variants: {
-        extend: {
-            display: ['dark'],
-        },
-    }
+    // variants: {
+    //     extend: {
+    //         display: ['dark'],
+    //     },
+    // }
 }
