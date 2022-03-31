@@ -16,7 +16,6 @@
         "twig/intl-extra": "^3.0",
         "intervention/image": "^2.5",
         "symfony/finder": "^5.2",
-        "cweagans/composer-patches": "^1.7",
         "jetbrains/phpstorm-attributes": "^1.0",
         "cuyz/valinor": "^0.1.1"
     },
