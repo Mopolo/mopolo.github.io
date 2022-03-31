@@ -79,9 +79,10 @@
                     Configuration TYPO3 (pages, options, etc.)
                     Formulaire de souscription avec étapes
                     Simulateur de consommation
-                    Connexion client
-                    Connexion en mode admin
+                    Connexion client et admin
                     Outils de log interne
+                    CI (Jenkins, Docker, Pull Requests, PHPStan)
+                    Rituels (Code review et présentations internes)
                 </target>
             </trans-unit>
             <trans-unit id="work.tde.micro.summary">
@@ -94,19 +95,17 @@
             <trans-unit id="work.tde.micro.highlights">
                 <source>work.tde.micro.highlights</source>
                 <target>
-                    Dépendances via composer
                     Configuration standalone de Doctrine
                     Librairie maison pour les webservices (SOAP, HTTP, Queues)
                     Système d'énumérations via MagicConstant
                     Documentation technique avec Mkdocs
                     Tests unitaires avec PHPUnit
-                    Analyse du code avec PHPStan
+                    Analyse statique du code avec PHPStan
                 </target>
             </trans-unit>
             <trans-unit id="work.tde.api.highlights">
                 <source>work.tde.api.highlights</source>
                 <target>
-                    Utilisation de Laravel
                     OAuth via Laravel Passport
                     Documentation OpenAPI
                 </target>
@@ -150,6 +149,20 @@
                     WeSpeakStudent est le premier gros projet que j'ai réalisé à Osedea.
                 </target>
             </trans-unit>
+            <trans-unit id="work.osedea.wss.highlights">
+                <source>work.osedea.wss.highlights</source>
+                <target>
+                    Gestion des écoles, comptes de directeurs d'école
+                    Données des étudiants
+                    Affichage des paiements Stripe
+                    Gestion de documents
+                    Extraction des données Google Analytics
+                    Planification de notifications push
+                    Accès étudiant pour gérer leur app : news, évènements, élections, sondages
+                    API Rest pour le site et les apps
+                    Frontend en SPA avec AngularJS
+                </target>
+            </trans-unit>
             <trans-unit id="work.osedea.wss.backend.highlights">
                 <source>work.osedea.wss.backend.highlights</source>
                 <target>
@@ -187,18 +200,34 @@
                 <source>work.osedea.morcare.summary</source>
                 <target>Morecare est une version internationalle de WeSpeakStudent</target>
             </trans-unit>
+            <trans-unit id="work.osedea.morcare.highlights">
+                <source>work.osedea.morcare.highlights</source>
+                <target>Version internationalle de WeSpeakStudent</target>
+            </trans-unit>
             <trans-unit id="work.osedea.arcelormittal.summary">
                 <source>work.osedea.arcelormittal.summary</source>
                 <target>
                     Webapp permettant la gestion d'équipements d'une mine au Canada.
-                    La gestion était anciennement faite via un fichier Excell.
+                    La gestion était anciennement faite via un fichier Excel.
                     La webapp permettait d'attribuer les équipements de la mine de façon automatique en fonction de plusieurs critères.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.arcelormittal.highlights">
+                <source>work.osedea.arcelormittal.highlights</source>
+                <target>
+                    Refonte d'un fichier Excel en webapp pour la gestion d'équipements miniers.
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.familyreach.summary">
                 <source>work.osedea.familyreach.summary</source>
                 <target>
                     FamilyReach Give est une application de financement participatif pour aider des familles américaines ayant un enfant qui a un cancer.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.familyreach.highlights">
+                <source>work.osedea.familyreach.highlights</source>
+                <target>
+                    Application de crowdfunding pour familles américaines ayant un enfant malade.
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.familyreach.backend.highlights">
@@ -225,9 +254,10 @@
             <trans-unit id="work.osedea.gigleaf.highlights">
                 <source>work.osedea.gigleaf.highlights</source>
                 <target>
+                    Site de mise en relation d'artistes freelance et de recruteurs
                     Backend avec Laravel
                     Frontend en SPA avec AngularJS
-                    Utilisation de Mandrill
+                    Envoi d'emails via Mandrill
                     Queues via Beanstalk
                 </target>
             </trans-unit>
@@ -236,6 +266,12 @@
                 <target>
                     Application Ionic d'informations médicales.
                     Les données sont statiques.
+                </target>
+            </trans-unit>
+            <trans-unit id="work.osedea.simply-obstetrics.highlights">
+                <source>work.osedea.simply-obstetrics.highlights</source>
+                <target>
+                    Application Ionic d'informations médicales avec données statiques.
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.osd.summary">
@@ -249,6 +285,7 @@
             <trans-unit id="work.osedea.osd.highlights">
                 <source>work.osedea.osd.highlights</source>
                 <target>
+                    Outil interne pour le terminal
                     Gestion des alias SSH
                     Gestion des versions des projets (tags git, mise à jour des package.json)
                     Compilation des app Ionic/Cordova vers iOs et Android

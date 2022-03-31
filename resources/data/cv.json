@@ -65,7 +65,7 @@
     "skills": [
         { "name": "PHP", "level": 5 },
         { "name": "Laravel", "level": 4 },
-        { "name": "Symfony", "level": 2 },
+        { "name": "Symfony", "level": 3 },
         { "name": "TYPO3", "level": 4 },
         { "name": "React", "level": 3 },
         { "name": "TypeScript", "level": 4 },
@@ -74,7 +74,7 @@
         { "name": "PHPStorm", "level": 5 },
         { "name": "Docker", "level": 3 },
         { "name": "Webpack", "level": 3 },
-        { "name": "Ray", "level": 2 },
+        { "name": "Java", "level": 2 },
         { "name": "Jira", "level": 3 },
         { "name": "Scrum", "level": 4 }
     ],
@@ -136,6 +136,7 @@
                 {
                     "name": "WeSpeakStudent",
                     "summary": "l:work.osedea.wss.summary",
+                    "highlights": "l:work.osedea.wss.highlights",
                     "url": "https://wespeakstudent.com",
                     "tags": ["Zend 2", "AngularJS", "Bootstrap", "prerender.io", "Ionic", "Git"],
                     "images": [
@@ -162,6 +163,7 @@
                 {
                     "name": "Morcare",
                     "summary": "l:work.osedea.morcare.summary",
+                    "highlights": "l:work.osedea.morcare.highlights",
                     "url": "https://morcare.ca",
                     "tags": ["Zend 2", "AngularJS", "Bootstrap"],
                     "images": [
@@ -172,11 +174,13 @@
                 {
                     "name": "Arcelormittal",
                     "summary": "l:work.osedea.arcelormittal.summary",
+                    "highlights": "l:work.osedea.arcelormittal.highlights",
                     "tags": ["Zend 2", "AngularJS", "Bootstrap", "Git"]
                 },
                 {
                     "name": "FamilyReach Give",
                     "summary": "l:work.osedea.familyreach.summary",
+                    "highlights": "l:work.osedea.familyreach.highlights",
                     "url": "https://familyreach.org",
                     "tags": ["Laravel 4", "AngularJS", "Bootstrap", "Ionic", "Beanstalk"],
                     "images": [
@@ -200,18 +204,19 @@
                 {
                     "name": "Gigleaf",
                     "summary": "l:work.osedea.gigleaf.summary",
+                    "highlights": "l:work.osedea.gigleaf.highlights",
                     "url": "https://gigleaf.me",
                     "tags": ["Laravel 5", "AngularJS", "Bootstrap", "Beanstalk"],
                     "images": [
                         "img:osedea/gigleaf-1.jpg",
                         "img:osedea/gigleaf-2.jpg",
                         "img:osedea/gigleaf-3.jpg"
-                    ],
-                    "highlights": "l:work.osedea.gigleaf.highlights"
+                    ]
                 },
                 {
                     "name": "Simply Obstetrics",
                     "summary": "l:work.osedea.simply-obstetrics.summary",
+                    "highlights": "l:work.osedea.simply-obstetrics.highlights",
                     "url": "https://www.simplyobstetrics.com",
                     "tags": ["AngularJS", "Ionic"],
                     "images": [
