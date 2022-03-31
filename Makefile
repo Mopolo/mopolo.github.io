@@ -23,7 +23,7 @@ psalm:
 	php vendor/bin/psalm
 
 prod-setup:
-	composer install --prefer-dist --no-interaction --no-suggest
+	composer install --prefer-dist --no-interaction
 	npm ci
 
 prod-build:
