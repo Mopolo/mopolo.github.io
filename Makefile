@@ -8,13 +8,13 @@ help:
 
 dev-setup:
 	composer install
-	yarn
+	npm install
 
 dev-watch:
-	yarn watch
+	npm run watch
 
 dev-build:
-	yarn dev
+	npm run dev
 
 dev-link:
 	valet link portfolio
@@ -24,10 +24,10 @@ psalm:
 
 prod-setup:
 	composer install --prefer-dist --no-interaction --no-suggest
-	yarn install --non-interactive
+	npm ci
 
 prod-build:
-	yarn prod
+	npm run prod
 	php bin/build.php
 	php bin/thumbnails.php
 	cp -R public/css docs
