@@ -4,18 +4,14 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition\Site;
 
-use JetBrains\PhpStorm\Immutable;
-
-#[Immutable]
 final class Colors
 {
-    public string $textlightbg;
-
-    public string $textdarkbg;
-
-    public string $bg;
-
-    public string $home;
-
-    public string $header;
+    public function __construct(
+        public readonly string $textlightbg,
+        public readonly string $textdarkbg,
+        public readonly string $bg,
+        public readonly string $home,
+        public readonly string $header,
+    ) {
+    }
 }

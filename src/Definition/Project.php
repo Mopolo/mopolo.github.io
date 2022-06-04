@@ -3,25 +3,21 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-use JetBrains\PhpStorm\Immutable;
-
-#[Immutable]
 final class Project
 {
-    public string $name;
-
-    public ?string $url = null;
-
-    public ?string $summary;
-
-    /** @var string[] */
-    public array $tags;
-
-    /** @var Image[] */
-    public array $images;
-
-    public ?Highlights $highlights;
-
-    /** @var Section[] */
-    public array $sections;
+    /**
+     * @param array<string> $tags
+     * @param array<Image> $images
+     * @param array<Section> $sections
+     */
+    public function __construct(
+        public readonly string $name,
+        public readonly ?string $url,
+        public readonly ?string $summary,
+        public readonly array $tags,
+        public readonly array $images,
+        public readonly ?Highlights $highlights,
+        public readonly array $sections,
+    ) {
+    }
 }

@@ -3,26 +3,22 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-use JetBrains\PhpStorm\Immutable;
-
-#[Immutable]
 final class Cv
 {
-    public Site $site;
-
-    public Contact $contact;
-
-    public Links $links;
-
-    /** @var Skill[] */
-    public array $skills;
-
-    /** @var Work[] */
-    public array $work;
-
-    /** @var Project[] */
-    public array $projects;
-
-    /** @var School[] */
-    public array $studies;
+    /**
+     * @param array<Skill> $skills
+     * @param array<Work> $work
+     * @param array<Project> $projects
+     * @param array<School> $studies
+     */
+    public function __construct(
+        public readonly Site $site,
+        public readonly Contact $contact,
+        public readonly Links $links,
+        public readonly array $skills,
+        public readonly array $work,
+        public readonly array $projects,
+        public readonly array $studies,
+    ) {
+    }
 }

@@ -4,26 +4,22 @@ declare(strict_types=1);
 namespace Mopolo\Cv\Definition;
 
 use DateTime;
-use JetBrains\PhpStorm\Immutable;
 
-#[Immutable]
 final class Work
 {
-    public string $name;
-
-    public string $place;
-
-    public DateTime $start;
-
-    public ?DateTime $end;
-
-    public string $intro;
-
-    public string $summary;
-
-    /** @var string[] */
-    public array $tags;
-
-    /** @var Project[] */
-    public array $projects;
+    /**
+     * @param array<string> $tags
+     * @param array<Project> $projects
+     */
+    public function __construct(
+        public readonly string $name,
+        public readonly string $place,
+        public readonly DateTime $start,
+        public readonly ?DateTime $end,
+        public readonly string $intro,
+        public readonly string $summary,
+        public readonly array $tags,
+        public readonly array $projects,
+    ) {
+    }
 }
