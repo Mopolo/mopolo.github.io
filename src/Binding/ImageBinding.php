@@ -7,7 +7,7 @@ use Mopolo\Cv\Definition\Image;
 
 final class ImageBinding
 {
-    public function __invoke(mixed $value): Image
+    public function __invoke(string $value): Image
     {
         $path = '/img/projects/' . substr($value, 4);
 

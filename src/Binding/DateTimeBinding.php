@@ -8,7 +8,7 @@ use DateTime;
 
 final class DateTimeBinding
 {
-    public function __invoke(mixed $value): DateTime
+    public function __invoke(string $value): DateTime
     {
         return DateTime::createFromFormat('Y-m-d', $value);
     }

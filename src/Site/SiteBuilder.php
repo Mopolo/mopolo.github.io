@@ -141,6 +141,7 @@ final class SiteBuilder
             return '/css/style.css';
         }
 
+        /** @var array{'/css/style.css': string} $manifest */
         $manifest = json_decode(file_get_contents(self::MIX_MANIFEST_FILE), true);
 
         return $manifest['/css/style.css'] ?? '/css/style.css';

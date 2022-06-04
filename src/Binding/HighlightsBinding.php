@@ -15,7 +15,7 @@ final class HighlightsBinding
         $this->translator = $translator;
     }
 
-    public function __invoke(mixed $value): Highlights
+    public function __invoke(string $value): Highlights
     {
         $lines = $this->translator->translate($value);
 
