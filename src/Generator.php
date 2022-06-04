@@ -5,17 +5,16 @@ namespace Mopolo\Cv;
 
 use CuyZ\Valinor\Mapper\Source\FileSource;
 use CuyZ\Valinor\MapperBuilder;
-use Mopolo\Cv\Definition\Cv;
 use Mopolo\Cv\Binding\DateTimeBinding;
 use Mopolo\Cv\Binding\HighlightsBinding;
 use Mopolo\Cv\Binding\ImageBinding;
 use Mopolo\Cv\Binding\StringBinding;
+use Mopolo\Cv\Definition\Cv;
 use Mopolo\Cv\Support\Translator;
 use SplFileObject;
 
 final class Generator
 {
-    private Translator $translator;
     private DateTimeBinding $dateTimeBinding;
     private StringBinding $stringBinding;
     private ImageBinding $imageBinding;
@@ -23,7 +22,6 @@ final class Generator
 
     public function __construct(Translator $translator)
     {
-        $this->translator = $translator;
         $this->dateTimeBinding = new DateTimeBinding();
         $this->stringBinding = new StringBinding($translator);
         $this->imageBinding = new ImageBinding();
