@@ -10,7 +10,7 @@
     "require": {
         "php": "8.1.*",
         "ext-json": "*",
-        "cuyz/valinor": "0.1.1",
+        "cuyz/valinor": "0.9.*",
         "intervention/image": "^2.5",
         "jetbrains/phpstorm-attributes": "^1.0",
         "symfony/config": "^6.1",

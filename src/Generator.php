@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv;
 
-use CuyZ\Valinor\Mapper\Source\FileSource;
+use CuyZ\Valinor\Mapper\Source\Source;
 use CuyZ\Valinor\MapperBuilder;
 use Mopolo\Cv\Binding\DateTimeBinding;
 use Mopolo\Cv\Binding\HighlightsBinding;
@@ -31,14 +31,14 @@ final class Generator
     public function build(): Cv
     {
         return (new MapperBuilder())
-            ->bind($this->dateTimeBinding)
-            ->bind($this->stringBinding)
-            ->bind($this->imageBinding)
-            ->bind($this->highlightsBinding)
+            ->registerConstructor($this->dateTimeBinding)
+            ->alter($this->stringBinding)
+            ->registerConstructor($this->imageBinding)
+            ->registerConstructor($this->highlightsBinding)
             ->mapper()
             ->map(
                 Cv::class,
-                new FileSource(new SplFileObject(__DIR__ . '/../resources/data/cv.json'))
+                Source::file(new SplFileObject(__DIR__ . '/../resources/data/cv.json'))
             );
     }
 }

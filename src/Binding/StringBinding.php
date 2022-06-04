@@ -14,7 +14,7 @@ final class StringBinding
         $this->translator = $translator;
     }
 
-    public function __invoke(mixed $value): string
+    public function __invoke(string $value): string
     {
         if (str_starts_with($value, 'l:')) {
             return $this->translator->translate($value);
