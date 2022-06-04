@@ -210,6 +210,8 @@
                     Webapp permettant la gestion d'équipements d'une mine au Canada.
                     La gestion était anciennement faite via un fichier Excel.
                     La webapp permettait d'attribuer les équipements de la mine de façon automatique en fonction de plusieurs critères.
+
+                    Ce projet nous a permit de visiter San Francisco pendant 4 jours et participer au <![CDATA[<a href="https://techcrunch.com/2014/09/07/git-bounty-wants-to-help-open-source-programmers-get-paid-for-bug-fixes/" class="text-purple-500 dark:text-purple-400 underline">Disrupt SF Hackathon de Tech Crunch de 2014</a>]]>.
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.arcelormittal.highlights">

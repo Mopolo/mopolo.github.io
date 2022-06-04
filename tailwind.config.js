@@ -5,6 +5,7 @@ module.exports = {
     content: [
         './resources/**/*.twig',
         './resources/data/cv.json',
+        './resources/i18n/*.xlf',
     ],
     theme: {
         colors: {

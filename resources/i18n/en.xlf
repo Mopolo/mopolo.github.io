@@ -200,6 +200,8 @@
                     The assigning of vehicles was based on a lot of parameters and was done semi-manually using Excel.
 
                     The tool consists of a web app built with Zend 2 and AngularJS. It was able to assign vehicles automatically based on different criteria.
+
+                    This project allowed us to visit San Francisco for 4 days and participate in the <![CDATA[<a href="https://techcrunch.com/2014/09/07/git-bounty-wants-to-help-open-source-programmers-get-paid-for-bug-fixes/" class="text-purple-500 dark:text-purple-400 underline">2014 Tech Crunch's Disrupt SF Hackathon</a>]]>.
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.familyreach.summary">

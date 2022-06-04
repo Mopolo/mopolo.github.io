@@ -73,10 +73,10 @@
                                 {% endif %}
 
                                 {% if project.summary %}
-                                    <p class="ml-1 mt-2 text-sm md:text-base">{{ project.summary | nl2br }}</p>
+                                    <p class="ml-1 mt-2 text-sm md:text-base">{{ project.summary | raw | nl2br }}</p>
                                 {% endif %}
 
-                                {% if project.highlights.lines %}
+                                {% if project.highlights.lines|length > 1 %}
                                     <ul class="list-disc list-inside mt-3 md:ml-5 text-xs md:text-base">
                                         {% for highlight in project.highlights.lines %}
                                             <li>{{ highlight }}</li>
@@ -93,11 +93,13 @@
                                                     {{ section.name }}
                                                 </h3>
 
-                                                <ul class="list-disc ml-4 md:ml-10 text-xs md:text-base">
-                                                    {% for highlight in section.highlights.lines %}
-                                                        <li>{{ highlight }}</li>
-                                                    {% endfor %}
-                                                </ul>
+                                                {% if section.highlights.lines|length > 1 %}
+                                                    <ul class="list-disc ml-4 md:ml-10 text-xs md:text-base">
+                                                        {% for highlight in section.highlights.lines %}
+                                                            <li>{{ highlight }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
                                             </div>
                                         {% endfor %}
                                     </div>
