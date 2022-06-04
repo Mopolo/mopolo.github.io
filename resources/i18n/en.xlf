@@ -344,6 +344,20 @@
                     It was developped at Direct Energie before being open sourced.
                 </target>
             </trans-unit>
+            <trans-unit id="projects.radiophonix">
+                <source>projects.radiophonix</source>
+                <target>
+                    Radiophonix was a free and open-source platform to publish and listen to french audio fictions (also known as <![CDATA[&ldquo;]]>Sagas MP3<![CDATA[&rdquo;]]>).
+
+                    It was written in JavaScript (with Vue.js) and PHP (with Laravel). I also started to discover TypeScript.
+
+                    This project was also a way to use GitLab for dynamic environments used in Pull Requests.
+
+                    The design is from the very talented <![CDATA[<a href="https://www.pierre.tl/realisations/radiophonix/" class="text-orange-400 underline">Pierre</a>]]>.
+
+                    Pierre and I were invited to present the project in public for the first time at the 2019 edition of <![CDATA[<a href="http://www.mp3aparis.fr" class="text-orange-400 underline">MP3@Paris</a>]]>.
+                </target>
+            </trans-unit>
             <trans-unit id="projects.portfolio">
                 <source>projects.portfolio</source>
                 <target>

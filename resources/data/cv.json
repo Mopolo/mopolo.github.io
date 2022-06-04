@@ -284,6 +284,17 @@
             "url": "https://github.com/CuyZ/MagicConstant"
         },
         {
+            "name": "Radiophonix",
+            "summary": "l:projects.radiophonix",
+            "tags": ["Laravel", "Vue.js", "GitLab"],
+            "url": "https://gitlab.com/Radiophonix/Radiophonix",
+            "images": [
+                "img:radiophonix/radiophonix-1.png",
+                "img:radiophonix/radiophonix-2.png",
+                "img:radiophonix/radiophonix-3.png"
+            ]
+        },
+        {
             "name": "Portfolio",
             "summary": "l:projects.portfolio",
             "tags": ["PHP", "Node.js", "Ruby"],

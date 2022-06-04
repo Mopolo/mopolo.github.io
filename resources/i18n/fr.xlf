@@ -364,6 +364,20 @@
                     Cette librairie a d'abord été développée pour Direct Energie avant de devenir open source.
                 </target>
             </trans-unit>
+            <trans-unit id="projects.radiophonix">
+                <source>projects.radiophonix</source>
+                <target>
+                    Radiophonix était une plateforme libre et gratuite de publication et d'écoute de Sagas MP3 écrite en JavaScript à l'aide de Vue.js et l'API en PHP à l'aide de Laravel.
+
+                    Cela a été l'occasion de mettre en place un système d'environnements dynamiques pilotés via GitLab et utlisés pour les Pull Requests.
+
+                    J'y ai aussi commencé ma découverte du TypeScript.
+
+                    Le design vient du très talentueux <![CDATA[<a href="https://www.pierre.tl/realisations/radiophonix/" class="text-orange-400 underline">Pierre</a>]]>.
+
+                    Pierre et moi avons été invités à présenter le site en public pour la première fois à l'édition 2019 de <![CDATA[<a href="http://www.mp3aparis.fr" class="text-orange-400 underline">MP3@Paris</a>]]>.
+                </target>
+            </trans-unit>
             <trans-unit id="projects.portfolio">
                 <source>projects.portfolio</source>
                 <target>
