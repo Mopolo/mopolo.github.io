@@ -11,6 +11,7 @@ use Symfony\Component\Translation\Loader\XliffFileLoader;
 use Symfony\Component\Translation\Translator as SymfonyTranslator;
 use Twig\Environment;
 use Twig\Extra\Intl\IntlExtension;
+use Twig\Extra\String\StringExtension;
 use Twig\Loader\FilesystemLoader;
 use Twig\TwigFilter;
 
@@ -40,6 +41,7 @@ final class PageRenderer
         $loader = new FilesystemLoader(__DIR__ . '/../../resources/views');
         $this->twig = new Environment($loader);
         $this->twig->addExtension(new IntlExtension());
+        $this->twig->addExtension(new StringExtension());
         $this->twig->addFilter(
             new TwigFilter('trans', fn(string $value) => $this->translator->translate($value))
         );
