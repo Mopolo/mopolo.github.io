@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: make prod-setup
 
+      - name: QA
+        run: make qa
+
       - name: Build site
         run: make prod-build
 

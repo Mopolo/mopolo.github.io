@@ -19,7 +19,7 @@ dev-build:
 dev-link:
 	valet link portfolio
 
-psalm:
+qa:
 	php vendor/bin/psalm
 
 prod-setup:
