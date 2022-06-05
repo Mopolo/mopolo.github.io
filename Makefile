@@ -1,35 +1,41 @@
-help:
-	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  dev-setup                        to setup dev environment"
-	@echo "  dev-watch                        to start dev mode"
-	@echo "  dev-link                         to link the project using Valet."
-	@echo "  prod-setup                       to install dependencies for production"
-	@echo "  prod-build                       to create a production build"
+# Executables
+PHP = php
+NODE = node
+NPM = npm
+VALET = valet
+COMPOSER = $(PHP) composer
 
-dev-setup:
-	composer install
-	npm install
+# Misc
+.DEFAULT_GOAL = help
+.PHONY        = help build up start down logs sh composer vendor sf cc
 
-dev-watch:
-	npm run watch
+## —— Makefile —————————————————————————————————————————————————————————————
+help: ## Outputs this help screen
+	@grep -E '(^[a-zA-Z0-9_-]+:.*?##.*$$)|(^##)' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}{printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}' | sed -e 's/\[32m##/[33m/'
 
-dev-build:
-	npm run dev
+## —— DEV ——————————————————————————————————————————————————————————————
+dev-setup: ## Install dependencies
+	@$(COMPOSER) install
+	@$(NPM) install
 
-dev-link:
-	valet link portfolio
+dev-watch: ## Start watching assets
+	@$(NPM) run watch
 
-qa:
-	php vendor/bin/psalm
+dev-build: ## Compile assets in DEV mode
+	@$(NPM) run dev
 
-prod-setup:
-	composer install --prefer-dist --no-interaction
-	npm ci
+dev-link: ## links the project to portfolio.test
+	@$(VALET) link portfolio
 
-prod-build:
-	npm run prod
-	php bin/build.php
-	php bin/thumbnails.php
+## —— PROD ——————————————————————————————————————————————————————————————
+prod-setup: ## Install vendor dependencies
+	@$(COMPOSER) install --prefer-dist --no-interaction
+	@$(NPM) ci
+
+prod-build: ## Compile assets in DEV mode
+	@$(NPM) run prod
+	$(PHP) bin/build.php
+	$(PHP) bin/thumbnails.php
 	cp -R public/css docs
 	cp -R public/img docs
 	cp CNAME docs
@@ -37,3 +43,7 @@ prod-build:
 	cp public/favicon-16x16.png docs
 	cp public/favicon-32x32.png docs
 	cp public/favicon-96x96.png docs
+
+## —— QA ——————————————————————————————————————————————————————————————
+qa: ## Run code quality tools
+	@$(PHP) vendor/bin/psalm
