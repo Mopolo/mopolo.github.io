@@ -201,7 +201,7 @@
 
                     The tool consists of a web app built with Zend 2 and AngularJS. It was able to assign vehicles automatically based on different criteria.
 
-                    This project allowed us to visit San Francisco for 4 days and participate in the <![CDATA[<a href="https://techcrunch.com/2014/09/07/git-bounty-wants-to-help-open-source-programmers-get-paid-for-bug-fixes/" class="text-purple-500 dark:text-purple-400 underline">2014 Tech Crunch's Disrupt SF Hackathon</a>]]>.
+                    This project allowed us to visit San Francisco for 4 days and participate in the [2014 Tech Crunch's Disrupt SF Hackathon](https://techcrunch.com/2014/09/07/git-bounty-wants-to-help-open-source-programmers-get-paid-for-bug-fixes/).
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.familyreach.summary">
@@ -353,9 +353,9 @@
 
                     This project was also a way to use GitLab for dynamic environments used in Pull Requests.
 
-                    The design is from the very talented <![CDATA[<a href="https://www.pierre.tl/realisations/radiophonix/" class="text-orange-400 underline">Pierre</a>]]>.
+                    The design is from the very talented [Pierre](https://www.pierre.tl/realisations/radiophonix/).
 
-                    Pierre and I were invited to present the project in public for the first time at the 2019 edition of <![CDATA[<a href="http://www.mp3aparis.fr" class="text-orange-400 underline">MP3@Paris</a>]]>.
+                    Pierre and I were invited to present the project in public for the first time at the 2019 edition of [MP3@Paris](http://www.mp3aparis.fr).
                 </target>
             </trans-unit>
             <trans-unit id="projects.portfolio">

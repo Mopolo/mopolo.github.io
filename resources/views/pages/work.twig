@@ -73,7 +73,7 @@
                                 {% endif %}
 
                                 {% if project.summary %}
-                                    <p class="ml-1 mt-2 text-sm md:text-base">{{ project.summary | raw | nl2br }}</p>
+                                    <p class="ml-1 mt-2 text-sm md:text-base">{{ project.summary | md | raw | nl2br }}</p>
                                 {% endif %}
 
                                 {% if project.highlights.lines|length > 1 %}

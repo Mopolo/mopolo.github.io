@@ -18,7 +18,7 @@
     </div>
 
     {% if project.summary %}
-        <p>{{ project.summary | raw | nl2br }}</p>
+        <p>{{ project.summary | md | raw | nl2br }}</p>
     {% endif %}
 
     {% if project.url %}

@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Site;
 
+use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
+use League\CommonMark\Extension\InlinesOnly\InlinesOnlyExtension;
+use League\CommonMark\MarkdownConverter;
 use Mopolo\Cv\Definition\Cv;
 use Mopolo\Cv\Definition\Site\Colors;
 use Mopolo\Cv\Generator;
@@ -51,6 +54,14 @@ final class PageRenderer
 
     public function renderPage(string $page): string
     {
+        $colors = $this->colors($page);
+
+        $this->twig->addFilter(
+            new TwigFilter(
+                'md',
+                fn (string $value) => ($this->makeMarkdownConverter($colors->textLightBg))->convert($value)->getContent())
+        );
+
         return $this->twig->render(
             'pages/' . $page . '.twig',
             [
@@ -60,7 +71,7 @@ final class PageRenderer
                 'locale' => $this->locale,
                 'title' => $this->translator->translate('site.'),
                 'css' => SiteBuilder::findPublicCssFilePath(),
-                'colors' => $this->colors($page),
+                'colors' => $colors,
             ]
         );
     }
@@ -134,5 +145,25 @@ final class PageRenderer
         }
 
         return $url . $page;
+    }
+
+    private function makeMarkdownConverter(string $linkClasses): MarkdownConverter
+    {
+        $config = [
+            'external_link' => [
+                'internal_hosts' => 'mopolo.dev',
+                'open_in_new_window' => false,
+                'html_class' => "$linkClasses underline",
+                'nofollow' => '',
+                'noopener' => 'external',
+                'noreferrer' => 'external',
+            ],
+        ];
+
+        $environment = new \League\CommonMark\Environment\Environment($config);
+        $environment->addExtension(new InlinesOnlyExtension());
+        $environment->addExtension(new ExternalLinkExtension());
+
+        return new MarkdownConverter($environment);
     }
 }

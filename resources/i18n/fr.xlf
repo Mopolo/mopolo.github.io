@@ -211,7 +211,7 @@
                     La gestion était anciennement faite via un fichier Excel.
                     La webapp permettait d'attribuer les équipements de la mine de façon automatique en fonction de plusieurs critères.
 
-                    Ce projet nous a permit de visiter San Francisco pendant 4 jours et participer au <![CDATA[<a href="https://techcrunch.com/2014/09/07/git-bounty-wants-to-help-open-source-programmers-get-paid-for-bug-fixes/" class="text-purple-500 dark:text-purple-400 underline">Disrupt SF Hackathon de Tech Crunch de 2014</a>]]>.
+                    Ce projet nous a permit de visiter San Francisco pendant 4 jours et participer au [Disrupt SF Hackathon de Tech Crunch de 2014](https://techcrunch.com/2014/09/07/git-bounty-wants-to-help-open-source-programmers-get-paid-for-bug-fixes/).
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.arcelormittal.highlights">
@@ -373,9 +373,9 @@
 
                     J'y ai aussi commencé ma découverte du TypeScript.
 
-                    Le design vient du très talentueux <![CDATA[<a href="https://www.pierre.tl/realisations/radiophonix/" class="text-orange-400 underline">Pierre</a>]]>.
+                    Le design vient du très talentueux [Pierre](https://www.pierre.tl/realisations/radiophonix/).
 
-                    Pierre et moi avons été invités à présenter le site en public pour la première fois à l'édition 2019 de <![CDATA[<a href="http://www.mp3aparis.fr" class="text-orange-400 underline">MP3@Paris</a>]]>.
+                    Pierre et moi avons été invités à présenter le site en public pour la première fois à l'édition 2019 de [MP3@Paris](http://www.mp3aparis.fr).
                 </target>
             </trans-unit>
             <trans-unit id="projects.portfolio">
