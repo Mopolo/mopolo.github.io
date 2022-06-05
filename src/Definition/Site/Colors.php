@@ -7,8 +7,8 @@ namespace Mopolo\Cv\Definition\Site;
 final class Colors
 {
     public function __construct(
-        public readonly string $textlightbg,
-        public readonly string $textdarkbg,
+        public readonly string $textLightBg,
+        public readonly string $textDarkBg,
         public readonly string $bg,
         public readonly string $home,
         public readonly string $header,

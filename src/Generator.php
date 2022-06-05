@@ -39,6 +39,7 @@ final class Generator
             ->map(
                 Cv::class,
                 Source::file(new SplFileObject(__DIR__ . '/../resources/data/cv.json'))
+                    ->camelCaseKeys()
             );
     }
 }

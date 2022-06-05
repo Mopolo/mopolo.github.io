@@ -29,7 +29,7 @@
                             <div class="main-menu | pt-1 text-right md:text-left">
                                 <ul class="flex flex-col mt-1 md:mt-16 md:text-2xl md:leading-relaxed">
                                     {% for name, url in urls %}
-                                        <li class="{% if url.current %}font-extrabold {{ url.colors.textlightbg }}{% endif %}">
+                                        <li class="{% if url.current %}font-extrabold {{ url.colors.textLightBg }}{% endif %}">
                                             <a href="{{ url.href }}">{{ url.label }}</a>
                                         </li>
                                     {% endfor %}
