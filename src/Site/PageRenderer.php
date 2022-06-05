@@ -56,11 +56,13 @@ final class PageRenderer
     {
         $colors = $this->colors($page);
 
-        $this->twig->addFilter(
-            new TwigFilter(
-                'md',
-                fn (string $value) => ($this->makeMarkdownConverter($colors->textLightBg))->convert($value)->getContent())
-        );
+        if ($colors instanceof Colors) {
+            $this->twig->addFilter(
+                new TwigFilter(
+                    'md',
+                    fn (string $value) => ($this->makeMarkdownConverter($colors->textLightBg))->convert($value)->getContent())
+            );
+        }
 
         return $this->twig->render(
             'pages/' . $page . '.twig',
