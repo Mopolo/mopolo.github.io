@@ -3,7 +3,7 @@ PHP = php
 NODE = node
 NPM = npm
 VALET = valet
-COMPOSER = $(PHP) composer
+COMPOSER = composer
 
 # Misc
 .DEFAULT_GOAL = help
