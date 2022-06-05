@@ -9,11 +9,11 @@ use Mopolo\Cv\Binding\DateTimeBinding;
 use Mopolo\Cv\Binding\HighlightsBinding;
 use Mopolo\Cv\Binding\ImageBinding;
 use Mopolo\Cv\Binding\StringBinding;
-use Mopolo\Cv\Definition\Cv;
+use Mopolo\Cv\Definition\Data;
 use Mopolo\Cv\Support\Translator;
 use SplFileObject;
 
-final class Generator
+final class DataBuilder
 {
     private DateTimeBinding $dateTimeBinding;
     private StringBinding $stringBinding;
@@ -28,7 +28,7 @@ final class Generator
         $this->highlightsBinding = new HighlightsBinding($translator);
     }
 
-    public function build(): Cv
+    public function build(): Data
     {
         return (new MapperBuilder())
             ->registerConstructor($this->dateTimeBinding)
@@ -37,7 +37,7 @@ final class Generator
             ->registerConstructor($this->highlightsBinding)
             ->mapper()
             ->map(
-                Cv::class,
+                Data::class,
                 Source::file(new SplFileObject(__DIR__ . '/../resources/data/cv.json'))
                     ->camelCaseKeys()
             );

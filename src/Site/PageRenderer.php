@@ -6,9 +6,8 @@ namespace Mopolo\Cv\Site;
 use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
 use League\CommonMark\Extension\InlinesOnly\InlinesOnlyExtension;
 use League\CommonMark\MarkdownConverter;
-use Mopolo\Cv\Definition\Cv;
-use Mopolo\Cv\Definition\Site\Colors;
-use Mopolo\Cv\Generator;
+use Mopolo\Cv\DataBuilder;
+use Mopolo\Cv\Request;
 use Mopolo\Cv\Support\Translator;
 use Symfony\Component\Translation\Loader\XliffFileLoader;
 use Symfony\Component\Translation\Translator as SymfonyTranslator;
@@ -20,27 +19,34 @@ use Twig\TwigFilter;
 
 final class PageRenderer
 {
-    private string $locale;
-    private string $env;
+    private Request $request;
     private Translator $translator;
     private Environment $twig;
-    private Cv $definition;
 
     public function __construct(string $locale, string $env)
     {
-        setlocale(LC_ALL, $locale);
-        \Locale::setDefault($locale);
+        $this->initTranslator($locale);
+        $this->startRequest($env, $locale);
+        $this->initTwig();
+    }
 
-        $this->locale = $locale;
-        $this->env = $env;
+    private function startRequest(string $env, string $locale): void
+    {
+        $this->request = Request::start($env, $locale, (new DataBuilder($this->translator))->build());
+    }
 
+    private function initTranslator(string $locale): void
+    {
         $translator = new SymfonyTranslator($locale);
         $translator->addLoader('xlf', new XliffFileLoader());
         $translator->addResource('xlf', __DIR__ . '/../../resources/i18n/fr.xlf', 'fr');
         $translator->addResource('xlf', __DIR__ . '/../../resources/i18n/en.xlf', 'en');
 
         $this->translator = new Translator($translator);
+    }
 
+    private function initTwig(): void
+    {
         $loader = new FilesystemLoader(__DIR__ . '/../../resources/views');
         $this->twig = new Environment($loader);
         $this->twig->addExtension(new IntlExtension());
@@ -49,78 +55,68 @@ final class PageRenderer
             new TwigFilter('trans', fn(string $value) => $this->translator->translate($value))
         );
 
-        $this->definition = (new Generator($this->translator))->build();
+        $this->twig->addFilter(
+            new TwigFilter(
+                'md',
+                function (string $value) {
+                    return ($this->makeMarkdownConverter($this->request->colors()?->textLightBg ?? ''))
+                        ->convert($value)
+                        ->getContent();
+                }
+            )
+        );
     }
 
     public function renderPage(string $page): string
     {
-        $colors = $this->colors($page);
-
-        if ($colors instanceof Colors) {
-            $this->twig->addFilter(
-                new TwigFilter(
-                    'md',
-                    fn (string $value) => ($this->makeMarkdownConverter($colors->textLightBg))->convert($value)->getContent())
-            );
-        }
+        $this->request = $this->request->navigateTo($page);
 
         return $this->twig->render(
             'pages/' . $page . '.twig',
             [
-                'data' => $this->definition,
-                'urls' => $this->menu($page),
-                'langs' => $this->langs($page),
-                'locale' => $this->locale,
+                'data' => $this->request->data(),
+                'urls' => $this->menu(),
+                'langs' => $this->langs(),
+                'locale' => $this->request->locale(),
                 'title' => $this->translator->translate('site.'),
                 'css' => SiteBuilder::findPublicCssFilePath(),
-                'colors' => $colors,
+                'colors' => $this->request->colors(),
             ]
         );
     }
 
-    private function colors(string $pageId): ?Colors
-    {
-        foreach ($this->definition->site->pages as $page) {
-            if ($page->id === $pageId) {
-                return $page->colors;
-            }
-        }
-
-        return null;
-    }
-
-    private function langs(string $currentPage): array
+    private function langs(): array
     {
         $urls = [];
 
         foreach (SiteBuilder::LOCALES as $locale) {
             $urls[] = [
                 'label' => strtoupper($locale),
-                'href' => $this->url($currentPage, $locale),
-                'current' => $locale === $this->locale,
+                'href' => $this->url($this->request->page(), $locale),
+                'current' => $locale === $this->request->locale(),
             ];
         }
 
         return $urls;
     }
 
-    private function menu(string $currentPage): array
+    private function menu(): array
     {
         $urls = [];
 
         foreach (SiteBuilder::PAGES as $page) {
             $urls[$page] = [
-                'href' => $this->url($page, $this->locale),
+                'href' => $this->url($page, $this->request->locale()),
                 'label' => $this->translator->translate('site.menu.' . $page),
-                'current' => $page === $currentPage || ($page === 'index' && $currentPage === '404'),
-                'colors' => $this->colors($page),
+                'current' => $page === $this->request->page() || ($page === 'index' && $this->request->page() === '404'),
+                'colors' => $this->request->colors($page),
             ];
         }
 
         $urls['github'] = [
-            'href' => $this->definition->links->github,
+            'href' => $this->request->data()->links->github,
             'label' => 'Github',
-            'colors' => $this->colors('github'),
+            'colors' => $this->request->colors('github'),
         ];
 
         return $urls;
@@ -128,7 +124,7 @@ final class PageRenderer
 
     private function url(string $page, string $locale): string
     {
-        if ($this->env === 'dev') {
+        if ($this->request->env() === 'dev') {
             if ($page === 'index') {
                 return '/?lang=' . $locale;
             }

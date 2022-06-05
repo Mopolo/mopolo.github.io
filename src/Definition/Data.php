@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition;
 
-final class Cv
+final class Data
 {
     /**
      * @param array<Skill> $skills
