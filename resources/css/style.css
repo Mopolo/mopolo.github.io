@@ -27,8 +27,8 @@
             theme('colors.pink.400') 60%,
             theme('colors.green.500') 60%,
             theme('colors.green.500') 80%,
-            theme('colors.blue.400') 80%,
-            theme('colors.blue.400') 100%
+            theme('colors.cyan.400') 80%,
+            theme('colors.cyan.400') 100%
         ) 5;
     }
 }
