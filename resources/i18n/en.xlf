@@ -318,6 +318,14 @@
             </trans-unit>
 
             <!-- Projects -->
+            <trans-unit id="projects.loot-table">
+                <source>projects.loot-table</source>
+                <target>
+                    Loot table generator I made for a friend running Dungeons &amp; Dragons campaigns.
+
+                    It's written in TypeScript and React and is deployed on Github Pages.
+                </target>
+            </trans-unit>
             <trans-unit id="projects.forlhorn">
                 <source>projects.forlhorn</source>
                 <target>

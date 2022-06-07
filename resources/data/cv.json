@@ -267,6 +267,12 @@
     ],
     "projects": [
         {
+            "name": "Loot table",
+            "summary": "l:projects.loot-table",
+            "tags": ["TypeScript", "React", "Recoil", "Bootstrap"],
+            "url": "https://loot-table.mopolo.dev"
+        },
+        {
             "name": "Forlhörn",
             "summary": "l:projects.forlhorn",
             "tags": ["Java", "Ebean", "Guice"]
