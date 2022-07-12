@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6cbf7ea540cace55aa6cdfc57a2e2b3",
+    "content-hash": "67d904834412de650476eb8c5609c148",
     "packages": [
         {
             "name": "cuyz/valinor",
-            "version": "0.9.0",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuyZ/Valinor.git",
-                "reference": "a097f60a485c61d434c794125ea721a322754027"
+                "reference": "bd74557e752ee66ccb51d83a87b36e127110e791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CuyZ/Valinor/zipball/a097f60a485c61d434c794125ea721a322754027",
-                "reference": "a097f60a485c61d434c794125ea721a322754027",
+                "url": "https://api.github.com/repos/CuyZ/Valinor/zipball/bd74557e752ee66ccb51d83a87b36e127110e791",
+                "reference": "bd74557e752ee66ccb51d83a87b36e127110e791",
                 "shasum": ""
             },
             "require": {
@@ -70,9 +70,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CuyZ/Valinor/issues",
-                "source": "https://github.com/CuyZ/Valinor/tree/0.9.0"
+                "source": "https://github.com/CuyZ/Valinor/tree/0.12.0"
             },
-            "time": "2022-05-23T21:01:31+00:00"
+            "time": "2022-07-10T17:57:21+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -151,16 +151,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.13.2",
+            "version": "1.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5b668aef16090008790395c02c893b1ba13f7e08"
+                "reference": "648b0343343565c4a056bfc8392201385e8d89f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5b668aef16090008790395c02c893b1ba13f7e08",
-                "reference": "5b668aef16090008790395c02c893b1ba13f7e08",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/648b0343343565c4a056bfc8392201385e8d89f0",
+                "reference": "648b0343343565c4a056bfc8392201385e8d89f0",
                 "shasum": ""
             },
             "require": {
@@ -172,9 +172,10 @@
             "require-dev": {
                 "doctrine/cache": "^1.11 || ^2.0",
                 "doctrine/coding-standard": "^6.0 || ^8.1",
-                "phpstan/phpstan": "^0.12.20",
+                "phpstan/phpstan": "^1.4.10 || ^1.8.0",
                 "phpunit/phpunit": "^7.5 || ^8.0 || ^9.1.5",
-                "symfony/cache": "^4.4 || ^5.2"
+                "symfony/cache": "^4.4 || ^5.2",
+                "vimeo/psalm": "^4.10"
             },
             "type": "library",
             "autoload": {
@@ -217,9 +218,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.13.2"
+                "source": "https://github.com/doctrine/annotations/tree/1.13.3"
             },
-            "time": "2021-08-05T19:00:23+00:00"
+            "time": "2022-07-02T10:48:51+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -3909,7 +3910,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": "8.1.*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-intl": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
