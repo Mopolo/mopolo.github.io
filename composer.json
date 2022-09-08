@@ -9,9 +9,10 @@
     ],
     "require": {
         "php": "8.1.*",
-        "ext-json": "*",
         "ext-intl": "*",
+        "ext-json": "*",
         "cuyz/valinor": "0.14.*",
+        "filp/whoops": "^2.14",
         "intervention/image": "^2.5",
         "jetbrains/phpstorm-attributes": "^1.0",
         "league/commonmark": "^2.3",

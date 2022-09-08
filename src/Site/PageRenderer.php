@@ -16,6 +16,8 @@ use Twig\Extra\Intl\IntlExtension;
 use Twig\Extra\String\StringExtension;
 use Twig\Loader\FilesystemLoader;
 use Twig\TwigFilter;
+use Whoops\Handler\PrettyPageHandler;
+use Whoops\Run;
 
 final class PageRenderer
 {
@@ -25,9 +27,17 @@ final class PageRenderer
 
     public function __construct(string $locale, string $env)
     {
+        $this->registerWhoops();
         $this->initTranslator($locale);
         $this->startRequest($env, $locale);
         $this->initTwig();
+    }
+
+    private function registerWhoops(): void
+    {
+        $whoops = new Run;
+        $whoops->pushHandler(new PrettyPageHandler);
+        $whoops->register();
     }
 
     private function startRequest(string $env, string $locale): void
