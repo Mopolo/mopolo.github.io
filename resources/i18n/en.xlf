@@ -72,7 +72,7 @@
 
             <trans-unit id="work.tde.intro">
                 <source>work.tde.intro</source>
-                <target>TotalEnergies is a french electric utility company which produces and distributes gas and electricity.</target>
+                <target>TotalEnergies is a French electric utility company which produces and distributes gas and electricity.</target>
             </trans-unit>
             <trans-unit id="work.tde.summary">
                 <source>work.tde.summary</source>
@@ -107,7 +107,7 @@
                     Standalone Doctrine setup for several databases
                     Custom library to call SOAP and HTTP WebServices
                     Enum system to handle business "magic constants"
-                    Documentation with Mkdocs
+                    Documentation with MkDocs
                     Unit and feature tests using PHPUnit
                     Code analysis with PHPStan
                 </target>
@@ -131,7 +131,7 @@
             </trans-unit>
             <trans-unit id="work.globalis.obs.summary">
                 <source>work.globalis.obs.summary</source>
-                <target>The Nouvel Obs is a french online and paper magazine.</target>
+                <target>The Nouvel Obs is a French online and paper magazine.</target>
             </trans-unit>
             <trans-unit id="work.globalis.obs.highlights">
                 <source>work.globalis.obs.highlights</source>
@@ -150,14 +150,14 @@
                 <target>
                     Osedea is a web agency based in Montréal, Québec. I started as an intern and continued on as an employee.
 
-                    The company was small when I started so I had the opportunity to build/discover a lot.
+                    The company was small when I started, so I had the opportunity to build/discover a lot.
 
-                    It was also my first time working on MacOS and with a different keyboard layout than the french one.
+                    It was also my first time working on macOS and with a different keyboard layout than the french one.
                 </target>
             </trans-unit>
             <trans-unit id="work.osedea.summary">
                 <source>work.osedea.summary</source>
-                <target>Development of differents sites and mobile apps.</target>
+                <target>Development of different sites and mobile apps.</target>
             </trans-unit>
             <trans-unit id="work.osedea.wss.summary">
                 <source>work.osedea.wss.summary</source>
@@ -308,7 +308,7 @@
             <trans-unit id="work.ratp.intro">
                 <source>work.ratp.intro</source>
                 <target>
-                    The Régie Autonome des Transports Parisiens (RATP) is the public transport operator of Paris and it's surroudings.
+                    The Régie Autonome des Transports Parisiens (RATP) is the public transport operator of Paris and it's surroundings.
                 </target>
             </trans-unit>
             <trans-unit id="work.ratp.summary">
@@ -332,7 +332,7 @@
                 <target>
                     Loot table generator I made for a friend running Dungeons &amp; Dragons campaigns.
 
-                    It's written in TypeScript and React and is deployed on Github Pages.
+                    It's written in TypeScript and React and is deployed on GitHub Pages.
                 </target>
             </trans-unit>
             <trans-unit id="projects.forlhorn">
@@ -358,7 +358,7 @@
                 <target>
                     PHP implementation of enumerations that can manage multiple formats.
 
-                    It was developped at Direct Energie before being open sourced.
+                    It was developed at Direct Energie before being open sourced.
                 </target>
             </trans-unit>
             <trans-unit id="projects.radiophonix">
@@ -386,15 +386,15 @@
             <trans-unit id="projects.craftworld">
                 <source>projects.craftworld</source>
                 <target>
-                    CraftWorld was a french Minecraft server created in 2011 and closed in 2014.
+                    CraftWorld was a French Minecraft server created in 2011 and closed in 2014.
 
                     This project was both a hobby and a way to practice and experiment technologies. The game and the website were hosted on two different machines.
 
                     I developed an API and tools to create interactions between the website and the game.
 
-                    Players could administrate some aspects of the game on the website such as their ingame money and their rank.
+                    Players could administrate some aspects of the game on the website such as their in-game money and their rank.
 
-                    I also built a full control panel for the staff team which allowed them to administrate the server without being logged in the game. They could see the console log, execute ingame commands, kick/ban players, install new features, start/stop the server, etc.
+                    I also built a full control panel for the staff team which allowed them to administrate the server without being logged in the game. They could see the console log, execute in-game commands, kick/ban players, install new features, start/stop the server, etc.
                 </target>
             </trans-unit>
         </body>
