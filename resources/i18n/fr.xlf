@@ -61,6 +61,15 @@
             </trans-unit>
 
             <!-- Work -->
+            <trans-unit id="work.bedrock.intro">
+                <source>work.bedrock.intro</source>
+                <target>Bedrock développe une plateforme de streaming pour divers clients tels que Salto ou M6.</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.summary">
+                <source>work.bedrock.summary</source>
+                <target>Développement de micro-services en GraphQL.</target>
+            </trans-unit>
+
             <trans-unit id="work.tde.intro">
                 <source>work.tde.intro</source>
                 <target>TotalEnergies est un fournisseur et producteur d'électricité et de gaz.</target>

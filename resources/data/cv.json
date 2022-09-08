@@ -80,6 +80,14 @@
     ],
     "work": [
         {
+            "name": "Bedrock Streaming",
+            "place": "Lyon, France",
+            "start": "2022-08-01",
+            "tags": ["Symfony", "GraphQL", "AWS", "Terraform", "PHPStan", "Git"],
+            "intro": "l:work.bedrock.intro",
+            "summary": "l:work.bedrock.summary"
+        },
+        {
             "name": "TotalEnergies",
             "place": "Paris, France",
             "start": "2016-10-01",
