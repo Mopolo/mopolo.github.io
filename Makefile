@@ -40,9 +40,6 @@ prod-build: ## Compile assets in DEV mode
 	cp -R public/img docs
 	cp CNAME docs
 	cp public/favicon.ico docs
-	cp public/favicon-16x16.png docs
-	cp public/favicon-32x32.png docs
-	cp public/favicon-96x96.png docs
 
 ## —— QA ——————————————————————————————————————————————————————————————
 qa: ## Run code quality tools
