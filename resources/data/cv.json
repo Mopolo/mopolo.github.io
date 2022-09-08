@@ -90,6 +90,7 @@
             "projects": [
                 {
                     "name": "l:work.tde.site.name",
+                    "url": "https://www.totalenergies.fr",
                     "highlights": "l:work.tde.site.highlights",
                     "images": [
                         "img:tde/ec.png",
@@ -245,6 +246,7 @@
             "projects": [
                 {
                     "name": "Site",
+                    "url": "https://www.morningcroissant.fr",
                     "highlights": "l:work.morningcroissant.website.highlights",
                     "images": [
                         "img:morningcroissant/mc-1.jpg",
