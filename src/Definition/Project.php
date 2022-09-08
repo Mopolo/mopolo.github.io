@@ -12,12 +12,12 @@ final class Project
      */
     public function __construct(
         public readonly string $name,
-        public readonly ?string $url,
-        public readonly ?string $summary,
-        public readonly array $tags,
-        public readonly array $images,
-        public readonly ?Highlights $highlights,
-        public readonly array $sections,
+        public readonly array $tags = [],
+        public readonly array $images = [],
+        public readonly ?Highlights $highlights = null,
+        public readonly array $sections = [],
+        public readonly ?string $url = null,
+        public readonly ?string $summary = null,
     ) {
     }
 }

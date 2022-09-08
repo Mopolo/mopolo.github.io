@@ -15,11 +15,11 @@ final class Work
         public readonly string $name,
         public readonly string $place,
         public readonly DateTime $start,
-        public readonly ?DateTime $end,
         public readonly string $intro,
         public readonly string $summary,
-        public readonly array $tags,
-        public readonly array $projects,
+        public readonly array $tags = [],
+        public readonly array $projects = [],
+        public readonly ?DateTime $end = null,
     ) {
     }
 }

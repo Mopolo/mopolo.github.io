@@ -330,22 +330,22 @@
     ],
     "studies": [
         {
-            "year": "2014",
+            "year": 2014,
             "name": "Supinfo",
             "place": "Montréal, Canada"
         },
         {
-            "year": "2013",
+            "year": 2013,
             "name": "Supinfo",
             "place": "Paris, France"
         },
         {
-            "year": "2012",
+            "year": 2012,
             "name": "l:studies.licence",
             "place": "Amiens, France"
         },
         {
-            "year": "2011",
+            "year": 2011,
             "name": "l:studies.dut",
             "place": "Amiens, France"
         }
