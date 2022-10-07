@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a4027153ae886d8a0157fd90909a57b",
+    "content-hash": "2cae5a0aa431f6901ef787256ce6a45d",
     "packages": [
         {
             "name": "cuyz/valinor",
-            "version": "0.14.0",
+            "version": "0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuyZ/Valinor.git",
-                "reference": "d8957c061d3d6ab8225d0eae6ca0bd13d3613bb3"
+                "reference": "0d2205edd332b6aa908cabe6dbfd22a091dcd70c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CuyZ/Valinor/zipball/d8957c061d3d6ab8225d0eae6ca0bd13d3613bb3",
-                "reference": "d8957c061d3d6ab8225d0eae6ca0bd13d3613bb3",
+                "url": "https://api.github.com/repos/CuyZ/Valinor/zipball/0d2205edd332b6aa908cabe6dbfd22a091dcd70c",
+                "reference": "0d2205edd332b6aa908cabe6dbfd22a091dcd70c",
                 "shasum": ""
             },
             "require": {
@@ -70,9 +70,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CuyZ/Valinor/issues",
-                "source": "https://github.com/CuyZ/Valinor/tree/0.14.0"
+                "source": "https://github.com/CuyZ/Valinor/tree/0.15.0"
             },
-            "time": "2022-09-01T10:51:11+00:00"
+            "time": "2022-10-06T11:49:08+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
