@@ -9,7 +9,7 @@ use function strlen;
 
 final class Str
 {
-    public static function random($length = 10): string
+    public static function random(int $length = 10): string
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
