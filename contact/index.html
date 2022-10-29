@@ -142,7 +142,7 @@
 
     <div class="mt-4 md:mt-10">
         <p>
-            Mon Email : <a href="mailto:hello@mopolo.net" class="border-b-2 border-black dark:border-gray-300">hello@mopolo.net</a>
+            Mon Email : <a id="a-AKMucLGrLx7vljSvCn" href="" class="border-b-2 border-black dark:border-gray-300"></a>
         </p>
 
         <p class="mt-8">
@@ -165,18 +165,16 @@
 
     <script type="text/javascript">
         (function () {
-            function duckface(face) {
-                document.getElementById('duckface').innerHTML = face;
-            }
+            const el = document.getElementById('a-AKMucLGrLx7vljSvCn');
+            let e = '07ix0SEJTT2loZWxsb0Btb3BvbG8ubmV0N0VlZ3I=BtPbQ';
+            e = e.substring(5);
+            e = e.substring(e.length - 5, 0);
+            e = atob(e);
+            e = e.substring(5);
+            e = e.substring(e.length - 5, 0);
 
-            document.getElementById('duck').addEventListener('click', function() {
-                setTimeout(function() { duckface('>'); }, 200);
-                setTimeout(function() { duckface('-'); }, 500);
-                setTimeout(function() { duckface('>'); }, 800);
-                setTimeout(function() { duckface('-'); }, 1100);
-
-                localStorage.removeItem('theme');
-            });
+            el.setAttribute('href', 'mailto:' + e);
+            el.innerHTML = e;
         })();
     </script>
 
