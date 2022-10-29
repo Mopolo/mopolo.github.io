@@ -8,6 +8,7 @@ use League\CommonMark\Extension\InlinesOnly\InlinesOnlyExtension;
 use League\CommonMark\MarkdownConverter;
 use Mopolo\Cv\DataBuilder;
 use Mopolo\Cv\Request;
+use Mopolo\Cv\Support\Str;
 use Mopolo\Cv\Support\Translator;
 use Symfony\Component\Translation\Loader\XliffFileLoader;
 use Symfony\Component\Translation\Translator as SymfonyTranslator;
@@ -18,6 +19,8 @@ use Twig\Loader\FilesystemLoader;
 use Twig\TwigFilter;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
+
+use function rand;
 
 final class PageRenderer
 {
@@ -91,6 +94,7 @@ final class PageRenderer
                 'title' => $this->translator->translate('site.'),
                 'css' => SiteBuilder::findPublicCssFilePath(),
                 'colors' => $this->request->colors(),
+                'random_string' => Str::random(rand(10, 20)),
             ]
         );
     }

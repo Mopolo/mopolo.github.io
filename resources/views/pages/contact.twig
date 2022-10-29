@@ -6,7 +6,7 @@
 
     <div class="mt-4 md:mt-10">
         <p>
-            {{ 'site.pages.contact.email'|trans }} <a href="mailto:{{ data.contact.email }}" class="border-b-2 border-black dark:border-gray-300">{{ data.contact.email }}</a>
+            {{ 'site.pages.contact.email'|trans }} <a id="a-{{ random_string }}" href="" class="border-b-2 border-black dark:border-gray-300"></a>
         </p>
 
         <p class="mt-8">
@@ -18,4 +18,21 @@
         </p>
     </div>
 
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        (function () {
+            const el = document.getElementById('a-{{ random_string }}');
+            let e = '{{ data.contact.email }}';
+            e = e.substring(5);
+            e = e.substring(e.length - 5, 0);
+            e = atob(e);
+            e = e.substring(5);
+            e = e.substring(e.length - 5, 0);
+
+            el.setAttribute('href', 'mailto:' + e);
+            el.innerHTML = e;
+        })();
+    </script>
 {% endblock %}
