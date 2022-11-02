@@ -18,7 +18,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          extensions: json, gd
+          extensions: json, gd, random
 
       - name: Setup Node
         uses: actions/setup-node@v3
