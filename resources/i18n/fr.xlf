@@ -51,6 +51,10 @@
                 <source>site.pages.contact.twitter</source>
                 <target>Je suis sur Twitter :</target>
             </trans-unit>
+            <trans-unit id="site.pages.contact.mastodon">
+                <source>site.pages.contact.mastodon</source>
+                <target>Et sur Mastodon :</target>
+            </trans-unit>
             <trans-unit id="site.pages.contact.linkedin">
                 <source>site.pages.contact.linkedin</source>
                 <target>Je suis aussi sur</target>

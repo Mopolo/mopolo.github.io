@@ -56,7 +56,11 @@
     "contact": {
         "email": "hello@mopolo.net",
         "linkedin": "https://www.linkedin.com/in/nathan-boiron-79785a60/",
-        "twitter": "Lopom"
+        "twitter": "Lopom",
+        "mastodon": {
+            "url": "https://phpc.social/@mopolo",
+            "username": "@mopolo@phpc.social"
+        }
     },
     "links": {
         "github": "https://github.com/Mopolo",

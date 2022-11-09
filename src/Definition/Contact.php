@@ -13,13 +13,17 @@ final class Contact
     public readonly string $linkedin;
     public readonly string $twitter;
 
+    public readonly Mastodon $mastodon;
+
     public function __construct(
         string $email,
         string $linkedin,
         string $twitter,
+        Mastodon $mastodon,
     ) {
         $this->email = Str::random(5) . base64_encode(Str::random(5) . $email . Str::random(5)) . Str::random(5);
         $this->linkedin = $linkedin;
         $this->twitter = $twitter;
+        $this->mastodon = $mastodon;
     }
 }
