@@ -1,0 +1,33 @@
+name: QA
+
+on: [pull_request]
+
+jobs:
+  psalm:
+    name: Psalm
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: json, gd, random
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: make prod-setup
+
+      - name: QA
+        run: make qa
+
+      - name: Build site
+        run: make prod-build
