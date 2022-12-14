@@ -1,6 +1,55 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base"
-    ]
+        ":dependencyDashboard",
+        ":ignoreModulesAndTests",
+        ":automergePatch",
+        ":automergeBranch",
+        ":rebaseStalePrs",
+        ":separateMajorReleases",
+        ":enableVulnerabilityAlerts",
+        ":timezone(UTC)",
+        ":label(renovate)"
+    ],
+    "commitBodyTable": true,
+    "lockFileMaintenance": {
+        "enabled": true,
+        "extends": [
+            "schedule:daily"
+        ]
+    },
+    "platformAutomerge": true,
+    "rangeStrategy": "replace",
+    "rollbackPrs": true,
+    "packageRules": [
+        {
+            "matchManagers": ["composer", "npm"],
+            "rangeStrategy": "bump"
+        },
+        {
+            "matchManagers": ["composer"],
+            "matchPackageNames": [
+                "php"
+            ],
+            "extends": [
+                ":automergeDisabled",
+                ":automergePr"
+            ],
+            "ignoreUnstable": false,
+            "groupName": "PHP"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        }
+    ],
+    "vulnerabilityAlerts": {
+        "extends": [
+            ":automergeDisabled",
+            ":automergePr",
+            ":labels(security)"
+        ],
+        "rangeStrategy": "bump"
+    }
 }
