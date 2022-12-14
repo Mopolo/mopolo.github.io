@@ -19,7 +19,7 @@
         "league/commonmark": "^2.3",
         "symfony/config": "^6.2.0",
         "symfony/finder": "^6.2.0",
-        "symfony/translation": "^6.1",
+        "symfony/translation": "^6.2.0",
         "twig/intl-extra": "^3.0",
         "twig/string-extra": "^3.4",
         "twig/twig": "^3.0"
