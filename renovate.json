@@ -4,7 +4,7 @@
         ":dependencyDashboard",
         ":ignoreModulesAndTests",
         ":automergePatch",
-        ":automergeBranch",
+        ":automergePr",
         ":rebaseStalePrs",
         ":separateMajorReleases",
         ":enableVulnerabilityAlerts",
@@ -37,11 +37,6 @@
             ],
             "ignoreUnstable": false,
             "groupName": "PHP"
-        },
-        {
-            "matchManagers": ["npm"],
-            "matchUpdateTypes": ["patch"],
-            "automerge": true
         }
     ],
     "vulnerabilityAlerts": {
