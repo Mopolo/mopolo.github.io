@@ -22,7 +22,7 @@
         "symfony/translation": "^6.2.0",
         "twig/intl-extra": "^3.4.2",
         "twig/string-extra": "^3.4",
-        "twig/twig": "^3.0"
+        "twig/twig": "^3.0.5"
     },
     "autoload": {
         "psr-4": {
