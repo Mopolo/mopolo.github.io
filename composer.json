@@ -21,7 +21,7 @@
         "symfony/finder": "^6.2.3",
         "symfony/translation": "^6.2.3",
         "twig/intl-extra": "^3.4.2",
-        "twig/string-extra": "^3.4",
+        "twig/string-extra": "^3.5.0",
         "twig/twig": "^3.5.0"
     },
     "autoload": {
