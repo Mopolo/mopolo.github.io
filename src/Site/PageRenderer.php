@@ -45,7 +45,7 @@ final class PageRenderer
 
     private function startRequest(string $env, string $locale): void
     {
-        $this->request = Request::start($env, $locale, (new DataBuilder($this->translator))->build());
+        $this->request = Request::start($env, $locale, (new DataBuilder())->build());
     }
 
     private function initTranslator(string $locale): void

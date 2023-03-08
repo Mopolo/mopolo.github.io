@@ -14,7 +14,7 @@ final class Project
         public readonly string $name,
         public readonly array $tags = [],
         public readonly array $images = [],
-        public readonly ?Highlights $highlights = null,
+        public readonly ?string $highlights = null,
         public readonly array $sections = [],
         public readonly ?string $url = null,
         public readonly ?string $summary = null,
