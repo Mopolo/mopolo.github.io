@@ -8,7 +8,7 @@
         <div class="grid grid-cols-6">
             {% for school in data.studies %}
                 <div class="text-right font-bold pr-8 mb-2">{{ school.year }}</div>
-                <div class="text-left col-span-5">{{ school.name }}</div>
+                <div class="text-left col-span-5">{{ school.name|trans }}</div>
             {% endfor %}
         </div>
     </div>

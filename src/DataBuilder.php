@@ -6,7 +6,6 @@ namespace Mopolo\Cv;
 use CuyZ\Valinor\Mapper\Source\Source;
 use CuyZ\Valinor\MapperBuilder;
 use Mopolo\Cv\Definition\Data;
-use Mopolo\Cv\Definition\Highlights;
 use Mopolo\Cv\Definition\Image;
 use SplFileObject;
 
@@ -17,7 +16,6 @@ final class DataBuilder
         return (new MapperBuilder())
             ->supportDateFormats('Y-m-d')
             ->registerConstructor(Image::fromKey(...))
-            ->registerConstructor(Highlights::fromText(...))
             ->mapper()
             ->map(
                 Data::class,

@@ -7,7 +7,7 @@ final class Section
 {
     public function __construct(
         public readonly string $name,
-        public readonly Highlights $highlights,
+        public readonly string $highlights,
     ) {
     }
 }
