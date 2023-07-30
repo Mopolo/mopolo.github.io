@@ -17,7 +17,7 @@
         "filp/whoops": "^2.15.3",
         "intervention/image": "^2.7.2",
         "league/commonmark": "^2.4.0",
-        "symfony/config": "^6.2.7",
+        "symfony/config": "^6.2.13",
         "symfony/finder": "^6.2.7",
         "symfony/translation": "^6.2.11",
         "twig/intl-extra": "^3.5.1",
