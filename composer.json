@@ -16,7 +16,7 @@
         "cuyz/valinor": "1.4.*",
         "filp/whoops": "^2.15.3",
         "intervention/image": "^2.7.2",
-        "league/commonmark": "^2.4.0",
+        "league/commonmark": "^2.4.1",
         "symfony/config": "^6.3.2",
         "symfony/finder": "^6.3.3",
         "symfony/translation": "^6.2.11",
