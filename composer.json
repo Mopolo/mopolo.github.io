@@ -20,7 +20,7 @@
         "symfony/config": "^6.3.2",
         "symfony/finder": "^6.3.3",
         "symfony/translation": "^6.2.11",
-        "twig/intl-extra": "^3.5.1",
+        "twig/intl-extra": "^3.7.1",
         "twig/string-extra": "^3.5.1",
         "twig/twig": "^3.5.1"
     },
