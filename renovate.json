@@ -3,7 +3,7 @@
     "extends": [
         ":dependencyDashboard",
         ":ignoreModulesAndTests",
-        ":automergePatch",
+        ":automergeStableNonMajor",
         ":automergePr",
         ":rebaseStalePrs",
         ":separateMajorReleases",
@@ -13,21 +13,13 @@
     ],
     "commitBodyTable": true,
     "platformAutomerge": true,
-    "rangeStrategy": "replace",
+    "rangeStrategy": "bump",
     "rollbackPrs": true,
     "packageRules": [
-        {
-            "matchManagers": ["composer", "npm"],
-            "rangeStrategy": "bump"
-        },
         {
             "matchManagers": ["composer"],
             "matchPackageNames": [
                 "php"
-            ],
-            "extends": [
-                ":automergeDisabled",
-                ":automergePr"
             ],
             "ignoreUnstable": false,
             "groupName": "PHP"
