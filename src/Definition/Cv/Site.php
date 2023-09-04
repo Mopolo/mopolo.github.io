@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Mopolo\Cv\Definition;
+namespace Mopolo\Cv\Definition\Cv;
 
-use Mopolo\Cv\Definition\Site\Page;
+use Mopolo\Cv\Definition\Cv\Site\Page;
 
-final class Site
+final readonly class Site
 {
     /**
      * @param array<Page> $pages
      */
     public function __construct(
-        public readonly array $pages,
+        public array $pages,
     ) {
     }
 }

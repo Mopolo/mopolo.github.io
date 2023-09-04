@@ -6,9 +6,8 @@ namespace Mopolo\Cv;
 
 use Locale;
 use LogicException;
-use Mopolo\Cv\Definition\Data;
-use Mopolo\Cv\Definition\Site\Colors;
-
+use Mopolo\Cv\Definition\Cv\Data;
+use Mopolo\Cv\Definition\Cv\Site\Colors;
 use function setlocale;
 
 final class Request

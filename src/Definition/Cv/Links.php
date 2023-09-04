@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mopolo\Cv\Definition;
+namespace Mopolo\Cv\Definition\Cv;
 
 final class Links
 {

@@ -1,20 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace Mopolo\Cv\Definition;
+namespace Mopolo\Cv\Definition\Cv;
 
 use Mopolo\Cv\Support\Str;
-
 use function base64_decode;
 use function base64_encode;
 
-final class Contact
+final readonly class Contact
 {
-    public readonly string $email;
-    public readonly string $linkedin;
-    public readonly string $twitter;
+    public string $email;
+    public string $linkedin;
+    public string $twitter;
 
-    public readonly Mastodon $mastodon;
+    public Mastodon $mastodon;
 
     public function __construct(
         string $email,

@@ -5,8 +5,8 @@ namespace Mopolo\Cv;
 
 use CuyZ\Valinor\Mapper\Source\Source;
 use CuyZ\Valinor\MapperBuilder;
-use Mopolo\Cv\Definition\Data;
-use Mopolo\Cv\Definition\Image;
+use Mopolo\Cv\Definition\Cv\Data;
+use Mopolo\Cv\Definition\Cv\Image;
 use SplFileObject;
 
 final class DataBuilder

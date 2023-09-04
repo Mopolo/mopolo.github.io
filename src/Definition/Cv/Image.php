@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Mopolo\Cv\Definition;
+namespace Mopolo\Cv\Definition\Cv;
 
 use function substr;
 
-final class Image
+final readonly class Image
 {
     /** @psalm-pure */
     public function __construct(
-        public readonly string $id,
-        public readonly string $url,
-        public readonly string $thumbnail,
+        public string $id,
+        public string $url,
+        public string $thumbnail,
     ) {
     }
 
