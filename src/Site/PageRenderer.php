@@ -94,7 +94,7 @@ final class PageRenderer
                 'title' => $this->translator->translate('site.'),
                 'css' => SiteBuilder::findPublicCssFilePath(),
                 'colors' => $this->request->colors(),
-                'random_string' => Str::random(rand(10, 20)),
+                'random_string' => Str::random(random_int(10, 20)),
             ]
         );
     }
@@ -128,7 +128,7 @@ final class PageRenderer
         }
 
         $urls['github'] = [
-            'href' => $this->request->data()->links->github,
+            'href' => $this->request->data()->contact->github,
             'label' => 'Github',
             'colors' => $this->request->colors('github'),
         ];

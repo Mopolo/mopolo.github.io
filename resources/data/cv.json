@@ -57,14 +57,12 @@
         "email": "aGVsbG9AbW9wb2xvLm5ldA==",
         "linkedin": "https://www.linkedin.com/in/nathan-boiron-79785a60/",
         "twitter": "Lopom",
+        "github": "https://github.com/Mopolo",
+        "gitlab": "https://gitlab.com/Mopolo",
         "mastodon": {
             "url": "https://phpc.social/@mopolo",
             "username": "@mopolo@phpc.social"
         }
-    },
-    "links": {
-        "github": "https://github.com/Mopolo",
-        "gitlab": "https://gitlab.com/Mopolo"
     },
     "skills": [
         { "name": "PHP", "level": 5 },
