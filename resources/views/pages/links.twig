@@ -1,0 +1,32 @@
+{% extends "layouts/main.twig" %}
+
+{% block content %}
+
+    {{ include('partials/title.twig', { title: 'site.pages.links' | trans }) }}
+
+    <div class="mt-4 md:mt-10">
+        {% for link in data.links %}
+            <div class="mb-10 md:mb-12">
+                <div class="{{ colors.textLightBg }} flex gap-4">
+                    <div>{{ link.date | date('Y-m-d') }}</div>
+                    <div>
+                        {% for tag in link.tags %}
+                            #{{ tag }}
+                        {% endfor %}
+                    </div>
+                    <div>/</div>
+                    <div><a href="{{ link.url }}">{{ link.host }}</a></div>
+                </div>
+
+                <h2 class="mt-3 mb-2">
+                    <a href="{{ link.url }}" target="_blank" class="text-lg md:text-xl font-medium mb-2 mt-2">
+                        {{ link.title }}
+                    </a>
+                </h2>
+
+                {{ link.description|trans }}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

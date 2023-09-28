@@ -1,0 +1,16 @@
+[
+    {
+        "date": "2023-09-26",
+        "title": "Can I PHP?",
+        "url": "https://caniphp.com",
+        "tags": ["php"],
+        "description": "l:link.caniphp.description"
+    },
+    {
+        "date": "2023-09-01",
+        "title": "Go By Example",
+        "url": "https://gobyexample.com",
+        "tags": ["go"],
+        "description": "l:link.gobyexample.description"
+    }
+]

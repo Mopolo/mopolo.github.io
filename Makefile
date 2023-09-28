@@ -27,6 +27,9 @@ dev-build: ## Compile assets in DEV mode
 dev-link: ## links the project to portfolio.test
 	@$(VALET) link portfolio
 
+dev-serve: ## Serve the application
+	@$(PHP) -S localhost:8000 -t public
+
 ## —— PROD ——————————————————————————————————————————————————————————————
 prod-setup: ## Install vendor dependencies
 	@$(COMPOSER) install --prefer-dist --no-interaction

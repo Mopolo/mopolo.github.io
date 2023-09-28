@@ -33,6 +33,10 @@
                 <source>site.menu.contact</source>
                 <target>Contact</target>
             </trans-unit>
+            <trans-unit id="site.menu.links">
+                <source>site.menu.links</source>
+                <target>Liens</target>
+            </trans-unit>
 
             <!-- Pages -->
             <trans-unit id="site.pages.studies">
@@ -62,6 +66,10 @@
             <trans-unit id="site.pages.work">
                 <source>site.pages.work</source>
                 <target>Expérience</target>
+            </trans-unit>
+            <trans-unit id="site.pages.links">
+                <source>site.pages.links</source>
+                <target>Liens</target>
             </trans-unit>
 
             <!-- Work -->
@@ -421,6 +429,16 @@
                     J'ai aussi créé un pannel administratif pour que le staff puisse gérer le serveur sans devoir se connecter en jeu.
                     Ce pannel permettait de voir les logs, la console de tchat, exécuter des commandes en jeu, installer des plugins, démarrer/arrêter le serveur, etc.
                 </target>
+            </trans-unit>
+
+            <!-- Links -->
+            <trans-unit id="link.gobyexample.description">
+                <source>link.gobyexample.description</source>
+                <target>Une simple liste d'exemples concrets de code Go.</target>
+            </trans-unit>
+            <trans-unit id="link.caniphp.description">
+                <source>link.caniphp.description</source>
+                <target>Site pour trouver la version d'une feature PHP</target>
             </trans-unit>
         </body>
     </file>

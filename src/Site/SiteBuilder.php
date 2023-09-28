@@ -15,7 +15,7 @@ final class SiteBuilder
 {
     public const DEFAULT_LOCALE = 'fr';
     public const LOCALES = ['fr', 'en'];
-    public const PAGES = ['index', 'work', 'projects', 'studies', 'contact'];
+    public const PAGES = ['index', 'work', 'projects', 'links', 'studies', 'contact'];
     private const BUILD_DIR = __DIR__ . '/../../docs';
     private const RESOURCES_DIR = __DIR__ . '/../../resources';
     private const IMG_DIR = self::RESOURCES_DIR . '/img';

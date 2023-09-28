@@ -33,6 +33,10 @@
                 <source>site.menu.contact</source>
                 <target>Contact</target>
             </trans-unit>
+            <trans-unit id="site.menu.links">
+                <source>site.menu.links</source>
+                <target>Links</target>
+            </trans-unit>
 
             <!-- Pages -->
             <trans-unit id="site.pages.studies">
@@ -400,6 +404,16 @@
 
                     I also built a full control panel for the staff team which allowed them to administrate the server without being logged in the game. They could see the console log, execute in-game commands, kick/ban players, install new features, start/stop the server, etc.
                 </target>
+            </trans-unit>
+
+            <!-- Links -->
+            <trans-unit id="link.gobyexample.description">
+                <source>link.gobyexample.description</source>
+                <target>A simple list of concrete examples for idiomatic Go code.</target>
+            </trans-unit>
+            <trans-unit id="link.caniphp.description">
+                <source>link.caniphp.description</source>
+                <target>PHP feature support by version - like caniuse.com but for PHP</target>
             </trans-unit>
         </body>
     </file>

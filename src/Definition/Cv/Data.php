@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Definition\Cv;
 
+use Mopolo\Cv\Definition\Links\Link;
+
 final readonly class Data
 {
     /**
@@ -10,6 +12,7 @@ final readonly class Data
      * @param array<Work> $work
      * @param array<Project> $projects
      * @param array<School> $studies
+     * @param array<Link> $links
      */
     public function __construct(
         public Site    $site,
@@ -18,6 +21,7 @@ final readonly class Data
         public array   $work,
         public array   $projects,
         public array   $studies,
+        public array   $links,
     ) {
     }
 }

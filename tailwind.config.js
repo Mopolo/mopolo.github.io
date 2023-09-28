@@ -24,6 +24,7 @@ module.exports = {
                 '900': '#654B00',
             },
             green: colors.green,
+            amber: colors.amber,
             orange: colors.orange,
             purple: colors.violet,
             blue: colors.blue,
