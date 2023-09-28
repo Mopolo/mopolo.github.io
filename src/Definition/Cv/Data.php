@@ -14,7 +14,6 @@ final readonly class Data
     public function __construct(
         public Site    $site,
         public Contact $contact,
-        public Links   $links,
         public array   $skills,
         public array   $work,
         public array   $projects,
