@@ -14,7 +14,7 @@
         "ext-intl": "*",
         "ext-json": "*",
         "cuyz/valinor": "1.7.*",
-        "filp/whoops": "^2.15.3",
+        "filp/whoops": "^2.15.4",
         "intervention/image": "^2.7.2",
         "league/commonmark": "^2.4.1",
         "symfony/config": "^6.3.2",
