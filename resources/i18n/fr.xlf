@@ -25,6 +25,10 @@
                 <source>site.menu.projects</source>
                 <target>Projets</target>
             </trans-unit>
+            <trans-unit id="site.menu.til">
+                <source>site.menu.til</source>
+                <target>TIL</target>
+            </trans-unit>
             <trans-unit id="site.menu.studies">
                 <source>site.menu.studies</source>
                 <target>Études</target>
@@ -62,6 +66,10 @@
             <trans-unit id="site.pages.work">
                 <source>site.pages.work</source>
                 <target>Expérience</target>
+            </trans-unit>
+            <trans-unit id="site.pages.til.title">
+                <source>site.pages.til.title</source>
+                <target>Today I Learned</target>
             </trans-unit>
 
             <!-- Work -->
