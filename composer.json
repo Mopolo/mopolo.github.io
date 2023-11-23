@@ -17,9 +17,11 @@
         "filp/whoops": "^2.15.4",
         "intervention/image": "^2.7.2",
         "league/commonmark": "^2.4.1",
+        "spatie/commonmark-shiki-highlighter": "^2.1",
         "symfony/config": "^6.3.8",
         "symfony/finder": "^6.3.5",
         "symfony/translation": "^6.3.7",
+        "symfony/yaml": "^6.3",
         "twig/intl-extra": "^3.8.0",
         "twig/string-extra": "^3.8.0",
         "twig/twig": "^3.8.0"
@@ -34,6 +36,7 @@
         "sort-packages": true
     },
     "require-dev": {
+        "spatie/ray": "^1.40",
         "vimeo/psalm": "^5.16.0"
     }
 }

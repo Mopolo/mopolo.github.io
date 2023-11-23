@@ -20,14 +20,16 @@
 
         border-image: linear-gradient(
             to right,
-            theme('colors.purple.400') 20%,
-            theme('colors.orange.400') 20%,
-            theme('colors.orange.400') 40%,
-            theme('colors.pink.400') 40%,
-            theme('colors.pink.400') 60%,
-            theme('colors.green.500') 60%,
-            theme('colors.green.500') 80%,
-            theme('colors.cyan.400') 80%,
+            theme('colors.violet.400') 16.6%,
+            theme('colors.orange.400') 16.6%,
+            theme('colors.orange.400') 33.2%,
+            theme('colors.emerald.500') 33.2%,
+            theme('colors.emerald.500') 49.8%,
+            theme('colors.pink.400') 49.8%,
+            theme('colors.pink.400') 66.4%,
+            theme('colors.green.500') 66.4%,
+            theme('colors.green.500') 83%,
+            theme('colors.cyan.400') 83%,
             theme('colors.cyan.400') 100%
         ) 5;
     }

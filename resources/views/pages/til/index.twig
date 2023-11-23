@@ -1,0 +1,27 @@
+{% extends "layouts/main.twig" %}
+
+{% block content %}
+
+    <div>
+        {{ include('partials/title.twig', { title: 'site.pages.til.title' | trans }) }}
+    </div>
+
+    <div class="mt-4 md:mt-10">
+
+        {% for category, entries in tils %}
+            <div>
+                <h2 class="text-lg md:text-xl {{ colors.textLightBg }} font-medium mb-2 mt-4">
+                    {{ category }}
+                </h2>
+
+                <ul class="ps-2">
+                    {% for til in entries %}
+                        <li class="pb-1"><a href="{{ til.url }}" class="cursor-pointer hover:underline">{{ til.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

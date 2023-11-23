@@ -10,6 +10,7 @@ use Mopolo\Cv\DataBuilder;
 use Mopolo\Cv\Request;
 use Mopolo\Cv\Support\Str;
 use Mopolo\Cv\Support\Translator;
+use Mopolo\Cv\Til\Renderer;
 use Symfony\Component\Translation\Loader\XliffFileLoader;
 use Symfony\Component\Translation\Translator as SymfonyTranslator;
 use Twig\Environment;
@@ -84,18 +85,28 @@ final class PageRenderer
     {
         $this->request = $this->request->navigateTo($page);
 
+        $context = [
+            'data' => $this->request->data(),
+            'urls' => $this->menu(),
+            'langs' => $this->langs(),
+            'locale' => $this->request->locale(),
+            'title' => $this->translator->translate('site.'),
+            'css' => SiteBuilder::findPublicCssFilePath(),
+            'colors' => $this->request->colors(),
+            'random_string' => Str::random(random_int(10, 20)),
+        ];
+
+        if ($page === 'til') {
+            $context['tils'] = (new Renderer($this->request))->renderList();
+            $page = 'til/index';
+        } else if (str_starts_with($page, 'til/')) {
+            $context['til'] = (new Renderer($this->request))->renderFromSlug(str_replace('til/', '', $page));
+            $page = 'til/show';
+        }
+
         return $this->twig->render(
             'pages/' . $page . '.twig',
-            [
-                'data' => $this->request->data(),
-                'urls' => $this->menu(),
-                'langs' => $this->langs(),
-                'locale' => $this->request->locale(),
-                'title' => $this->translator->translate('site.'),
-                'css' => SiteBuilder::findPublicCssFilePath(),
-                'colors' => $this->request->colors(),
-                'random_string' => Str::random(random_int(10, 20)),
-            ]
+            $context
         );
     }
 
@@ -122,7 +133,7 @@ final class PageRenderer
             $urls[$page] = [
                 'href' => $this->url($page, $this->request->locale()),
                 'label' => $this->translator->translate('site.menu.' . $page),
-                'current' => $page === $this->request->page() || ($page === 'index' && $this->request->page() === '404'),
+                'current' => $this->isCurrentPage($page),
                 'colors' => $this->request->colors($page),
             ];
         }
@@ -134,6 +145,23 @@ final class PageRenderer
         ];
 
         return $urls;
+    }
+
+    private function isCurrentPage(string $page): bool
+    {
+        if ($page === $this->request->page()) {
+            return true;
+        }
+
+        if ($page === 'index' && $this->request->page() === '404') {
+            return true;
+        }
+
+        if ($page === 'til' && str_starts_with($this->request->page(), 'til/')) {
+            return true;
+        }
+
+        return false;
     }
 
     private function url(string $page, string $locale): string

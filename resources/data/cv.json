@@ -4,11 +4,11 @@
             {
                 "id": "work",
                 "colors": {
-                    "text_light_bg": "text-purple-500 dark:text-purple-400",
+                    "text_light_bg": "text-violet-500 dark:text-violet-400",
                     "text_dark_bg": "text-gray-200",
-                    "bg": "bg-purple-600",
-                    "home": "hover:border-purple-400 dark:hover:border-purple-400",
-                    "header": "border-purple-500"
+                    "bg": "bg-violet-600",
+                    "home": "hover:border-violet-400 dark:hover:border-violet-400",
+                    "header": "border-violet-500"
                 }
             },
             {
@@ -19,6 +19,16 @@
                     "bg": "bg-orange-600",
                     "home": "hover:border-orange-400 dark:hover:border-orange-400",
                     "header": "border-orange-400"
+                }
+            },
+            {
+                "id": "til",
+                "colors": {
+                    "text_light_bg": "text-emerald-500",
+                    "text_dark_bg": "text-gray-200",
+                    "bg": "bg-emerald-600",
+                    "home": "hover:border-emerald-400 dark:hover:border-emerald-400",
+                    "header": "border-emerald-500"
                 }
             },
             {
