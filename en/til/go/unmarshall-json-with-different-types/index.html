@@ -49,10 +49,10 @@
                                                                             <li class="">
                                             <a href="/en/projects">Projects</a>
                                         </li>
-                                                                            <li class="">
+                                                                            <li class="font-extrabold text-emerald-500">
                                             <a href="/en/til">TIL</a>
                                         </li>
-                                                                            <li class="font-extrabold text-pink-500">
+                                                                            <li class="">
                                             <a href="/en/studies">Studies</a>
                                         </li>
                                                                             <li class="">
@@ -64,8 +64,8 @@
                                                                     </ul>
 
                                 <div class="text-xl md:text-2xl md:mt-10 absolute top-2 md:static">
-                                        <a href="/studies" class="font-thin dark:hover:text-white">FR</a>
-    <a href="/en/studies" class="font-black dark:hover:text-white">EN</a>
+                                        <a href="/til/go/unmarshall-json-with-different-types" class="font-thin dark:hover:text-white">FR</a>
+    <a href="/en/til/go/unmarshall-json-with-different-types" class="font-black dark:hover:text-white">EN</a>
 
                                 </div>
 
@@ -138,22 +138,36 @@
 
                 <div class="mt-4 md:mt-24 px-5 md:px-10">
                     
-    <h2 class="text-3xl md:text-4xl font-semibold text-pink-500">
-    Studies
-</h2>
-
+    <div>
+        <h2 class="text-2xl font-semibold ">
+            <a href="/en/til" class="font-black underline">TIL</a> Unmarshall JSON when a struct type is different from the JSON type
+        </h2>
+    </div>
 
     <div class="mt-4 md:mt-10">
-        <div class="grid grid-cols-6">
-                            <div class="text-right font-bold pr-8 mb-2">2014</div>
-                <div class="text-left col-span-5">Supinfo</div>
-                            <div class="text-right font-bold pr-8 mb-2">2013</div>
-                <div class="text-left col-span-5">Supinfo</div>
-                            <div class="text-right font-bold pr-8 mb-2">2012</div>
-                <div class="text-left col-span-5">Licence in IT</div>
-                            <div class="text-right font-bold pr-8 mb-2">2011</div>
-                <div class="text-left col-span-5">DUT in IT</div>
-                    </div>
+        <div class="prose dark:prose-invert">
+            <p>Let's say you have this JSON:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">  </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">foo</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">123</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre>
+<p>And you want to unmarshall it into this struct:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #81A1C1">type</span><span style="color: #D8DEE9FF"> Foo </span><span style="color: #81A1C1">struct</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    Bar </span><span style="color: #81A1C1">int</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre>
+<p>You can tell the JSON unmarshaller to use a different type for the <code>Bar</code> field:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #81A1C1">type</span><span style="color: #D8DEE9FF"> Foo </span><span style="color: #81A1C1">struct</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    Bar </span><span style="color: #81A1C1">int</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">`</span><span style="color: #A3BE8C">json:&quot;bar,string&quot;</span><span style="color: #ECEFF4">`</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre>
+<p>You can even omit the field name if it's the same (case-insensitive) as the JSON field name:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #81A1C1">type</span><span style="color: #D8DEE9FF"> Foo </span><span style="color: #81A1C1">struct</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    Bar </span><span style="color: #81A1C1">int</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">`</span><span style="color: #A3BE8C">json:&quot;,string&quot;</span><span style="color: #ECEFF4">`</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre>
+
+        </div>
     </div>
 
                 </div>

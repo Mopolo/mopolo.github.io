@@ -49,10 +49,10 @@
                                                                             <li class="">
                                             <a href="/en/projects">Projects</a>
                                         </li>
-                                                                            <li class="">
+                                                                            <li class="font-extrabold text-emerald-500">
                                             <a href="/en/til">TIL</a>
                                         </li>
-                                                                            <li class="font-extrabold text-pink-500">
+                                                                            <li class="">
                                             <a href="/en/studies">Studies</a>
                                         </li>
                                                                             <li class="">
@@ -64,8 +64,8 @@
                                                                     </ul>
 
                                 <div class="text-xl md:text-2xl md:mt-10 absolute top-2 md:static">
-                                        <a href="/studies" class="font-thin dark:hover:text-white">FR</a>
-    <a href="/en/studies" class="font-black dark:hover:text-white">EN</a>
+                                        <a href="/til/jetbrains/cmd-shift-a-override" class="font-thin dark:hover:text-white">FR</a>
+    <a href="/en/til/jetbrains/cmd-shift-a-override" class="font-black dark:hover:text-white">EN</a>
 
                                 </div>
 
@@ -138,22 +138,25 @@
 
                 <div class="mt-4 md:mt-24 px-5 md:px-10">
                     
-    <h2 class="text-3xl md:text-4xl font-semibold text-pink-500">
-    Studies
-</h2>
-
+    <div>
+        <h2 class="text-2xl font-semibold ">
+            <a href="/en/til" class="font-black underline">TIL</a> Disable opening the native MacOS terminal
+        </h2>
+    </div>
 
     <div class="mt-4 md:mt-10">
-        <div class="grid grid-cols-6">
-                            <div class="text-right font-bold pr-8 mb-2">2014</div>
-                <div class="text-left col-span-5">Supinfo</div>
-                            <div class="text-right font-bold pr-8 mb-2">2013</div>
-                <div class="text-left col-span-5">Supinfo</div>
-                            <div class="text-right font-bold pr-8 mb-2">2012</div>
-                <div class="text-left col-span-5">Licence in IT</div>
-                            <div class="text-right font-bold pr-8 mb-2">2011</div>
-                <div class="text-left col-span-5">DUT in IT</div>
-                    </div>
+        <div class="prose dark:prose-invert">
+            <p>On a new Mac, the <code>Cmd+Shift+A</code> shortcut opens the Terminal app with the <code>apropos</code> search.</p>
+<p>This overrides the <code>Cmd+Shift+A</code> shortcut in IntelliJ, which opens the <code>Find Action</code> dialog.</p>
+<p>To disable the native shortcut:</p>
+<ul>
+<li>Open <strong>System Preferences | Keyboard | Shortcuts | Services | Text</strong>
+</li>
+<li>Disable <strong>Search man Page Index in Terminal</strong>
+</li>
+</ul>
+
+        </div>
     </div>
 
                 </div>
