@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aae38ef3e00acb944cbc44dba26bdb60",
+    "content-hash": "5070b831a1f8cb3694ebee9a79e40e8b",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -4031,16 +4031,16 @@
         },
         {
             "name": "spatie/ray",
-            "version": "1.41.0",
+            "version": "1.41.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ray.git",
-                "reference": "40a957532e010e3a429691a8c3087958dac2f106"
+                "reference": "051a0facb1d2462fafef87ff77eb74d6f2d12944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ray/zipball/40a957532e010e3a429691a8c3087958dac2f106",
-                "reference": "40a957532e010e3a429691a8c3087958dac2f106",
+                "url": "https://api.github.com/repos/spatie/ray/zipball/051a0facb1d2462fafef87ff77eb74d6f2d12944",
+                "reference": "051a0facb1d2462fafef87ff77eb74d6f2d12944",
                 "shasum": ""
             },
             "require": {
@@ -4059,7 +4059,7 @@
                 "pestphp/pest": "^1.22",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^9.5",
-                "rector/rector": "^0.18.4",
+                "rector/rector": "^0.19.2",
                 "spatie/phpunit-snapshot-assertions": "^4.2",
                 "spatie/test-time": "^1.2"
             },
@@ -4095,7 +4095,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/ray/issues",
-                "source": "https://github.com/spatie/ray/tree/1.41.0"
+                "source": "https://github.com/spatie/ray/tree/1.41.1"
             },
             "funding": [
                 {
@@ -4107,7 +4107,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-01-24T15:29:57+00:00"
+            "time": "2024-01-25T10:15:50+00:00"
         },
         {
             "name": "symfony/console",
