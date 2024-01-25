@@ -36,7 +36,7 @@
         "sort-packages": true
     },
     "require-dev": {
-        "spatie/ray": "^1.41.0",
+        "spatie/ray": "^1.41.1",
         "vimeo/psalm": "^5.20.0"
     }
 }
