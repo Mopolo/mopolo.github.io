@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de6c4a23320eb9f6772d4080d77b0a38",
+    "content-hash": "bf8b767e8f66341cea385a19644d437a",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -1066,23 +1066,23 @@
         },
         {
             "name": "spatie/commonmark-shiki-highlighter",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/commonmark-shiki-highlighter.git",
-                "reference": "52528a02f61d84030b313b5c7b0c4dd8edca7187"
+                "reference": "aac0c8b691c7a818ed9fe75e1aecd3ac3e90b630"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/commonmark-shiki-highlighter/zipball/52528a02f61d84030b313b5c7b0c4dd8edca7187",
-                "reference": "52528a02f61d84030b313b5c7b0c4dd8edca7187",
+                "url": "https://api.github.com/repos/spatie/commonmark-shiki-highlighter/zipball/aac0c8b691c7a818ed9fe75e1aecd3ac3e90b630",
+                "reference": "aac0c8b691c7a818ed9fe75e1aecd3ac3e90b630",
                 "shasum": ""
             },
             "require": {
                 "league/commonmark": "^2.0",
                 "php": "^8.0",
                 "spatie/shiki-php": "^1.1.1",
-                "symfony/process": "^5.3|^6.0"
+                "symfony/process": "^5.3|^6.0|^7.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.19",
@@ -1114,7 +1114,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/commonmark-shiki-highlighter/tree/2.1.1"
+                "source": "https://github.com/spatie/commonmark-shiki-highlighter/tree/2.2.0"
             },
             "funding": [
                 {
@@ -1122,7 +1122,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-28T08:03:04+00:00"
+            "time": "2024-02-17T11:14:09+00:00"
         },
         {
             "name": "spatie/shiki-php",
@@ -1938,20 +1938,20 @@
         },
         {
             "name": "symfony/process",
-            "version": "v6.3.4",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54"
+                "reference": "937a195147e0c27b2759ade834169ed006d0bc74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0b5c29118f2e980d455d2e34a5659f4579847c54",
-                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54",
+                "url": "https://api.github.com/repos/symfony/process/zipball/937a195147e0c27b2759ade834169ed006d0bc74",
+                "reference": "937a195147e0c27b2759ade834169ed006d0bc74",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -1979,7 +1979,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v6.3.4"
+                "source": "https://github.com/symfony/process/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -1995,7 +1995,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-07T10:39:22+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/string",
