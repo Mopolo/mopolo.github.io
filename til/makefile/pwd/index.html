@@ -64,8 +64,8 @@
                                                                     </ul>
 
                                 <div class="text-xl md:text-2xl md:mt-10 absolute top-2 md:static">
-                                        <a href="/til" class="font-black dark:hover:text-white">FR</a>
-    <a href="/en/til" class="font-thin dark:hover:text-white">EN</a>
+                                        <a href="/til/makefile/pwd" class="font-black dark:hover:text-white">FR</a>
+    <a href="/en/til/makefile/pwd" class="font-thin dark:hover:text-white">EN</a>
 
                                 </div>
 
@@ -139,46 +139,24 @@
                 <div class="mt-4 md:mt-24 px-5 md:px-10">
                     
     <div>
-        <h2 class="text-3xl md:text-4xl font-semibold text-emerald-500">
-    Today I Learned
-</h2>
-
+        <h2 class="text-2xl font-semibold ">
+            <a href="/til" class="font-black underline">TIL</a> Get the current directory in a Makefile
+        </h2>
     </div>
 
     <div class="mt-4 md:mt-10">
+        <div class="prose dark:prose-invert">
+            <p>The <code>$PWD</code> variable might not always work in a Makefile.</p>
+<p>Instead you need to use a command:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #88C0D0">some-target</span><span style="color: #ECEFF4">:</span></span>
+<span class="line"><span style="color: #D8DEE9FF">	echo </span><span style="color: #81A1C1">$(</span><span style="color: #88C0D0">shell</span><span style="color: #A3BE8C"> pwd</span><span style="color: #81A1C1">)</span></span>
+<span class="line"></span></code></pre>
+<p>This can be useful when using this information in another command, for example:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #88C0D0">some-target</span><span style="color: #ECEFF4">:</span></span>
+<span class="line"><span style="color: #D8DEE9FF">	docker run --rm -v </span><span style="color: #81A1C1">$(</span><span style="color: #88C0D0">shell</span><span style="color: #A3BE8C"> pwd</span><span style="color: #81A1C1">)</span><span style="color: #D8DEE9FF">:/app composer install</span></span>
+<span class="line"></span></code></pre>
 
-                    <div>
-                <h2 class="text-lg md:text-xl text-emerald-500 font-medium mb-2 mt-4">
-                    Go
-                </h2>
-
-                <ul class="ps-2">
-                                            <li class="pb-1"><a href="/til/go/disable-fx-logs" class="cursor-pointer hover:underline">Disable FX logs</a></li>
-                                            <li class="pb-1"><a href="/til/go/instanceof" class="cursor-pointer hover:underline">How to check if a variable is of some type</a></li>
-                                            <li class="pb-1"><a href="/til/go/unmarshall-json-with-different-types" class="cursor-pointer hover:underline">Unmarshall JSON when a struct type is different from the JSON type</a></li>
-                                    </ul>
-            </div>
-                    <div>
-                <h2 class="text-lg md:text-xl text-emerald-500 font-medium mb-2 mt-4">
-                    JetBrains
-                </h2>
-
-                <ul class="ps-2">
-                                            <li class="pb-1"><a href="/til/jetbrains/cmd-shift-a-override" class="cursor-pointer hover:underline">Disable opening the native MacOS terminal</a></li>
-                                    </ul>
-            </div>
-                    <div>
-                <h2 class="text-lg md:text-xl text-emerald-500 font-medium mb-2 mt-4">
-                    Makefile
-                </h2>
-
-                <ul class="ps-2">
-                                            <li class="pb-1"><a href="/til/makefile/check-if-command-exists" class="cursor-pointer hover:underline">Check if a command exists</a></li>
-                                            <li class="pb-1"><a href="/til/makefile/hide-command-execution" class="cursor-pointer hover:underline">Hide a command execution</a></li>
-                                            <li class="pb-1"><a href="/til/makefile/pwd" class="cursor-pointer hover:underline">Get the current directory in a Makefile</a></li>
-                                    </ul>
-            </div>
-        
+        </div>
     </div>
 
                 </div>
