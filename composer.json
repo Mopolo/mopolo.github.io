@@ -32,11 +32,11 @@
         }
     },
     "config": {
-        "preferred-install": "source",
+        "preferred-install": "dist",
         "sort-packages": true
     },
     "require-dev": {
-        "spatie/ray": "^1.41.1",
-        "vimeo/psalm": "^5.22.2"
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-strict-rules": "^1.5"
     }
 }

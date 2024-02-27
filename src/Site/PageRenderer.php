@@ -7,6 +7,7 @@ use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
 use League\CommonMark\Extension\InlinesOnly\InlinesOnlyExtension;
 use League\CommonMark\MarkdownConverter;
 use Mopolo\Cv\DataBuilder;
+use Mopolo\Cv\Definition\Cv\Site\Colors;
 use Mopolo\Cv\Request;
 use Mopolo\Cv\Support\Str;
 use Mopolo\Cv\Support\Translator;
@@ -110,6 +111,9 @@ final class PageRenderer
         );
     }
 
+    /**
+     * @return list<array{label: string, href: string, current: bool}>
+     */
     private function langs(): array
     {
         $urls = [];
@@ -125,6 +129,9 @@ final class PageRenderer
         return $urls;
     }
 
+    /**
+     * @return array<string, array{href: string, label: string, current?: bool, colors: Colors|null}>
+     */
     private function menu(): array
     {
         $urls = [];

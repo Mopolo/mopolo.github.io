@@ -136,7 +136,13 @@ final class SiteBuilder
             return unlink($dir);
         }
 
-        foreach (scandir($dir) as $item) {
+        $items = scandir($dir);
+
+        if (!is_array($items)) {
+            return false;
+        }
+
+        foreach ($items as $item) {
             if ($item == '.' || $item == '..') {
                 continue;
             }
@@ -158,8 +164,17 @@ final class SiteBuilder
             return '/css/style.css';
         }
 
-        /** @var array{'/css/style.css': string} $manifest */
-        $manifest = json_decode(file_get_contents($mixManifestFile), true);
+        $manifestContent = file_get_contents($mixManifestFile);
+
+        if ($manifestContent === false) {
+            throw new Exception('Could not read mix-manifest.json');
+        }
+
+        $manifest = json_decode($manifestContent, true);
+
+        if (!is_array($manifest)) {
+            throw new Exception('Could not decode mix-manifest.json');
+        }
 
         return $manifest['/css/style.css'] ?? '/css/style.css';
     }

@@ -22,6 +22,6 @@ final class Translator
 
         $message = trim($this->translator->trans($key));
 
-        return empty($message) ? $key : $message;
+        return $message === "" ? $key : $message;
     }
 }

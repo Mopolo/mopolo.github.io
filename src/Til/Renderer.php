@@ -33,6 +33,9 @@ final class Renderer
         $this->markdown = new MarkdownConverter($environment);
     }
 
+    /**
+     * @return array<string, array<Entry>>
+     */
     public function renderList(): array
     {
         $finder = new Finder();
@@ -67,7 +70,13 @@ final class Renderer
             throw new Exception('TIL not found');
         }
 
-        return $this->render($pathOrFile, file_get_contents($pathOrFile));
+        $content = file_get_contents($pathOrFile);
+
+        if (!is_string($content)) {
+            throw new Exception('Invalid TIL content');
+        }
+
+        return $this->render($pathOrFile, $content);
     }
 
     public function render(string $path, string $content): Entry

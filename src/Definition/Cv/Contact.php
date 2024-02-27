@@ -24,7 +24,7 @@ final readonly class Contact
         string $gitlab,
         Mastodon $mastodon,
     ) {
-        $email = base64_decode($email);
+        $email = base64_decode($email, true);
         $this->email = Str::random(5) . base64_encode(Str::random(5) . $email . Str::random(5)) . Str::random(5);
         $this->linkedin = $linkedin;
         $this->twitter = $twitter;

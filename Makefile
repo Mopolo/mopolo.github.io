@@ -43,4 +43,4 @@ prod-build: ## Compile assets in DEV mode
 
 ## —— QA ——————————————————————————————————————————————————————————————
 qa: ## Run code quality tools
-	@$(PHP) vendor/bin/psalm
+	@$(PHP) vendor/bin/phpstan
