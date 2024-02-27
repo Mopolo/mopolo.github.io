@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Mopolo\Cv\Site;
 
 use Exception;
-use Intervention\Image\Constraint;
+use Intervention\Image\Drivers\Gd\Driver;
 use Intervention\Image\ImageManager;
 use Symfony\Component\Finder\Finder;
 use function file_exists;
@@ -23,7 +23,7 @@ final class SiteBuilder
     public function __construct(string $env)
     {
         $this->env = $env;
-        $this->images = new ImageManager(['driver' => 'gd']);
+        $this->images = new ImageManager(new Driver());
     }
 
     public function build(): void
@@ -90,7 +90,7 @@ final class SiteBuilder
 
             @mkdir($newPath, 0777, true);
 
-            $image = $this->images->make($file->getPathname());
+            $image = $this->images->read($file->getPathname());
 
             $newWidth = 50;
             $newHeight = null;
@@ -99,10 +99,7 @@ final class SiteBuilder
                 [$newWidth, $newHeight] = [$newHeight, $newWidth];
             }
 
-            $image->resize($newWidth, $newHeight, function (Constraint $constraint) {
-                $constraint->aspectRatio();
-            })
-                ->save($newFilename);
+            $image->scaleDown($newWidth, $newHeight)->save($newFilename);
         }
     }
 
