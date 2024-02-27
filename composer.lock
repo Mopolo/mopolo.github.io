@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "926921f7c6c4d51a7873ee7d30fd008a",
+    "content-hash": "bd22f650ac25b7fc2ffd7c6f7bbe8d14",
     "packages": [
         {
             "name": "cuyz/valinor",
