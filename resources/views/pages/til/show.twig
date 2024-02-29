@@ -4,11 +4,14 @@
 
     <div>
         <h2 class="text-2xl font-semibold {{ colors.textLightBg }}">
-            <a href="{{ urls.til.href }}" class="font-black underline">TIL</a> {{ til.title }}
+            <a href="{{ urls.til.href }}" class="font-black underline">TIL</a>
+            <span class="block pt-2 md:inline md:pt-0">
+                {{ til.title }}
+            </span>
         </h2>
     </div>
 
-    <div class="mt-4 md:mt-10">
+    <div class="mt-4 md:mt-10 mb-5">
         <div class="prose dark:prose-invert">
             {{ til.content|raw }}
         </div>
