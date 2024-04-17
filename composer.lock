@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ec4f5147d8402dd2792f050d95e7164",
+    "content-hash": "7df9af056bdb2b7a6dbb548dc3b452b8",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -2244,16 +2244,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.9.0",
+            "version": "v3.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "47857eebb197745f66369b76c044a2359e3cc5b9"
+                "reference": "664647f46bf68a98cf5af27b42de8017a3e2d878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/47857eebb197745f66369b76c044a2359e3cc5b9",
-                "reference": "47857eebb197745f66369b76c044a2359e3cc5b9",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/664647f46bf68a98cf5af27b42de8017a3e2d878",
+                "reference": "664647f46bf68a98cf5af27b42de8017a3e2d878",
                 "shasum": ""
             },
             "require": {
@@ -2307,7 +2307,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.9.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.9.1"
             },
             "funding": [
                 {
@@ -2319,7 +2319,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-16T16:04:21+00:00"
+            "time": "2024-04-17T09:00:00+00:00"
         }
     ],
     "packages-dev": [
