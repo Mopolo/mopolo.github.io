@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29354605e5bb3e5755d0fde8559655f9",
+    "content-hash": "e419c56b92a0d66032551f84898ad4df",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -1244,16 +1244,16 @@
         },
         {
             "name": "symfony/intl",
-            "version": "v7.0.3",
+            "version": "v7.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/intl.git",
-                "reference": "295995df4acf6790a35b9ce6ec32b313efb11ff8"
+                "reference": "dd12042707110995e2e7d80103f8d9928bea8621"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/intl/zipball/295995df4acf6790a35b9ce6ec32b313efb11ff8",
-                "reference": "295995df4acf6790a35b9ce6ec32b313efb11ff8",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/dd12042707110995e2e7d80103f8d9928bea8621",
+                "reference": "dd12042707110995e2e7d80103f8d9928bea8621",
                 "shasum": ""
             },
             "require": {
@@ -1270,7 +1270,8 @@
                     "Symfony\\Component\\Intl\\": ""
                 },
                 "exclude-from-classmap": [
-                    "/Tests/"
+                    "/Tests/",
+                    "/Resources/data/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1306,7 +1307,7 @@
                 "localization"
             ],
             "support": {
-                "source": "https://github.com/symfony/intl/tree/v7.0.3"
+                "source": "https://github.com/symfony/intl/tree/v7.0.7"
             },
             "funding": [
                 {
@@ -1322,7 +1323,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T15:02:46+00:00"
+            "time": "2024-04-18T09:29:19+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2114,22 +2115,22 @@
         },
         {
             "name": "twig/intl-extra",
-            "version": "v3.9.2",
+            "version": "v3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/intl-extra.git",
-                "reference": "39865e5d13165016a8e7ab8cc648ad2f7aa4b639"
+                "reference": "693f6beb8ca91fc6323e01b3addf983812f65c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/39865e5d13165016a8e7ab8cc648ad2f7aa4b639",
-                "reference": "39865e5d13165016a8e7ab8cc648ad2f7aa4b639",
+                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/693f6beb8ca91fc6323e01b3addf983812f65c93",
+                "reference": "693f6beb8ca91fc6323e01b3addf983812f65c93",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
                 "symfony/intl": "^5.4|^6.4|^7.0",
-                "twig/twig": "^3.9"
+                "twig/twig": "^3.10"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "^6.4|^7.0"
@@ -2162,7 +2163,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/intl-extra/tree/v3.9.2"
+                "source": "https://github.com/twigphp/intl-extra/tree/v3.10.0"
             },
             "funding": [
                 {
@@ -2174,7 +2175,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-17T12:41:53+00:00"
+            "time": "2024-05-11T07:35:57+00:00"
         },
         {
             "name": "twig/string-extra",
