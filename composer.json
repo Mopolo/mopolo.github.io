@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "8.3.7",
+        "php": "8.3.8",
         "ext-intl": "*",
         "ext-json": "*",
         "cuyz/valinor": "1.12.*",
