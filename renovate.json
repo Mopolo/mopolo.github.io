@@ -15,13 +15,26 @@
     "platformAutomerge": true,
     "rangeStrategy": "bump",
     "rollbackPrs": true,
+    "major": {
+        "dependencyDashboardApproval": true
+    },
     "packageRules": [
         {
             "matchManagers": ["composer"],
-            "matchPackageNames": [
-                "php"
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
             ],
-            "ignoreUnstable": false,
+            "groupName": "all composer non-major dependencies",
+            "groupSlug": "composer-all-minor-patch"
+        },
+        {
+            "matchManagers": ["composer"],
+            "matchPackageNames": ["php"],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
             "groupName": "PHP"
         }
     ],
