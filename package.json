@@ -13,7 +13,7 @@
         "tailwindcss": "^3.4.14"
     },
     "dependencies": {
-        "shiki": "^1.22.1"
+        "shiki": "^1.22.2"
     },
     "engines": {
         "node": "^20.18.0"
