@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0c85d2f551d30ce92919499cd5ce4c4",
+    "content-hash": "fe24eef62089f3f416042c8a3b6bdc33",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -2530,7 +2530,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "8.3.13",
+        "php": "8.3.14",
         "ext-intl": "*",
         "ext-json": "*"
     },
