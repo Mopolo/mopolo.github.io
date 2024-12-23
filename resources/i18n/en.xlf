@@ -51,9 +51,9 @@
                 <source>site.pages.contact.email</source>
                 <target>My email is</target>
             </trans-unit>
-            <trans-unit id="site.pages.contact.twitter">
-                <source>site.pages.contact.twitter</source>
-                <target>I'm on Twitter:</target>
+            <trans-unit id="site.pages.contact.bluesky">
+                <source>site.pages.contact.bluesky</source>
+                <target>I'm on Bluesky:</target>
             </trans-unit>
             <trans-unit id="site.pages.contact.mastodon">
                 <source>site.pages.contact.mastodon</source>

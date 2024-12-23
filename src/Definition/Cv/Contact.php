@@ -11,7 +11,7 @@ final readonly class Contact
 {
     public string $email;
     public string $linkedin;
-    public string $twitter;
+    public string $bluesky;
     public string $github;
     public string $gitlab;
     public Mastodon $mastodon;
@@ -19,7 +19,7 @@ final readonly class Contact
     public function __construct(
         string $email,
         string $linkedin,
-        string $twitter,
+        string $bluesky,
         string $github,
         string $gitlab,
         Mastodon $mastodon,
@@ -27,7 +27,7 @@ final readonly class Contact
         $email = base64_decode($email, true);
         $this->email = Str::random(5) . base64_encode(Str::random(5) . $email . Str::random(5)) . Str::random(5);
         $this->linkedin = $linkedin;
-        $this->twitter = $twitter;
+        $this->bluesky = $bluesky;
         $this->github = $github;
         $this->gitlab = $gitlab;
         $this->mastodon = $mastodon;
