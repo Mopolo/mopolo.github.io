@@ -29,14 +29,10 @@
             "groupSlug": "composer-all-minor-patch"
         },
         {
-            "matchManagers": ["composer"],
-            "matchPackageNames": ["php"],
-            "matchUpdateTypes": [
-                "minor",
-                "patch"
-            ],
-            "groupName": "PHP"
-        }
+            "matchManagers": [ "composer" ],
+            "matchDepNames": [ "php" ],
+            "enabled": false
+        },
     ],
     "vulnerabilityAlerts": {
         "extends": [
