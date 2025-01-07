@@ -74,7 +74,9 @@ final class PageRenderer
             new TwigFilter(
                 'md',
                 function (string $value) {
-                    return ($this->makeMarkdownConverter($this->request->colors()?->textLightBg ?? ''))
+                    $linkClass = $this->request->colors()?->textLightBg;
+
+                    return ($this->makeMarkdownConverter($linkClass ?? ''))
                         ->convert($value)
                         ->getContent();
                 }

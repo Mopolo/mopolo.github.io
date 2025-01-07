@@ -140,7 +140,7 @@ final class SiteBuilder
         }
 
         foreach ($items as $item) {
-            if ($item == '.' || $item == '..') {
+            if ($item === '.' || $item === '..') {
                 continue;
             }
 
@@ -173,6 +173,12 @@ final class SiteBuilder
             throw new Exception('Could not decode mix-manifest.json');
         }
 
-        return $manifest['/css/style.css'] ?? '/css/style.css';
+        $path = $manifest['/css/style.css'] ?? '/css/style.css';
+
+        if (!is_string($path)) {
+            throw new Exception('Could not find /css/style.css in mix-manifest.json');
+        }
+
+        return $path;
     }
 }
