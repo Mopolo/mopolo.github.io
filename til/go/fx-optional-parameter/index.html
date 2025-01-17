@@ -49,13 +49,13 @@
                                                                             <li class="">
                                             <a href="/projects">Projets</a>
                                         </li>
-                                                                            <li class="">
+                                                                            <li class="font-extrabold text-emerald-500">
                                             <a href="/til">TIL</a>
                                         </li>
                                                                             <li class="">
                                             <a href="/studies">Études</a>
                                         </li>
-                                                                            <li class="font-extrabold text-green-500">
+                                                                            <li class="">
                                             <a href="/contact">Contact</a>
                                         </li>
                                                                             <li class="">
@@ -64,8 +64,8 @@
                                                                     </ul>
 
                                 <div class="text-xl md:text-2xl md:mt-10 absolute top-2 md:static">
-                                        <a href="/contact" class="font-black dark:hover:text-white">FR</a>
-    <a href="/en/contact" class="font-thin dark:hover:text-white">EN</a>
+                                        <a href="/til/go/fx-optional-parameter" class="font-black dark:hover:text-white">FR</a>
+    <a href="/en/til/go/fx-optional-parameter" class="font-thin dark:hover:text-white">EN</a>
 
                                 </div>
 
@@ -138,27 +138,36 @@
 
                 <div class="mt-4 md:mt-24 px-5 md:px-10">
                     
-    <h2 class="text-3xl md:text-4xl font-semibold text-green-500">
-    Contact
-</h2>
+    <div>
+        <h2 class="text-2xl font-semibold ">
+            <a href="/til" class="font-black underline">TIL</a>
+            <span class="block pt-2 md:inline md:pt-0">
+                Optional parameters with Fx
+            </span>
+        </h2>
+    </div>
 
+    <div class="mt-4 md:mt-10 mb-5">
+        <div class="prose dark:prose-invert">
+            <p>It can sometimes be useful to have optional dependencies in the Fx container.</p>
+<p>For example to run some checks when boot the app only when some dependencies are present.</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color:#D8DEE9">fx</span><span style="color:#ECEFF4">.</span><span style="color:#88C0D0">New</span><span style="color:#ECEFF4">(</span></span>
+<span class="line"><span style="color:#D8DEE9FF">    </span><span style="color:#616E88">// ...</span></span>
+<span class="line"><span style="color:#D8DEE9FF">    </span></span>
+<span class="line"><span style="color:#D8DEE9FF">    </span><span style="color:#D8DEE9">fx</span><span style="color:#ECEFF4">.</span><span style="color:#88C0D0">Invoke</span><span style="color:#ECEFF4">(</span><span style="color:#D8DEE9">fx</span><span style="color:#ECEFF4">.</span><span style="color:#88C0D0">Annotate</span><span style="color:#ECEFF4">(</span><span style="color:#81A1C1">func</span><span style="color:#ECEFF4">(</span><span style="color:#D8DEE9">foo</span><span style="color:#D8DEE9FF"> </span><span style="color:#81A1C1">*</span><span style="color:#D8DEE9FF">Foo</span><span style="color:#ECEFF4">)</span><span style="color:#D8DEE9FF"> </span><span style="color:#81A1C1">error</span><span style="color:#D8DEE9FF"> </span><span style="color:#ECEFF4">{</span></span>
+<span class="line"><span style="color:#D8DEE9FF">        </span><span style="color:#81A1C1">if</span><span style="color:#D8DEE9FF"> </span><span style="color:#D8DEE9">foo</span><span style="color:#D8DEE9FF"> </span><span style="color:#81A1C1">==</span><span style="color:#D8DEE9FF"> </span><span style="color:#81A1C1">nil</span><span style="color:#D8DEE9FF"> </span><span style="color:#ECEFF4">{</span></span>
+<span class="line"><span style="color:#D8DEE9FF">            </span><span style="color:#616E88">// The dependency was not provided, we skip the rest</span></span>
+<span class="line"><span style="color:#D8DEE9FF">            </span><span style="color:#81A1C1">return</span><span style="color:#D8DEE9FF"> </span><span style="color:#81A1C1">nil</span></span>
+<span class="line"><span style="color:#D8DEE9FF">        </span><span style="color:#ECEFF4">}</span></span>
+<span class="line"><span style="color:#D8DEE9FF">        </span></span>
+<span class="line"><span style="color:#D8DEE9FF">        </span><span style="color:#616E88">// Here we can run checks on foo</span></span>
+<span class="line"><span style="color:#D8DEE9FF">        </span></span>
+<span class="line"><span style="color:#D8DEE9FF">        </span><span style="color:#81A1C1">return</span><span style="color:#D8DEE9FF"> </span><span style="color:#81A1C1">...</span></span>
+<span class="line"><span style="color:#D8DEE9FF">    </span><span style="color:#ECEFF4">},</span><span style="color:#D8DEE9FF"> </span><span style="color:#D8DEE9">fx</span><span style="color:#ECEFF4">.</span><span style="color:#88C0D0">ParamTags</span><span style="color:#ECEFF4">(</span><span style="color:#ECEFF4">`</span><span style="color:#A3BE8C">optional:&quot;true&quot;</span><span style="color:#ECEFF4">`</span><span style="color:#ECEFF4">))),</span></span>
+<span class="line"><span style="color:#ECEFF4">)</span></span>
+<span class="line"></span></code></pre>
 
-    <div class="mt-4 md:mt-10">
-        <p>
-            Mon Email : <a id="a-K59cWfYbfmnZNzEt" href="" class="border-b-2 border-black dark:border-gray-300"></a>
-        </p>
-
-        <p class="mt-8">
-            Je suis sur Bluesky : <a href="https://bsky.app/profile/mopolo.dev" class="border-b-2 border-black dark:border-gray-300">@mopolo.dev</a>
-        </p>
-
-        <p class="mt-8">
-            Et sur Mastodon : <a rel="me" href="https://phpc.social/@mopolo" class="border-b-2 border-black dark:border-gray-300">@mopolo@phpc.social</a>
-        </p>
-
-        <p class="mt-8">
-            Je suis aussi sur <a href="https://www.linkedin.com/in/nathan-b-79785a60/" class="border-b-2 border-black dark:border-gray-300">Linkedin</a>
-        </p>
+        </div>
     </div>
 
                 </div>
@@ -172,16 +181,18 @@
 
     <script type="text/javascript">
         (function () {
-            const el = document.getElementById('a-K59cWfYbfmnZNzEt');
-            let e = 'JP9jfOXVhYmdoZWxsb0Btb3BvbG8ubmV0UDRtbVg=LLp8Q';
-            e = e.substring(5);
-            e = e.substring(e.length - 5, 0);
-            e = atob(e);
-            e = e.substring(5);
-            e = e.substring(e.length - 5, 0);
+            function duckface(face) {
+                document.getElementById('duckface').innerHTML = face;
+            }
 
-            el.setAttribute('href', 'mailto:' + e);
-            el.innerHTML = e;
+            document.getElementById('duck').addEventListener('click', function() {
+                setTimeout(function() { duckface('>'); }, 200);
+                setTimeout(function() { duckface('-'); }, 500);
+                setTimeout(function() { duckface('>'); }, 800);
+                setTimeout(function() { duckface('-'); }, 1100);
+
+                localStorage.removeItem('theme');
+            });
         })();
     </script>
 
