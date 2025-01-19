@@ -15,7 +15,7 @@
         "ext-json": "*",
         "cuyz/valinor": "1.14.2",
         "filp/whoops": "^2.16.0",
-        "intervention/image": "^3.10.2",
+        "intervention/image": "^3.11.0",
         "league/commonmark": "^2.6.1",
         "spatie/commonmark-shiki-highlighter": "^2.5.1",
         "symfony/config": "^7.2.0",
