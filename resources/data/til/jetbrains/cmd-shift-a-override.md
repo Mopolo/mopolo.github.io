@@ -2,9 +2,9 @@
 category: JetBrains
 title: Disable opening the native MacOS terminal
 ---
-On a new Mac, the `Cmd+Shift+A` shortcut opens the Terminal app with the `apropos` search.
+On a new Mac, the <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>A</kbd> shortcut opens the Terminal app with the `apropos` search.
 
-This overrides the `Cmd+Shift+A` shortcut in IntelliJ, which opens the `Find Action` dialog.
+This overrides the <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>A</kbd> shortcut in IntelliJ, which opens the `Find Action` dialog.
 
 To disable the native shortcut:
 
