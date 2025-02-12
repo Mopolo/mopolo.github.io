@@ -7,11 +7,9 @@ namespace Mopolo\Cv\Til;
 final readonly class Entry
 {
     public function __construct(
-        public string $category,
-        public string $title,
+        public FrontMatter $frontMatter,
         public string $content,
         public string $slug,
         public string $url,
-        public array $sources,
     ) {}
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Mopolo\Cv\Til;
 
+use CuyZ\Valinor\Mapper\Source\Source;
+use CuyZ\Valinor\MapperBuilder;
 use Exception;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
@@ -49,7 +51,7 @@ final class Renderer
         foreach ($finder as $file) {
             $entry = $this->renderFile($file);
 
-            $tils[$entry->category][] = $entry;
+            $tils[$entry->frontMatter->category][] = $entry;
         }
 
         return $tils;
@@ -91,33 +93,19 @@ final class Renderer
             throw new Exception('Missing front matter in ' . $path);
         }
 
-        $frontMatter = $result->getFrontMatter();
+        $rawFrontMatter = $result->getFrontMatter();
 
-        if (!is_array($frontMatter)) {
-            throw new Exception('Invalid front matter in ' . $path);
+        if (!is_array($rawFrontMatter)) {
+            throw new Exception("Front matter is not an array");
         }
 
-        $category = $frontMatter['category'] ?? throw new Exception('Missing category in ' . $path);
-
-        if (!is_string($category)) {
-            throw new Exception('Invalid category in ' . $path);
-        }
-
-        $title = $frontMatter['title'] ?? throw new Exception('Missing title in ' . $path);
-
-        if (!is_string($title)) {
-            throw new Exception('Invalid title in ' . $path);
-        }
-
-        $sources = $frontMatter['sources'] ?? [];
+        $frontMatter = (new MapperBuilder())->mapper()->map(FrontMatter::class, Source::array($rawFrontMatter));
 
         return new Entry(
-            $category,
-            $title,
+            $frontMatter,
             $result->getContent(),
             $slug,
             $this->url($slug),
-            $sources,
         );
     }
 

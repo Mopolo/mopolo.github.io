@@ -6,7 +6,7 @@
         <h2 class="text-2xl font-semibold {{ colors.textLightBg }}">
             <a href="{{ urls.til.href }}" class="font-black underline">TIL</a>
             <span class="block pt-2 md:inline md:pt-0">
-                {{ til.title }}
+                {{ til.frontMatter.title }}
             </span>
         </h2>
     </div>
@@ -17,11 +17,11 @@
         </div>
     </div>
 
-    {% if til.sources %}
+    {% if til.frontMatter.sources %}
         <div class="mt-4 md:mt-14 mb-5 text-gray-600 dark:text-gray-400">
             <div class="mb-2 border-b-2 border-gray-500">
                 <h4 class="text-sm">
-                    {% if til.sources|length == 1 %}
+                    {% if til.frontMatter.sources|length == 1 %}
                         Source
                     {% else %}
                         Sources
@@ -30,7 +30,7 @@
             </div>
 
             <div class="flex flex-col text-sm">
-                {% for source in til.sources %}
+                {% for source in til.frontMatter.sources %}
                     <a href="{{ source }}" class="hover:underline">{{ source }}</a>
                 {% endfor %}
             </div>
