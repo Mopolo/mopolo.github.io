@@ -1,6 +1,8 @@
 ---
 category: JetBrains
 title: Adding a timestamp shortcut
+sources:
+    - https://www.rudyisme.com/item/shortcut-to-get-the-current-unix-timestamp-in-phpstorm
 ---
 There is a way in Jetbrains IDEs to insert the current timestamp anywhere.
 

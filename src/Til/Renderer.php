@@ -109,12 +109,15 @@ final class Renderer
             throw new Exception('Invalid title in ' . $path);
         }
 
+        $sources = $frontMatter['sources'] ?? [];
+
         return new Entry(
             $category,
             $title,
             $result->getContent(),
             $slug,
             $this->url($slug),
+            $sources,
         );
     }
 

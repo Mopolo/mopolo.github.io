@@ -12,5 +12,6 @@ final readonly class Entry
         public string $content,
         public string $slug,
         public string $url,
+        public array $sources,
     ) {}
 }
