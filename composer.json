@@ -22,9 +22,9 @@
         "symfony/finder": "^7.2.2",
         "symfony/translation": "^7.2.6",
         "symfony/yaml": "^7.2.6",
-        "twig/intl-extra": "^3.20.0",
-        "twig/string-extra": "^3.20.0",
-        "twig/twig": "^3.20.0"
+        "twig/intl-extra": "^3.21.0",
+        "twig/string-extra": "^3.21.0",
+        "twig/twig": "^3.21.0"
     },
     "autoload": {
         "psr-4": {
