@@ -14,7 +14,7 @@
         "ext-intl": "*",
         "ext-json": "*",
         "cuyz/valinor": "1.16.1",
-        "filp/whoops": "^2.18.0",
+        "filp/whoops": "^2.18.1",
         "intervention/image": "^3.11.3",
         "league/commonmark": "^2.7.0",
         "spatie/commonmark-shiki-highlighter": "^2.5.1",
