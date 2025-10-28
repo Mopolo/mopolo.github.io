@@ -19,9 +19,9 @@
         "league/commonmark": "^2.7.1",
         "spatie/commonmark-shiki-highlighter": "^2.5.1",
         "symfony/config": "^7.3.4",
-        "symfony/finder": "^7.3.2",
+        "symfony/finder": "^7.3.5",
         "symfony/translation": "^7.3.4",
-        "symfony/yaml": "^7.3.3",
+        "symfony/yaml": "^7.3.5",
         "twig/intl-extra": "^3.21.0",
         "twig/string-extra": "^3.21.0",
         "twig/twig": "^3.21.1"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d2efc8579f39d0a9ced15f3948ed9f4",
+    "content-hash": "c3d99f1e3a459ae6ebdc16c7ab1ea66c",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -1201,16 +1201,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v7.3.2",
+            "version": "v7.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe"
+                "reference": "9f696d2f1e340484b4683f7853b273abff94421f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2a6614966ba1074fa93dae0bc804227422df4dfe",
-                "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/9f696d2f1e340484b4683f7853b273abff94421f",
+                "reference": "9f696d2f1e340484b4683f7853b273abff94421f",
                 "shasum": ""
             },
             "require": {
@@ -1245,7 +1245,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v7.3.2"
+                "source": "https://github.com/symfony/finder/tree/v7.3.5"
             },
             "funding": [
                 {
@@ -1265,7 +1265,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-15T13:41:35+00:00"
+            "time": "2025-10-15T18:45:57+00:00"
         },
         {
             "name": "symfony/intl",
@@ -2079,16 +2079,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.3.3",
+            "version": "v7.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "d4f4a66866fe2451f61296924767280ab5732d9d"
+                "reference": "90208e2fc6f68f613eae7ca25a2458a931b1bacc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/d4f4a66866fe2451f61296924767280ab5732d9d",
-                "reference": "d4f4a66866fe2451f61296924767280ab5732d9d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/90208e2fc6f68f613eae7ca25a2458a931b1bacc",
+                "reference": "90208e2fc6f68f613eae7ca25a2458a931b1bacc",
                 "shasum": ""
             },
             "require": {
@@ -2131,7 +2131,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.3"
+                "source": "https://github.com/symfony/yaml/tree/v7.3.5"
             },
             "funding": [
                 {
@@ -2151,7 +2151,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-27T11:34:33+00:00"
+            "time": "2025-09-27T09:00:46+00:00"
         },
         {
             "name": "twig/intl-extra",
