@@ -49,13 +49,13 @@
                                                                             <li class="">
                                             <a href="/en/projects">Projects</a>
                                         </li>
-                                                                            <li class="">
+                                                                            <li class="font-extrabold text-emerald-500">
                                             <a href="/en/til">TIL</a>
                                         </li>
                                                                             <li class="">
                                             <a href="/en/studies">Studies</a>
                                         </li>
-                                                                            <li class="font-extrabold text-green-500">
+                                                                            <li class="">
                                             <a href="/en/contact">Contact</a>
                                         </li>
                                                                             <li class="">
@@ -64,8 +64,8 @@
                                                                     </ul>
 
                                 <div class="text-xl md:text-2xl md:mt-10 absolute top-2 md:static">
-                                        <a href="/contact" class="font-thin dark:hover:text-white">FR</a>
-    <a href="/en/contact" class="font-black dark:hover:text-white">EN</a>
+                                        <a href="/til/tips/find-ip" class="font-thin dark:hover:text-white">FR</a>
+    <a href="/en/til/tips/find-ip" class="font-black dark:hover:text-white">EN</a>
 
                                 </div>
 
@@ -138,29 +138,26 @@
 
                 <div class="mt-4 md:mt-24 px-5 md:px-10">
                     
-    <h2 class="text-3xl md:text-4xl font-semibold text-green-500">
-    Contact
-</h2>
-
-
-    <div class="mt-4 md:mt-10">
-        <p>
-            My email is <a id="a-q7umObiVQSeQ0d" href="" class="border-b-2 border-black dark:border-gray-300"></a>
-        </p>
-
-        <p class="mt-8">
-            I&#039;m on Bluesky: <a href="https://bsky.app/profile/mopolo.dev" class="border-b-2 border-black dark:border-gray-300">@mopolo.dev</a>
-        </p>
-
-        <p class="mt-8">
-            And on Mastodon: <a rel="me" href="https://phpc.social/@mopolo" class="border-b-2 border-black dark:border-gray-300">@mopolo@phpc.social</a>
-        </p>
-
-        <p class="mt-8">
-            You can also find me on <a href="https://www.linkedin.com/in/nathan-b-79785a60/" class="border-b-2 border-black dark:border-gray-300">Linkedin</a>
-        </p>
+    <div>
+        <h2 class="text-2xl font-semibold ">
+            <a href="/en/til" class="font-black underline">TIL</a>
+            <span class="block pt-2 md:inline md:pt-0">
+                Find a machine&#039;s IP public address
+            </span>
+        </h2>
     </div>
 
+    <div class="mt-4 md:mt-10 mb-5">
+        <div class="prose dark:prose-invert">
+            <p>For this we can use <code>curl</code>:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color:#88C0D0">curl</span><span style="color:#D8DEE9FF"> </span><span style="color:#A3BE8C">ifconfig.me/ip</span></span>
+<span class="line"></span></code></pre>
+<p>The domain itself explains other available infos and can be used in the browser to display the current IP.</p>
+
+        </div>
+    </div>
+
+    
                 </div>
 
             </div>
@@ -172,16 +169,18 @@
 
     <script type="text/javascript">
         (function () {
-            const el = document.getElementById('a-q7umObiVQSeQ0d');
-            let e = 'bjHYVVVBBVXdoZWxsb0Btb3BvbG8ubmV0NTRtOUc=FqUpD';
-            e = e.substring(5);
-            e = e.substring(e.length - 5, 0);
-            e = atob(e);
-            e = e.substring(5);
-            e = e.substring(e.length - 5, 0);
+            function duckface(face) {
+                document.getElementById('duckface').innerHTML = face;
+            }
 
-            el.setAttribute('href', 'mailto:' + e);
-            el.innerHTML = e;
+            document.getElementById('duck').addEventListener('click', function() {
+                setTimeout(function() { duckface('>'); }, 200);
+                setTimeout(function() { duckface('-'); }, 500);
+                setTimeout(function() { duckface('>'); }, 800);
+                setTimeout(function() { duckface('-'); }, 1100);
+
+                localStorage.removeItem('theme');
+            });
         })();
     </script>
 
