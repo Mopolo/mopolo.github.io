@@ -1,10 +1,11 @@
 ---
-category: Tips
+category: Bash
 title: Find a machine's IP public address
 sources:
     - https://ifconfig.me
 ---
 For this we can use `curl`:
+
 ```bash
 curl ifconfig.me/ip
 ```
