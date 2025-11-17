@@ -64,8 +64,8 @@
                                                                     </ul>
 
                                 <div class="text-xl md:text-2xl md:mt-10 absolute top-2 md:static">
-                                        <a href="/til/tips/find-ip" class="font-thin dark:hover:text-white">FR</a>
-    <a href="/en/til/tips/find-ip" class="font-black dark:hover:text-white">EN</a>
+                                        <a href="/til/bash/file-update-date" class="font-thin dark:hover:text-white">FR</a>
+    <a href="/en/til/bash/file-update-date" class="font-black dark:hover:text-white">EN</a>
 
                                 </div>
 
@@ -142,32 +142,24 @@
         <h2 class="text-2xl font-semibold ">
             <a href="/en/til" class="font-black underline">TIL</a>
             <span class="block pt-2 md:inline md:pt-0">
-                Find a machine&#039;s IP public address
+                Change a file last update date
             </span>
         </h2>
     </div>
 
     <div class="mt-4 md:mt-10 mb-5">
         <div class="prose dark:prose-invert">
-            <p>For this we can use <code>curl</code>:</p>
-<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color:#88C0D0">curl</span><span style="color:#D8DEE9FF"> </span><span style="color:#A3BE8C">ifconfig.me/ip</span></span>
+            <p>It can be useful to change a file last update date, which can be done with <code>touch</code>:</p>
+<pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color:#616E88"># To set a date in the past</span></span>
+<span class="line"><span style="color:#88C0D0">touch</span><span style="color:#D8DEE9FF"> </span><span style="color:#A3BE8C">-d</span><span style="color:#D8DEE9FF"> </span><span style="color:#ECEFF4">&quot;</span><span style="color:#A3BE8C">10 minutes ago</span><span style="color:#ECEFF4">&quot;</span><span style="color:#D8DEE9FF"> </span><span style="color:#A3BE8C">./example.txt</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#616E88"># To set it to now</span></span>
+<span class="line"><span style="color:#88C0D0">touch</span><span style="color:#D8DEE9FF"> </span><span style="color:#A3BE8C">./example.txt</span></span>
 <span class="line"></span></code></pre>
-<p>The domain itself explains other available infos and can be used in the browser to display the current IP.</p>
 
         </div>
     </div>
 
-            <div class="mt-4 md:mt-14 mb-5 text-gray-600 dark:text-gray-400">
-            <div class="mb-2 border-b-2 border-gray-500">
-                <h4 class="text-sm">
-                                            Source
-                                    </h4>
-            </div>
-
-            <div class="flex flex-col text-sm">
-                                    <a href="https://ifconfig.me" class="hover:underline">https://ifconfig.me</a>
-                            </div>
-        </div>
     
                 </div>
 
