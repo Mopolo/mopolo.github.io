@@ -95,9 +95,36 @@
             "name": "Bedrock Streaming",
             "place": "Lyon, France",
             "start": "2022-08-01",
-            "tags": ["Symfony", "GraphQL", "AWS", "Terraform", "PHPStan", "Git"],
+            "end": "2025-03-07",
+            "tags": ["Symfony", "GraphQL", "AWS", "Terraform", "Kubernetes", "Go", "Gerkin"],
             "intro": "l:work.bedrock.intro",
-            "summary": "l:work.bedrock.summary"
+            "summary": "l:work.bedrock.summary",
+            "projects": [
+                {
+                    "name": "l:work.bedrock.php.name",
+                    "summary": "l:work.bedrock.php.summary",
+                    "highlights": "l:work.bedrock.php.highlights",
+                    "tags": ["Symfony", "GraphQL", "Behat", "AWS", "Terraform", "Kubernetes"]
+                },
+                {
+                    "name": "l:work.bedrock.go.name",
+                    "sections": [
+                        {
+                            "name": "Micro services",
+                            "highlights": "l:work.bedrock.go.micro-services.highlights"
+                        },
+                        {
+                            "name": "SDK",
+                            "highlights": "l:work.bedrock.go.sdk.highlights"
+                        },
+                        {
+                            "name": "l:work.bedrock.go.formation.title",
+                            "highlights": "l:work.bedrock.go.formation.highlights"
+                        }
+                    ],
+                    "tags": ["Go", "Fx", "Gherkin", "AWS", "GitHub"]
+                }
+            ]
         },
         {
             "name": "TotalEnergies",

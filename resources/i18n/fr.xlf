@@ -75,11 +75,64 @@
             <!-- Work -->
             <trans-unit id="work.bedrock.intro">
                 <source>work.bedrock.intro</source>
-                <target>Bedrock développe une plateforme de streaming pour divers clients tels que Salto ou M6.</target>
+                <target>Bedrock développe des services de streaming tels que M6+ ou Videoland.</target>
             </trans-unit>
             <trans-unit id="work.bedrock.summary">
                 <source>work.bedrock.summary</source>
                 <target>Développement de micro-services en GraphQL.</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.php.name">
+                <source>work.bedrock.php.name</source>
+                <target>Projets en PHP</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.php.summary">
+                <source>work.bedrock.php.summary</source>
+                <target>Développement d'APIs GraphQL avec Symfony.</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.php.highlights">
+                <source>work.bedrock.php.highlights</source>
+                <target>
+                    Tests de bout en bout avec Behat
+                    Découverte de GraphQL
+                    Infra as Code avec Terraform
+                    CI/CD avec GitHub
+                    Découverte de Kubernetes
+                </target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.name">
+                <source>work.bedrock.go.name</source>
+                <target>Projets en Go</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.micro-services.highlights">
+                <source>work.bedrock.go.micro-services.highlights</source>
+                <target>
+                    Découverte de Go
+                    Mise en place de Godog pour les tests en Gherkin
+                    Utilisation de Uber Fx pour l'injection de dépendances
+                    APIs en REST
+                    Utilisation de l'ORM Bun
+                    Développement d'un CLI pour les devs
+                    Mise en place d'un système de routing
+                </target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.sdk.highlights">
+                <source>work.bedrock.go.sdk.highlights</source>
+                <target>
+                    Création d'une orga GitHub pour les librairies Go internes
+                    Création d'un template de repository
+                    Mise en place d'un SDK pour les projets de l'équipe
+                </target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.formation.title">
+                <source>work.bedrock.go.formation.title</source>
+                <target>Formations</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.formation.highlights">
+                <source>work.bedrock.go.formation.highlights</source>
+                <target>
+                    Création d'une formation Go pour les développeurs PHP
+                    Formation de l'équipe sur des concepts Go
+                </target>
             </trans-unit>
 
             <trans-unit id="work.tde.intro">

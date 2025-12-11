@@ -76,7 +76,7 @@
                                     <p class="ml-1 mt-2 text-sm md:text-base">{{ project.summary | trans | md | raw | nl2br }}</p>
                                 {% endif %}
 
-                                {% if project.highlights|trans|split("\n")|length > 1 %}
+                                {% if project.highlights|default('')|length > 0 and project.highlights|trans|split("\n")|length > 1 %}
                                     <ul class="list-disc list-inside mt-3 md:ml-5 text-xs md:text-base">
                                         {% for highlight in project.highlights|trans|split("\n") %}
                                             <li>{{ highlight|trim }}</li>

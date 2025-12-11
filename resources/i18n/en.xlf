@@ -75,11 +75,64 @@
             <!-- Work -->
             <trans-unit id="work.bedrock.intro">
                 <source>work.bedrock.intro</source>
-                <target>Bedrock is creating a complete streaming platform for different clients like Salto or M6.</target>
+                <target>Bedrock is creating streaming services like M6+ or Videoland.</target>
             </trans-unit>
             <trans-unit id="work.bedrock.summary">
                 <source>work.bedrock.summary</source>
                 <target>Micro-services development using GraphQL.</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.php.name">
+                <source>work.bedrock.php.name</source>
+                <target>Projects in PHP</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.php.summary">
+                <source>work.bedrock.php.summary</source>
+                <target>GraphQL APIs developed using Symfony.</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.php.highlights">
+                <source>work.bedrock.php.highlights</source>
+                <target>
+                    End to end testing with Behat
+                    Discovery of GraphQL
+                    Infra as Code with Terraform
+                    CI/CD on GitHub
+                    Discovery of Kubernetes
+                </target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.name">
+                <source>work.bedrock.go.name</source>
+                <target>Projects in Go</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.micro-services.highlights">
+                <source>work.bedrock.go.micro-services.highlights</source>
+                <target>
+                    Discovery of Go
+                    Setup of Godog for testing in Gherkin
+                    Used Uber Fx for dependency injection
+                    REST and RPC APIs
+                    Used Bun ORM
+                    Developed a CLI for the team
+                    Created a custom routing system
+                </target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.sdk.highlights">
+                <source>work.bedrock.go.sdk.highlights</source>
+                <target>
+                    Created a dedicated GitHub org for internal Go libraries
+                    Created a repository template
+                    Setup a mini-framework for internal projects
+                </target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.formation.title">
+                <source>work.bedrock.go.formation.title</source>
+                <target>Courses</target>
+            </trans-unit>
+            <trans-unit id="work.bedrock.go.formation.highlights">
+                <source>work.bedrock.go.formation.highlights</source>
+                <target>
+                    Created a Go course aimed at PHP developers
+                    Gave several talks to the team about Go
+                </target>
             </trans-unit>
 
             <trans-unit id="work.tde.intro">
