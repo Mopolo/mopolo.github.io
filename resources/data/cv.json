@@ -92,6 +92,14 @@
     ],
     "work": [
         {
+            "name": "Vivlio",
+            "place": "Lyon, France",
+            "start": "2025-03-24",
+            "tags": ["Symfony", "Protobuf", "Azure", "Terraform", "Kubernetes", "Bazel"],
+            "intro": "l:work.vivlio.intro",
+            "summary": "l:work.vivlio.summary"
+        },
+        {
             "name": "Bedrock Streaming",
             "place": "Lyon, France",
             "start": "2022-08-01",

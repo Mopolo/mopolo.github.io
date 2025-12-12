@@ -73,6 +73,17 @@
             </trans-unit>
 
             <!-- Work -->
+            <trans-unit id="work.vivlio.intro">
+                <source>work.vivlio.intro</source>
+                <target>
+                    Vivlio développe une platforme de livres numériques en marque blanche.
+
+                    La platforme comprend toute la chaine de gestion d'un livre, depuis l'ingest
+                    jusqu'à la lecture sur liseuse, en passant par la gestion de la DRM et de la
+                    reprise de lecture sur plusieurs appareils.
+                </target>
+            </trans-unit>
+
             <trans-unit id="work.bedrock.intro">
                 <source>work.bedrock.intro</source>
                 <target>Bedrock développe des services de streaming tels que M6+ ou Videoland.</target>

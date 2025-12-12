@@ -73,6 +73,16 @@
             </trans-unit>
 
             <!-- Work -->
+            <trans-unit id="work.vivlio.intro">
+                <source>work.vivlio.intro</source>
+                <target>
+                    Vivlio develops an ebook platform in white label.
+
+                    This platform takes care of the entire lifecycle of an ebook, from ingest
+                    to reading it on an e-reader, while handling DRM and reading on multiple devices.
+                </target>
+            </trans-unit>
+
             <trans-unit id="work.bedrock.intro">
                 <source>work.bedrock.intro</source>
                 <target>Bedrock is creating streaming services like M6+ or Videoland.</target>
