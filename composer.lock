@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0beef84384bda6e6dd878d3fa98962f",
+    "content-hash": "b56161ce1eb1be5d5ab9da9777ebd046",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -2079,16 +2079,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.4.11",
+            "version": "v7.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "e2eb64a57763815ccae07ac1c7653d6cc1c326fd"
+                "reference": "8b6952b56ca6417f25f7a65758cadd0ce02edc51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/e2eb64a57763815ccae07ac1c7653d6cc1c326fd",
-                "reference": "e2eb64a57763815ccae07ac1c7653d6cc1c326fd",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/8b6952b56ca6417f25f7a65758cadd0ce02edc51",
+                "reference": "8b6952b56ca6417f25f7a65758cadd0ce02edc51",
                 "shasum": ""
             },
             "require": {
@@ -2131,7 +2131,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.4.11"
+                "source": "https://github.com/symfony/yaml/tree/v7.4.12"
             },
             "funding": [
                 {
@@ -2151,20 +2151,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-13T12:04:42+00:00"
+            "time": "2026-05-20T07:20:23+00:00"
         },
         {
             "name": "twig/intl-extra",
-            "version": "v3.24.0",
+            "version": "v3.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/intl-extra.git",
-                "reference": "32f15a38d45a8d0ec11bc8a3d97d3ac2a261499f"
+                "reference": "98f5ad5bff13230fcd2d834d9e79b50adf3ccda9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/32f15a38d45a8d0ec11bc8a3d97d3ac2a261499f",
-                "reference": "32f15a38d45a8d0ec11bc8a3d97d3ac2a261499f",
+                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/98f5ad5bff13230fcd2d834d9e79b50adf3ccda9",
+                "reference": "98f5ad5bff13230fcd2d834d9e79b50adf3ccda9",
                 "shasum": ""
             },
             "require": {
@@ -2203,7 +2203,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/intl-extra/tree/v3.24.0"
+                "source": "https://github.com/twigphp/intl-extra/tree/v3.26.0"
             },
             "funding": [
                 {
@@ -2215,7 +2215,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-17T13:57:47+00:00"
+            "time": "2026-05-19T20:44:48+00:00"
         },
         {
             "name": "twig/string-extra",
@@ -2286,16 +2286,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.25.0",
+            "version": "v3.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "0dade995be754556af4dcbf8721d45cb3271f9b4"
+                "reference": "1fcae487b180d78e6351f4e0afa91f9eab96a2bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/0dade995be754556af4dcbf8721d45cb3271f9b4",
-                "reference": "0dade995be754556af4dcbf8721d45cb3271f9b4",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1fcae487b180d78e6351f4e0afa91f9eab96a2bc",
+                "reference": "1fcae487b180d78e6351f4e0afa91f9eab96a2bc",
                 "shasum": ""
             },
             "require": {
@@ -2350,7 +2350,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.25.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.26.0"
             },
             "funding": [
                 {
@@ -2362,7 +2362,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-17T07:41:26+00:00"
+            "time": "2026-05-20T07:31:59+00:00"
         }
     ],
     "packages-dev": [
