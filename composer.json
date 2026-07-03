@@ -24,7 +24,7 @@
         "symfony/yaml": "^7.4.14",
         "twig/intl-extra": "^3.26.0",
         "twig/string-extra": "^3.24.0",
-        "twig/twig": "^3.27.1"
+        "twig/twig": "^3.28.0"
     },
     "autoload": {
         "psr-4": {
